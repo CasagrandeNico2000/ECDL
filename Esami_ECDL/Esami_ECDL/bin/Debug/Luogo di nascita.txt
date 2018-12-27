@@ -1,0 +1,20 @@
+Abruzzo;64010-67100;L'Aquila,Chieti,Pescara,Teramo
+Basilicata;75010-85100;Matera,Potenza
+Calabria;87010-89900;Catanzaro,Cosenza,Crotone,Reggio Calabria,Vibo Valentia
+Campania;80010-84135;Avellino,Benevento,Caserta,Napoli,Salerno
+Emilia Romagna;29010-48125;Bologna,Ferrara,Forli Cesena,Modena,Parma,Piacenza,Ravenna,Reggio Emilia,Rimini
+Friuli Venezia Giulia;32047-34170;Gorizia,Pordenone,Trieste,Udine
+Lazio;00010-04100;Frosinone,Latina,Rieti,Roma,Viterbo
+Liguria;12071-19137;Genova,Imperia,La Spezia,Savona
+Lombardia;20010-46100;Bergamo,Brescia,Como,Cremona,Lecco,Lodi,Mantova,Milano,Monza Brianza,Pavia,Sondrio,Varese
+Marche;43037-63900;Ancona,Ascoli Piceno,Fermo,Macerata,Pesaro Urbino
+Molise;86010-86170;Campobasso,Isernia
+Piemonte;10010-28925;Alessandria,Asti,Biella,Cuneo,Novara,Torino,Verbania,Vercelli
+Puglia;70010-76125;Bari,Barletta Andria Trani,Brindisi,Foggia,Lecce,Taranto
+Sardegna;07010-09170;Cagliari,Carbonia Iglesias,Medio Campidano,Nuoro,Ogliastra,Olbia Tempio,Oristano,Sassari
+Sicilia;90010-98168;Agrigento,Caltanissetta,Catania,Enna,Messina,Palermo,Ragusa,Siracusa,Trapani
+Toscana;50012-64140;Arezzo,Firenze,Grosseto,Livorno,Lucca,Massa Carrara,Pisa,Pistoia,Prato,Siena
+Trentino Alto Adige;38010-39100;Bolzano,Trento
+Umbria;05010-06135;Perugia,Terni
+Valle D'Aosta;11010-11100;Aosta
+Veneto;30010-45100;Belluno,Padova,Rovigo,Treviso,Venezia,Verona,Vicenza
