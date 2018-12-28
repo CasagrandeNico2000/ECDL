@@ -366,18 +366,87 @@ namespace Esami_ECDL
                 cittàUpdate = textBoxCittàUpdate.Text;
                 provinciaUpdate = comboBoxProvinciaUpdate.Text;
                 regioneUpdate = comboBoxRegioneUpdate.Text;
+                comboBoxProvinciaUpdate.Items.Clear();
+                comboBoxRegioneUpdate.Items.Clear();
+                foreach (string item in listaProvince)
+                {
+                    string[] p = item.Split(',');
+                    foreach (string item2 in p)
+                    {
+                        comboBoxProvinciaUpdate.Items.Add(item2);
+                    }
+                }
+                foreach (string item in listaRegioni)
+                {
+                    comboBoxRegioneUpdate.Items.Add(item);
+                }
             }
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            try
+            if (textBoxCAPUpdate.Text != "" && textBoxCittàUpdate.Text != "" && comboBoxProvinciaUpdate.Text != "" && comboBoxRegioneUpdate.Text != "")
             {
-
+                int indice = 0;
+                bool verCap = false, verProvincia = false, verRegione = false;
+                int cap = Convert.ToInt32(textBoxCAPUpdate.Text);
+                string città = textBoxCittàUpdate.Text;
+                string provincia = comboBoxProvinciaUpdate.Text;
+                string regione = comboBoxRegioneUpdate.Text;
+                foreach (string item in listaRegioni)
+                {
+                    if (regione == item)
+                    {
+                        string[] capCorretti = listaCAP.ElementAt(indice).Split('-');
+                        int minimo = Convert.ToInt32(capCorretti[0]);
+                        int massimo = Convert.ToInt32(capCorretti[1]);
+                        if (cap >= minimo && cap <= massimo)
+                        {
+                            verCap = true;
+                        }
+                        verRegione = true;
+                    }
+                    indice++;
+                }
+                foreach (string item in listaProvince)
+                {
+                    if (item.Contains(provincia))
+                    {
+                        verProvincia = true;
+                    }
+                }
+                if (verCap == true && verProvincia == true && verRegione == true)
+                {
+                    try
+                    {
+                        MySqlCommand UpdateQuery;
+                        string comando = "UPDATE ecdl.luogo_di_nascita SET CAP = " + cap + ", Città = '" + città + "', Provincia = '" + provincia + "', Regione = '" + regione + "' WHERE CAP = " + capUpdate;
+                        UpdateQuery = new MySqlCommand(comando, DatabaseECDL.connessioneEcdl);
+                        UpdateQuery.ExecuteNonQuery();
+                        MessageBox.Show("Modifica riga tabella effettuata!");
+                        Aggiorna();
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show(exception.ToString());
+                    }
+                }
+                else if (verCap == false)
+                {
+                    MessageBox.Show("CAP non corretto!");
+                }
+                else if (verProvincia == false)
+                {
+                    MessageBox.Show("Provincia non corretta!");
+                }
+                else if (verRegione == false)
+                {
+                    MessageBox.Show("Regione non corretta!");
+                }
             }
-            catch (Exception exception)
+            else
             {
-                MessageBox.Show(exception.ToString());
+                MessageBox.Show("Per eseguire il comando è necessario l'inserimento di tutti i dati!");
             }
         }
 

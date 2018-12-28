@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.buttonRisultati = new System.Windows.Forms.Button();
             this.buttonSede = new System.Windows.Forms.Button();
             this.buttonLuogodiNascita = new System.Windows.Forms.Button();
             this.buttonEsamiSessioni = new System.Windows.Forms.Button();
@@ -44,7 +45,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonRisultati = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -83,6 +83,23 @@
             this.panel7.Size = new System.Drawing.Size(775, 302);
             this.panel7.TabIndex = 5;
             // 
+            // buttonRisultati
+            // 
+            this.buttonRisultati.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonRisultati.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRisultati.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRisultati.ForeColor = System.Drawing.Color.Black;
+            this.buttonRisultati.Location = new System.Drawing.Point(212, 254);
+            this.buttonRisultati.Name = "buttonRisultati";
+            this.buttonRisultati.Size = new System.Drawing.Size(350, 35);
+            this.buttonRisultati.TabIndex = 6;
+            this.buttonRisultati.TabStop = false;
+            this.buttonRisultati.Text = "RISULTATI";
+            this.buttonRisultati.UseVisualStyleBackColor = false;
+            this.buttonRisultati.Click += new System.EventHandler(this.buttonRisultati_Click);
+            this.buttonRisultati.MouseEnter += new System.EventHandler(this.buttonRisultati_MouseEnter);
+            this.buttonRisultati.MouseLeave += new System.EventHandler(this.buttonRisultati_MouseLeave);
+            // 
             // buttonSede
             // 
             this.buttonSede.BackColor = System.Drawing.Color.Gainsboro;
@@ -93,6 +110,7 @@
             this.buttonSede.Name = "buttonSede";
             this.buttonSede.Size = new System.Drawing.Size(350, 35);
             this.buttonSede.TabIndex = 5;
+            this.buttonSede.TabStop = false;
             this.buttonSede.Text = "SEDE";
             this.buttonSede.UseVisualStyleBackColor = false;
             this.buttonSede.Click += new System.EventHandler(this.buttonSede_Click);
@@ -109,6 +127,7 @@
             this.buttonLuogodiNascita.Name = "buttonLuogodiNascita";
             this.buttonLuogodiNascita.Size = new System.Drawing.Size(350, 35);
             this.buttonLuogodiNascita.TabIndex = 4;
+            this.buttonLuogodiNascita.TabStop = false;
             this.buttonLuogodiNascita.Text = "LUOGO DI NASCITA";
             this.buttonLuogodiNascita.UseVisualStyleBackColor = false;
             this.buttonLuogodiNascita.Click += new System.EventHandler(this.buttonLuogodiNascita_Click);
@@ -125,6 +144,7 @@
             this.buttonEsamiSessioni.Name = "buttonEsamiSessioni";
             this.buttonEsamiSessioni.Size = new System.Drawing.Size(350, 35);
             this.buttonEsamiSessioni.TabIndex = 3;
+            this.buttonEsamiSessioni.TabStop = false;
             this.buttonEsamiSessioni.Text = "ESAMI + SESSIONI";
             this.buttonEsamiSessioni.UseVisualStyleBackColor = false;
             this.buttonEsamiSessioni.Click += new System.EventHandler(this.buttonEsamiSessioni_Click);
@@ -141,6 +161,7 @@
             this.buttonSessioni.Name = "buttonSessioni";
             this.buttonSessioni.Size = new System.Drawing.Size(350, 35);
             this.buttonSessioni.TabIndex = 2;
+            this.buttonSessioni.TabStop = false;
             this.buttonSessioni.Text = "SESSIONI";
             this.buttonSessioni.UseVisualStyleBackColor = false;
             this.buttonSessioni.Click += new System.EventHandler(this.buttonSessioni_Click);
@@ -157,6 +178,7 @@
             this.buttonEsami.Name = "buttonEsami";
             this.buttonEsami.Size = new System.Drawing.Size(350, 35);
             this.buttonEsami.TabIndex = 1;
+            this.buttonEsami.TabStop = false;
             this.buttonEsami.Text = "ESAMI";
             this.buttonEsami.UseVisualStyleBackColor = false;
             this.buttonEsami.Click += new System.EventHandler(this.buttonEsami_Click);
@@ -173,6 +195,7 @@
             this.buttonEsaminandi.Name = "buttonEsaminandi";
             this.buttonEsaminandi.Size = new System.Drawing.Size(350, 35);
             this.buttonEsaminandi.TabIndex = 0;
+            this.buttonEsaminandi.TabStop = false;
             this.buttonEsaminandi.Text = "ESAMINANDI";
             this.buttonEsaminandi.UseVisualStyleBackColor = false;
             this.buttonEsaminandi.Click += new System.EventHandler(this.buttonEsaminandi_Click);
@@ -261,22 +284,6 @@
             this.label1.Size = new System.Drawing.Size(98, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Menù";
-            // 
-            // buttonRisultati
-            // 
-            this.buttonRisultati.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonRisultati.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRisultati.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRisultati.ForeColor = System.Drawing.Color.Black;
-            this.buttonRisultati.Location = new System.Drawing.Point(212, 254);
-            this.buttonRisultati.Name = "buttonRisultati";
-            this.buttonRisultati.Size = new System.Drawing.Size(350, 35);
-            this.buttonRisultati.TabIndex = 6;
-            this.buttonRisultati.Text = "RISULTATI";
-            this.buttonRisultati.UseVisualStyleBackColor = false;
-            this.buttonRisultati.Click += new System.EventHandler(this.buttonRisultati_Click);
-            this.buttonRisultati.MouseEnter += new System.EventHandler(this.buttonRisultati_MouseEnter);
-            this.buttonRisultati.MouseLeave += new System.EventHandler(this.buttonRisultati_MouseLeave);
             // 
             // FormMenù
             // 

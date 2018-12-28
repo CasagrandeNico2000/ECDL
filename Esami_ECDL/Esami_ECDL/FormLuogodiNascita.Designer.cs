@@ -64,7 +64,20 @@
             this.buttonDeleteAll = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.dataGridViewLuogodiNascitaDelete = new System.Windows.Forms.DataGridView();
-            this.tabPageModifica = new System.Windows.Forms.TabPage();
+            this.tabPageCercaModifica = new System.Windows.Forms.TabPage();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.textBoxCercaCAP = new System.Windows.Forms.TextBox();
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.panel43 = new System.Windows.Forms.Panel();
             this.buttonClearUpdate = new System.Windows.Forms.Button();
             this.dataGridViewLuogodiNascitaUpdate = new System.Windows.Forms.DataGridView();
             this.buttonUpdate = new System.Windows.Forms.Button();
@@ -88,15 +101,6 @@
             this.textBoxCAPUpdate = new System.Windows.Forms.TextBox();
             this.panel38 = new System.Windows.Forms.Panel();
             this.panel39 = new System.Windows.Forms.Panel();
-            this.tabPageCerca = new System.Windows.Forms.TabPage();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -112,7 +116,12 @@
             this.panel11.SuspendLayout();
             this.tabPageCancella.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLuogodiNascitaDelete)).BeginInit();
-            this.tabPageModifica.SuspendLayout();
+            this.tabPageCercaModifica.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel40.SuspendLayout();
+            this.panel41.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLuogodiNascitaUpdate)).BeginInit();
             this.panel24.SuspendLayout();
             this.panel25.SuspendLayout();
@@ -122,9 +131,6 @@
             this.panel33.SuspendLayout();
             this.panel36.SuspendLayout();
             this.panel37.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -156,8 +162,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPageInserimento);
             this.tabControl1.Controls.Add(this.tabPageCancella);
-            this.tabControl1.Controls.Add(this.tabPageModifica);
-            this.tabControl1.Controls.Add(this.tabPageCerca);
+            this.tabControl1.Controls.Add(this.tabPageCercaModifica);
             this.tabControl1.Location = new System.Drawing.Point(3, 6);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -536,278 +541,22 @@
             this.dataGridViewLuogodiNascitaDelete.TabStop = false;
             this.dataGridViewLuogodiNascitaDelete.SelectionChanged += new System.EventHandler(this.dataGridViewLuogodiNascitaDelete_SelectionChanged);
             // 
-            // tabPageModifica
+            // tabPageCercaModifica
             // 
-            this.tabPageModifica.Controls.Add(this.buttonClearUpdate);
-            this.tabPageModifica.Controls.Add(this.dataGridViewLuogodiNascitaUpdate);
-            this.tabPageModifica.Controls.Add(this.buttonUpdate);
-            this.tabPageModifica.Controls.Add(this.panel24);
-            this.tabPageModifica.Controls.Add(this.panel28);
-            this.tabPageModifica.Controls.Add(this.panel32);
-            this.tabPageModifica.Controls.Add(this.panel36);
-            this.tabPageModifica.Location = new System.Drawing.Point(4, 25);
-            this.tabPageModifica.Name = "tabPageModifica";
-            this.tabPageModifica.Size = new System.Drawing.Size(761, 310);
-            this.tabPageModifica.TabIndex = 3;
-            this.tabPageModifica.Text = "MODIFICA";
-            this.tabPageModifica.UseVisualStyleBackColor = true;
-            // 
-            // buttonClearUpdate
-            // 
-            this.buttonClearUpdate.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonClearUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClearUpdate.ForeColor = System.Drawing.Color.Black;
-            this.buttonClearUpdate.Location = new System.Drawing.Point(22, 210);
-            this.buttonClearUpdate.Name = "buttonClearUpdate";
-            this.buttonClearUpdate.Size = new System.Drawing.Size(211, 32);
-            this.buttonClearUpdate.TabIndex = 13;
-            this.buttonClearUpdate.TabStop = false;
-            this.buttonClearUpdate.Text = "CLEAR";
-            this.buttonClearUpdate.UseVisualStyleBackColor = false;
-            this.buttonClearUpdate.Click += new System.EventHandler(this.buttonClearUpdate_Click);
-            this.buttonClearUpdate.MouseEnter += new System.EventHandler(this.buttonClearUpdate_MouseEnter);
-            this.buttonClearUpdate.MouseLeave += new System.EventHandler(this.buttonClearUpdate_MouseLeave);
-            // 
-            // dataGridViewLuogodiNascitaUpdate
-            // 
-            this.dataGridViewLuogodiNascitaUpdate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewLuogodiNascitaUpdate.Location = new System.Drawing.Point(252, 27);
-            this.dataGridViewLuogodiNascitaUpdate.Name = "dataGridViewLuogodiNascitaUpdate";
-            this.dataGridViewLuogodiNascitaUpdate.RowTemplate.Height = 24;
-            this.dataGridViewLuogodiNascitaUpdate.Size = new System.Drawing.Size(487, 256);
-            this.dataGridViewLuogodiNascitaUpdate.TabIndex = 12;
-            this.dataGridViewLuogodiNascitaUpdate.SelectionChanged += new System.EventHandler(this.dataGridViewLuogodiNascitaUpdate_SelectionChanged);
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUpdate.ForeColor = System.Drawing.Color.Black;
-            this.buttonUpdate.Location = new System.Drawing.Point(22, 251);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(211, 32);
-            this.buttonUpdate.TabIndex = 11;
-            this.buttonUpdate.TabStop = false;
-            this.buttonUpdate.Text = "UPDATE";
-            this.buttonUpdate.UseVisualStyleBackColor = false;
-            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
-            this.buttonUpdate.MouseEnter += new System.EventHandler(this.buttonUpdate_MouseEnter);
-            this.buttonUpdate.MouseLeave += new System.EventHandler(this.buttonUpdate_MouseLeave);
-            // 
-            // panel24
-            // 
-            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel24.Controls.Add(this.panel25);
-            this.panel24.Controls.Add(this.panel26);
-            this.panel24.Controls.Add(this.panel27);
-            this.panel24.Location = new System.Drawing.Point(22, 167);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(211, 34);
-            this.panel24.TabIndex = 10;
-            // 
-            // panel25
-            // 
-            this.panel25.Controls.Add(this.comboBoxRegioneUpdate);
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel25.Location = new System.Drawing.Point(37, 0);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(172, 32);
-            this.panel25.TabIndex = 2;
-            // 
-            // comboBoxRegioneUpdate
-            // 
-            this.comboBoxRegioneUpdate.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBoxRegioneUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxRegioneUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxRegioneUpdate.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBoxRegioneUpdate.FormattingEnabled = true;
-            this.comboBoxRegioneUpdate.Location = new System.Drawing.Point(3, 1);
-            this.comboBoxRegioneUpdate.Name = "comboBoxRegioneUpdate";
-            this.comboBoxRegioneUpdate.Size = new System.Drawing.Size(166, 30);
-            this.comboBoxRegioneUpdate.TabIndex = 1;
-            this.comboBoxRegioneUpdate.TabStop = false;
-            this.comboBoxRegioneUpdate.Text = "Regione...";
-            this.comboBoxRegioneUpdate.SelectedIndexChanged += new System.EventHandler(this.comboBoxRegioneUpdate_SelectedIndexChanged);
-            // 
-            // panel26
-            // 
-            this.panel26.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel26.Location = new System.Drawing.Point(3, 0);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(34, 32);
-            this.panel26.TabIndex = 1;
-            // 
-            // panel27
-            // 
-            this.panel27.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel27.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel27.Location = new System.Drawing.Point(0, 0);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(3, 32);
-            this.panel27.TabIndex = 0;
-            // 
-            // panel28
-            // 
-            this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel28.Controls.Add(this.panel29);
-            this.panel28.Controls.Add(this.panel30);
-            this.panel28.Controls.Add(this.panel31);
-            this.panel28.Location = new System.Drawing.Point(22, 120);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(211, 34);
-            this.panel28.TabIndex = 9;
-            // 
-            // panel29
-            // 
-            this.panel29.Controls.Add(this.comboBoxProvinciaUpdate);
-            this.panel29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel29.Location = new System.Drawing.Point(37, 0);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(172, 32);
-            this.panel29.TabIndex = 2;
-            // 
-            // comboBoxProvinciaUpdate
-            // 
-            this.comboBoxProvinciaUpdate.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBoxProvinciaUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxProvinciaUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxProvinciaUpdate.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBoxProvinciaUpdate.FormattingEnabled = true;
-            this.comboBoxProvinciaUpdate.Location = new System.Drawing.Point(3, 1);
-            this.comboBoxProvinciaUpdate.Name = "comboBoxProvinciaUpdate";
-            this.comboBoxProvinciaUpdate.Size = new System.Drawing.Size(166, 30);
-            this.comboBoxProvinciaUpdate.TabIndex = 1;
-            this.comboBoxProvinciaUpdate.TabStop = false;
-            this.comboBoxProvinciaUpdate.Text = "Provincia...";
-            this.comboBoxProvinciaUpdate.SelectedIndexChanged += new System.EventHandler(this.comboBoxProvinciaUpdate_SelectedIndexChanged);
-            // 
-            // panel30
-            // 
-            this.panel30.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel30.Location = new System.Drawing.Point(3, 0);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(34, 32);
-            this.panel30.TabIndex = 1;
-            // 
-            // panel31
-            // 
-            this.panel31.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel31.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel31.Location = new System.Drawing.Point(0, 0);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(3, 32);
-            this.panel31.TabIndex = 0;
-            // 
-            // panel32
-            // 
-            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel32.Controls.Add(this.panel33);
-            this.panel32.Controls.Add(this.panel34);
-            this.panel32.Controls.Add(this.panel35);
-            this.panel32.Location = new System.Drawing.Point(22, 73);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(211, 34);
-            this.panel32.TabIndex = 8;
-            // 
-            // panel33
-            // 
-            this.panel33.Controls.Add(this.textBoxCittàUpdate);
-            this.panel33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel33.Location = new System.Drawing.Point(37, 0);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(172, 32);
-            this.panel33.TabIndex = 2;
-            // 
-            // textBoxCittàUpdate
-            // 
-            this.textBoxCittàUpdate.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxCittàUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCittàUpdate.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxCittàUpdate.Location = new System.Drawing.Point(6, 6);
-            this.textBoxCittàUpdate.Name = "textBoxCittàUpdate";
-            this.textBoxCittàUpdate.Size = new System.Drawing.Size(160, 21);
-            this.textBoxCittàUpdate.TabIndex = 0;
-            this.textBoxCittàUpdate.TabStop = false;
-            this.textBoxCittàUpdate.Text = "Città...";
-            this.textBoxCittàUpdate.Click += new System.EventHandler(this.textBoxCittàUpdate_Click);
-            this.textBoxCittàUpdate.Leave += new System.EventHandler(this.textBoxCittàUpdate_Leave);
-            // 
-            // panel34
-            // 
-            this.panel34.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel34.Location = new System.Drawing.Point(3, 0);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(34, 32);
-            this.panel34.TabIndex = 1;
-            // 
-            // panel35
-            // 
-            this.panel35.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel35.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel35.Location = new System.Drawing.Point(0, 0);
-            this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(3, 32);
-            this.panel35.TabIndex = 0;
-            // 
-            // panel36
-            // 
-            this.panel36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel36.Controls.Add(this.panel37);
-            this.panel36.Controls.Add(this.panel38);
-            this.panel36.Controls.Add(this.panel39);
-            this.panel36.Location = new System.Drawing.Point(22, 27);
-            this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(211, 34);
-            this.panel36.TabIndex = 7;
-            // 
-            // panel37
-            // 
-            this.panel37.Controls.Add(this.textBoxCAPUpdate);
-            this.panel37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel37.Location = new System.Drawing.Point(37, 0);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(172, 32);
-            this.panel37.TabIndex = 2;
-            // 
-            // textBoxCAPUpdate
-            // 
-            this.textBoxCAPUpdate.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxCAPUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCAPUpdate.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxCAPUpdate.Location = new System.Drawing.Point(6, 6);
-            this.textBoxCAPUpdate.Name = "textBoxCAPUpdate";
-            this.textBoxCAPUpdate.Size = new System.Drawing.Size(160, 21);
-            this.textBoxCAPUpdate.TabIndex = 1;
-            this.textBoxCAPUpdate.TabStop = false;
-            this.textBoxCAPUpdate.Text = "CAP...";
-            this.textBoxCAPUpdate.Click += new System.EventHandler(this.textBoxCAPUpdate_Click);
-            this.textBoxCAPUpdate.Leave += new System.EventHandler(this.textBoxCAPUpdate_Leave);
-            // 
-            // panel38
-            // 
-            this.panel38.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel38.Location = new System.Drawing.Point(3, 0);
-            this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(34, 32);
-            this.panel38.TabIndex = 1;
-            // 
-            // panel39
-            // 
-            this.panel39.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel39.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel39.Location = new System.Drawing.Point(0, 0);
-            this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(3, 32);
-            this.panel39.TabIndex = 0;
-            // 
-            // tabPageCerca
-            // 
-            this.tabPageCerca.Location = new System.Drawing.Point(4, 25);
-            this.tabPageCerca.Name = "tabPageCerca";
-            this.tabPageCerca.Size = new System.Drawing.Size(761, 310);
-            this.tabPageCerca.TabIndex = 2;
-            this.tabPageCerca.Text = "CERCA";
-            this.tabPageCerca.UseVisualStyleBackColor = true;
+            this.tabPageCercaModifica.Controls.Add(this.panel40);
+            this.tabPageCercaModifica.Controls.Add(this.buttonClearUpdate);
+            this.tabPageCercaModifica.Controls.Add(this.dataGridViewLuogodiNascitaUpdate);
+            this.tabPageCercaModifica.Controls.Add(this.buttonUpdate);
+            this.tabPageCercaModifica.Controls.Add(this.panel24);
+            this.tabPageCercaModifica.Controls.Add(this.panel28);
+            this.tabPageCercaModifica.Controls.Add(this.panel32);
+            this.tabPageCercaModifica.Controls.Add(this.panel36);
+            this.tabPageCercaModifica.Location = new System.Drawing.Point(4, 25);
+            this.tabPageCercaModifica.Name = "tabPageCercaModifica";
+            this.tabPageCercaModifica.Size = new System.Drawing.Size(761, 310);
+            this.tabPageCercaModifica.TabIndex = 3;
+            this.tabPageCercaModifica.Text = "CERCA E MODIFICA";
+            this.tabPageCercaModifica.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
@@ -892,6 +641,290 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Luogo di nascita";
             // 
+            // panel40
+            // 
+            this.panel40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel40.Controls.Add(this.panel41);
+            this.panel40.Controls.Add(this.panel42);
+            this.panel40.Controls.Add(this.panel43);
+            this.panel40.Location = new System.Drawing.Point(22, 5);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(717, 34);
+            this.panel40.TabIndex = 30;
+            // 
+            // panel41
+            // 
+            this.panel41.Controls.Add(this.textBoxCercaCAP);
+            this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel41.Location = new System.Drawing.Point(37, 0);
+            this.panel41.Name = "panel41";
+            this.panel41.Size = new System.Drawing.Size(678, 32);
+            this.panel41.TabIndex = 2;
+            // 
+            // textBoxCercaCAP
+            // 
+            this.textBoxCercaCAP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCercaCAP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCercaCAP.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxCercaCAP.Location = new System.Drawing.Point(6, 6);
+            this.textBoxCercaCAP.Name = "textBoxCercaCAP";
+            this.textBoxCercaCAP.Size = new System.Drawing.Size(666, 21);
+            this.textBoxCercaCAP.TabIndex = 1;
+            this.textBoxCercaCAP.TabStop = false;
+            this.textBoxCercaCAP.Text = "CERCA CAP...";
+            // 
+            // panel42
+            // 
+            this.panel42.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel42.Location = new System.Drawing.Point(3, 0);
+            this.panel42.Name = "panel42";
+            this.panel42.Size = new System.Drawing.Size(34, 32);
+            this.panel42.TabIndex = 1;
+            // 
+            // panel43
+            // 
+            this.panel43.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel43.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel43.Location = new System.Drawing.Point(0, 0);
+            this.panel43.Name = "panel43";
+            this.panel43.Size = new System.Drawing.Size(3, 32);
+            this.panel43.TabIndex = 0;
+            // 
+            // buttonClearUpdate
+            // 
+            this.buttonClearUpdate.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonClearUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearUpdate.ForeColor = System.Drawing.Color.Black;
+            this.buttonClearUpdate.Location = new System.Drawing.Point(22, 233);
+            this.buttonClearUpdate.Name = "buttonClearUpdate";
+            this.buttonClearUpdate.Size = new System.Drawing.Size(211, 32);
+            this.buttonClearUpdate.TabIndex = 29;
+            this.buttonClearUpdate.TabStop = false;
+            this.buttonClearUpdate.Text = "CLEAR";
+            this.buttonClearUpdate.UseVisualStyleBackColor = false;
+            // 
+            // dataGridViewLuogodiNascitaUpdate
+            // 
+            this.dataGridViewLuogodiNascitaUpdate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewLuogodiNascitaUpdate.Location = new System.Drawing.Point(252, 50);
+            this.dataGridViewLuogodiNascitaUpdate.Name = "dataGridViewLuogodiNascitaUpdate";
+            this.dataGridViewLuogodiNascitaUpdate.RowTemplate.Height = 24;
+            this.dataGridViewLuogodiNascitaUpdate.Size = new System.Drawing.Size(487, 256);
+            this.dataGridViewLuogodiNascitaUpdate.TabIndex = 28;
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUpdate.ForeColor = System.Drawing.Color.Black;
+            this.buttonUpdate.Location = new System.Drawing.Point(22, 274);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(211, 32);
+            this.buttonUpdate.TabIndex = 27;
+            this.buttonUpdate.TabStop = false;
+            this.buttonUpdate.Text = "UPDATE";
+            this.buttonUpdate.UseVisualStyleBackColor = false;
+            // 
+            // panel24
+            // 
+            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel24.Controls.Add(this.panel25);
+            this.panel24.Controls.Add(this.panel26);
+            this.panel24.Controls.Add(this.panel27);
+            this.panel24.Location = new System.Drawing.Point(22, 190);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(211, 34);
+            this.panel24.TabIndex = 26;
+            // 
+            // panel25
+            // 
+            this.panel25.Controls.Add(this.comboBoxRegioneUpdate);
+            this.panel25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel25.Location = new System.Drawing.Point(37, 0);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(172, 32);
+            this.panel25.TabIndex = 2;
+            // 
+            // comboBoxRegioneUpdate
+            // 
+            this.comboBoxRegioneUpdate.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxRegioneUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxRegioneUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxRegioneUpdate.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBoxRegioneUpdate.FormattingEnabled = true;
+            this.comboBoxRegioneUpdate.Location = new System.Drawing.Point(3, 1);
+            this.comboBoxRegioneUpdate.Name = "comboBoxRegioneUpdate";
+            this.comboBoxRegioneUpdate.Size = new System.Drawing.Size(166, 30);
+            this.comboBoxRegioneUpdate.TabIndex = 1;
+            this.comboBoxRegioneUpdate.TabStop = false;
+            this.comboBoxRegioneUpdate.Text = "Regione...";
+            // 
+            // panel26
+            // 
+            this.panel26.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel26.Location = new System.Drawing.Point(3, 0);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(34, 32);
+            this.panel26.TabIndex = 1;
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel27.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel27.Location = new System.Drawing.Point(0, 0);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(3, 32);
+            this.panel27.TabIndex = 0;
+            // 
+            // panel28
+            // 
+            this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel28.Controls.Add(this.panel29);
+            this.panel28.Controls.Add(this.panel30);
+            this.panel28.Controls.Add(this.panel31);
+            this.panel28.Location = new System.Drawing.Point(22, 143);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(211, 34);
+            this.panel28.TabIndex = 25;
+            // 
+            // panel29
+            // 
+            this.panel29.Controls.Add(this.comboBoxProvinciaUpdate);
+            this.panel29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel29.Location = new System.Drawing.Point(37, 0);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(172, 32);
+            this.panel29.TabIndex = 2;
+            // 
+            // comboBoxProvinciaUpdate
+            // 
+            this.comboBoxProvinciaUpdate.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxProvinciaUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxProvinciaUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxProvinciaUpdate.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBoxProvinciaUpdate.FormattingEnabled = true;
+            this.comboBoxProvinciaUpdate.Location = new System.Drawing.Point(3, 1);
+            this.comboBoxProvinciaUpdate.Name = "comboBoxProvinciaUpdate";
+            this.comboBoxProvinciaUpdate.Size = new System.Drawing.Size(166, 30);
+            this.comboBoxProvinciaUpdate.TabIndex = 1;
+            this.comboBoxProvinciaUpdate.TabStop = false;
+            this.comboBoxProvinciaUpdate.Text = "Provincia...";
+            // 
+            // panel30
+            // 
+            this.panel30.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel30.Location = new System.Drawing.Point(3, 0);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(34, 32);
+            this.panel30.TabIndex = 1;
+            // 
+            // panel31
+            // 
+            this.panel31.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel31.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel31.Location = new System.Drawing.Point(0, 0);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(3, 32);
+            this.panel31.TabIndex = 0;
+            // 
+            // panel32
+            // 
+            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel32.Controls.Add(this.panel33);
+            this.panel32.Controls.Add(this.panel34);
+            this.panel32.Controls.Add(this.panel35);
+            this.panel32.Location = new System.Drawing.Point(22, 96);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(211, 34);
+            this.panel32.TabIndex = 24;
+            // 
+            // panel33
+            // 
+            this.panel33.Controls.Add(this.textBoxCittàUpdate);
+            this.panel33.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel33.Location = new System.Drawing.Point(37, 0);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(172, 32);
+            this.panel33.TabIndex = 2;
+            // 
+            // textBoxCittàUpdate
+            // 
+            this.textBoxCittàUpdate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCittàUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCittàUpdate.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxCittàUpdate.Location = new System.Drawing.Point(6, 6);
+            this.textBoxCittàUpdate.Name = "textBoxCittàUpdate";
+            this.textBoxCittàUpdate.Size = new System.Drawing.Size(160, 21);
+            this.textBoxCittàUpdate.TabIndex = 0;
+            this.textBoxCittàUpdate.TabStop = false;
+            this.textBoxCittàUpdate.Text = "Città...";
+            // 
+            // panel34
+            // 
+            this.panel34.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel34.Location = new System.Drawing.Point(3, 0);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(34, 32);
+            this.panel34.TabIndex = 1;
+            // 
+            // panel35
+            // 
+            this.panel35.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel35.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel35.Location = new System.Drawing.Point(0, 0);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(3, 32);
+            this.panel35.TabIndex = 0;
+            // 
+            // panel36
+            // 
+            this.panel36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel36.Controls.Add(this.panel37);
+            this.panel36.Controls.Add(this.panel38);
+            this.panel36.Controls.Add(this.panel39);
+            this.panel36.Location = new System.Drawing.Point(22, 50);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(211, 34);
+            this.panel36.TabIndex = 23;
+            // 
+            // panel37
+            // 
+            this.panel37.Controls.Add(this.textBoxCAPUpdate);
+            this.panel37.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel37.Location = new System.Drawing.Point(37, 0);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(172, 32);
+            this.panel37.TabIndex = 2;
+            // 
+            // textBoxCAPUpdate
+            // 
+            this.textBoxCAPUpdate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCAPUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCAPUpdate.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxCAPUpdate.Location = new System.Drawing.Point(6, 6);
+            this.textBoxCAPUpdate.Name = "textBoxCAPUpdate";
+            this.textBoxCAPUpdate.Size = new System.Drawing.Size(160, 21);
+            this.textBoxCAPUpdate.TabIndex = 1;
+            this.textBoxCAPUpdate.TabStop = false;
+            this.textBoxCAPUpdate.Text = "CAP...";
+            // 
+            // panel38
+            // 
+            this.panel38.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel38.Location = new System.Drawing.Point(3, 0);
+            this.panel38.Name = "panel38";
+            this.panel38.Size = new System.Drawing.Size(34, 32);
+            this.panel38.TabIndex = 1;
+            // 
+            // panel39
+            // 
+            this.panel39.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel39.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel39.Location = new System.Drawing.Point(0, 0);
+            this.panel39.Name = "panel39";
+            this.panel39.Size = new System.Drawing.Size(3, 32);
+            this.panel39.TabIndex = 0;
+            // 
             // FormLuogodiNascita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -919,7 +952,16 @@
             this.tabPageCancella.ResumeLayout(false);
             this.tabPageCancella.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLuogodiNascitaDelete)).EndInit();
-            this.tabPageModifica.ResumeLayout(false);
+            this.tabPageCercaModifica.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel40.ResumeLayout(false);
+            this.panel41.ResumeLayout(false);
+            this.panel41.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLuogodiNascitaUpdate)).EndInit();
             this.panel24.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
@@ -931,12 +973,6 @@
             this.panel36.ResumeLayout(false);
             this.panel37.ResumeLayout(false);
             this.panel37.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -956,7 +992,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPageInserimento;
         private System.Windows.Forms.TabPage tabPageCancella;
-        private System.Windows.Forms.TabPage tabPageCerca;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel18;
@@ -988,7 +1023,13 @@
         private System.Windows.Forms.Panel panelDeleteUntil;
         private System.Windows.Forms.RadioButton radioButtonMulti;
         private System.Windows.Forms.RadioButton radioButtonSingle;
-        private System.Windows.Forms.TabPage tabPageModifica;
+        private System.Windows.Forms.TabPage tabPageCercaModifica;
+        private System.Windows.Forms.Panel panel40;
+        private System.Windows.Forms.Panel panel41;
+        private System.Windows.Forms.TextBox textBoxCercaCAP;
+        private System.Windows.Forms.Panel panel42;
+        private System.Windows.Forms.Panel panel43;
+        private System.Windows.Forms.Button buttonClearUpdate;
         private System.Windows.Forms.DataGridView dataGridViewLuogodiNascitaUpdate;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Panel panel24;
@@ -1011,6 +1052,5 @@
         private System.Windows.Forms.TextBox textBoxCAPUpdate;
         private System.Windows.Forms.Panel panel38;
         private System.Windows.Forms.Panel panel39;
-        private System.Windows.Forms.Button buttonClearUpdate;
     }
 }
