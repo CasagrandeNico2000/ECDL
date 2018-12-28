@@ -65,17 +65,9 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.dataGridViewLuogodiNascitaDelete = new System.Windows.Forms.DataGridView();
             this.tabPageCercaModifica = new System.Windows.Forms.TabPage();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel40 = new System.Windows.Forms.Panel();
             this.panel41 = new System.Windows.Forms.Panel();
-            this.textBoxCercaCAP = new System.Windows.Forms.TextBox();
+            this.textBoxCercaValore = new System.Windows.Forms.TextBox();
             this.panel42 = new System.Windows.Forms.Panel();
             this.panel43 = new System.Windows.Forms.Panel();
             this.buttonClearUpdate = new System.Windows.Forms.Button();
@@ -101,6 +93,18 @@
             this.textBoxCAPUpdate = new System.Windows.Forms.TextBox();
             this.panel38 = new System.Windows.Forms.Panel();
             this.panel39 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.radioButtonSearchCAP = new System.Windows.Forms.RadioButton();
+            this.radioButtonSearchCittà = new System.Windows.Forms.RadioButton();
+            this.radioButtonSearchProvincia = new System.Windows.Forms.RadioButton();
+            this.radioButtonSearchRegione = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -117,9 +121,6 @@
             this.tabPageCancella.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLuogodiNascitaDelete)).BeginInit();
             this.tabPageCercaModifica.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel40.SuspendLayout();
             this.panel41.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLuogodiNascitaUpdate)).BeginInit();
@@ -131,6 +132,9 @@
             this.panel33.SuspendLayout();
             this.panel36.SuspendLayout();
             this.panel37.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -543,6 +547,10 @@
             // 
             // tabPageCercaModifica
             // 
+            this.tabPageCercaModifica.Controls.Add(this.radioButtonSearchRegione);
+            this.tabPageCercaModifica.Controls.Add(this.radioButtonSearchProvincia);
+            this.tabPageCercaModifica.Controls.Add(this.radioButtonSearchCittà);
+            this.tabPageCercaModifica.Controls.Add(this.radioButtonSearchCAP);
             this.tabPageCercaModifica.Controls.Add(this.panel40);
             this.tabPageCercaModifica.Controls.Add(this.buttonClearUpdate);
             this.tabPageCercaModifica.Controls.Add(this.dataGridViewLuogodiNascitaUpdate);
@@ -558,89 +566,6 @@
             this.tabPageCercaModifica.Text = "CERCA E MODIFICA";
             this.tabPageCercaModifica.UseVisualStyleBackColor = true;
             // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label3);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 78);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(775, 49);
-            this.panel6.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(281, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(209, 29);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Scegliere opzione";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 478);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(775, 3);
-            this.panel5.TabIndex = 3;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 481);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(775, 75);
-            this.panel4.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(335, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 38);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Menù";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            this.label2.MouseEnter += new System.EventHandler(this.label2_MouseEnter);
-            this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 75);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(775, 3);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(775, 75);
-            this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(255, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 38);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Luogo di nascita";
-            // 
             // panel40
             // 
             this.panel40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -649,29 +574,30 @@
             this.panel40.Controls.Add(this.panel43);
             this.panel40.Location = new System.Drawing.Point(22, 5);
             this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(717, 34);
+            this.panel40.Size = new System.Drawing.Size(323, 34);
             this.panel40.TabIndex = 30;
             // 
             // panel41
             // 
-            this.panel41.Controls.Add(this.textBoxCercaCAP);
+            this.panel41.Controls.Add(this.textBoxCercaValore);
             this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel41.Location = new System.Drawing.Point(37, 0);
             this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(678, 32);
+            this.panel41.Size = new System.Drawing.Size(284, 32);
             this.panel41.TabIndex = 2;
             // 
-            // textBoxCercaCAP
+            // textBoxCercaValore
             // 
-            this.textBoxCercaCAP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxCercaCAP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCercaCAP.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxCercaCAP.Location = new System.Drawing.Point(6, 6);
-            this.textBoxCercaCAP.Name = "textBoxCercaCAP";
-            this.textBoxCercaCAP.Size = new System.Drawing.Size(666, 21);
-            this.textBoxCercaCAP.TabIndex = 1;
-            this.textBoxCercaCAP.TabStop = false;
-            this.textBoxCercaCAP.Text = "CERCA CAP...";
+            this.textBoxCercaValore.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCercaValore.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCercaValore.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxCercaValore.Location = new System.Drawing.Point(6, 6);
+            this.textBoxCercaValore.Name = "textBoxCercaValore";
+            this.textBoxCercaValore.Size = new System.Drawing.Size(272, 21);
+            this.textBoxCercaValore.TabIndex = 1;
+            this.textBoxCercaValore.TabStop = false;
+            this.textBoxCercaValore.Text = "CERCA...";
+            this.textBoxCercaValore.TextChanged += new System.EventHandler(this.textBoxCercaValore_TextChanged);
             // 
             // panel42
             // 
@@ -925,6 +851,129 @@
             this.panel39.Size = new System.Drawing.Size(3, 32);
             this.panel39.TabIndex = 0;
             // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 78);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(775, 49);
+            this.panel6.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
+            this.label3.Location = new System.Drawing.Point(281, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(209, 29);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Scegliere opzione";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 478);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(775, 3);
+            this.panel5.TabIndex = 3;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 481);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(775, 75);
+            this.panel4.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
+            this.label2.Location = new System.Drawing.Point(335, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 38);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Menù";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.MouseEnter += new System.EventHandler(this.label2_MouseEnter);
+            this.label2.MouseLeave += new System.EventHandler(this.label2_MouseLeave);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 75);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(775, 3);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(775, 75);
+            this.panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.Location = new System.Drawing.Point(255, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(254, 38);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Luogo di nascita";
+            // 
+            // radioButtonSearchCAP
+            // 
+            this.radioButtonSearchCAP.AutoSize = true;
+            this.radioButtonSearchCAP.Location = new System.Drawing.Point(370, 12);
+            this.radioButtonSearchCAP.Name = "radioButtonSearchCAP";
+            this.radioButtonSearchCAP.Size = new System.Drawing.Size(56, 21);
+            this.radioButtonSearchCAP.TabIndex = 31;
+            this.radioButtonSearchCAP.Text = "CAP";
+            this.radioButtonSearchCAP.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSearchCittà
+            // 
+            this.radioButtonSearchCittà.AutoSize = true;
+            this.radioButtonSearchCittà.Location = new System.Drawing.Point(458, 12);
+            this.radioButtonSearchCittà.Name = "radioButtonSearchCittà";
+            this.radioButtonSearchCittà.Size = new System.Drawing.Size(57, 21);
+            this.radioButtonSearchCittà.TabIndex = 32;
+            this.radioButtonSearchCittà.Text = "Città";
+            this.radioButtonSearchCittà.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSearchProvincia
+            // 
+            this.radioButtonSearchProvincia.AutoSize = true;
+            this.radioButtonSearchProvincia.Location = new System.Drawing.Point(544, 12);
+            this.radioButtonSearchProvincia.Name = "radioButtonSearchProvincia";
+            this.radioButtonSearchProvincia.Size = new System.Drawing.Size(87, 21);
+            this.radioButtonSearchProvincia.TabIndex = 33;
+            this.radioButtonSearchProvincia.Text = "Provincia";
+            this.radioButtonSearchProvincia.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSearchRegione
+            // 
+            this.radioButtonSearchRegione.AutoSize = true;
+            this.radioButtonSearchRegione.Location = new System.Drawing.Point(657, 12);
+            this.radioButtonSearchRegione.Name = "radioButtonSearchRegione";
+            this.radioButtonSearchRegione.Size = new System.Drawing.Size(82, 21);
+            this.radioButtonSearchRegione.TabIndex = 34;
+            this.radioButtonSearchRegione.Text = "Regione";
+            this.radioButtonSearchRegione.UseVisualStyleBackColor = true;
+            // 
             // FormLuogodiNascita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -953,12 +1002,7 @@
             this.tabPageCancella.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLuogodiNascitaDelete)).EndInit();
             this.tabPageCercaModifica.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.tabPageCercaModifica.PerformLayout();
             this.panel40.ResumeLayout(false);
             this.panel41.ResumeLayout(false);
             this.panel41.PerformLayout();
@@ -973,6 +1017,12 @@
             this.panel36.ResumeLayout(false);
             this.panel37.ResumeLayout(false);
             this.panel37.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1026,7 +1076,7 @@
         private System.Windows.Forms.TabPage tabPageCercaModifica;
         private System.Windows.Forms.Panel panel40;
         private System.Windows.Forms.Panel panel41;
-        private System.Windows.Forms.TextBox textBoxCercaCAP;
+        private System.Windows.Forms.TextBox textBoxCercaValore;
         private System.Windows.Forms.Panel panel42;
         private System.Windows.Forms.Panel panel43;
         private System.Windows.Forms.Button buttonClearUpdate;
@@ -1052,5 +1102,9 @@
         private System.Windows.Forms.TextBox textBoxCAPUpdate;
         private System.Windows.Forms.Panel panel38;
         private System.Windows.Forms.Panel panel39;
+        private System.Windows.Forms.RadioButton radioButtonSearchRegione;
+        private System.Windows.Forms.RadioButton radioButtonSearchProvincia;
+        private System.Windows.Forms.RadioButton radioButtonSearchCittà;
+        private System.Windows.Forms.RadioButton radioButtonSearchCAP;
     }
 }

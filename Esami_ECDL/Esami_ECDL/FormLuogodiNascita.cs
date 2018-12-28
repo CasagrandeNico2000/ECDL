@@ -518,6 +518,50 @@ namespace Esami_ECDL
             }
         }
 
+        private void textBoxCercaValore_TextChanged(object sender, EventArgs e)
+        {
+            if (radioButtonSearchCAP.Checked == true)
+            {
+                MySqlCommand SearchCAPQuery;
+                SearchCAPQuery = new MySqlCommand("SELECT * FROM ecdl.luogo_di_nascita WHERE CAP LIKE '" + textBoxCercaValore.Text + "%'", DatabaseECDL.connessioneEcdl);
+                MySqlDataAdapter MSQLAdapter = new MySqlDataAdapter(SearchCAPQuery);
+                DataSet ds = new DataSet();
+
+                MSQLAdapter.Fill(ds);
+                dataGridViewLuogodiNascitaUpdate.DataSource = ds.Tables[0];
+            }
+            else if (radioButtonSearchCittà.Checked == true)
+            {
+                MySqlCommand SearchCittàQuery;
+                SearchCittàQuery = new MySqlCommand("SELECT * FROM ecdl.luogo_di_nascita WHERE Città LIKE '" + textBoxCercaValore.Text + "%'", DatabaseECDL.connessioneEcdl);
+                MySqlDataAdapter MSQLAdapter = new MySqlDataAdapter(SearchCittàQuery);
+                DataSet ds = new DataSet();
+
+                MSQLAdapter.Fill(ds);
+                dataGridViewLuogodiNascitaUpdate.DataSource = ds.Tables[0];
+            }
+            else if (radioButtonSearchProvincia.Checked == true)
+            {
+                MySqlCommand SearchProvinciaQuery;
+                SearchProvinciaQuery = new MySqlCommand("SELECT * FROM ecdl.luogo_di_nascita WHERE Provincia LIKE '" + textBoxCercaValore.Text + "%'", DatabaseECDL.connessioneEcdl);
+                MySqlDataAdapter MSQLAdapter = new MySqlDataAdapter(SearchProvinciaQuery);
+                DataSet ds = new DataSet();
+
+                MSQLAdapter.Fill(ds);
+                dataGridViewLuogodiNascitaUpdate.DataSource = ds.Tables[0];
+            }
+            else if (radioButtonSearchRegione.Checked == true)
+            {
+                MySqlCommand SearchRegioneQuery;
+                SearchRegioneQuery = new MySqlCommand("SELECT * FROM ecdl.luogo_di_nascita WHERE Regione LIKE '" + textBoxCercaValore.Text + "%'", DatabaseECDL.connessioneEcdl);
+                MySqlDataAdapter MSQLAdapter = new MySqlDataAdapter(SearchRegioneQuery);
+                DataSet ds = new DataSet();
+
+                MSQLAdapter.Fill(ds);
+                dataGridViewLuogodiNascitaUpdate.DataSource = ds.Tables[0];
+            }
+        }
+
         private void buttonDelete_MouseEnter(object sender, EventArgs e)
         {
             buttonDelete.ForeColor = Color.White;
