@@ -23,6 +23,7 @@ namespace Esami_ECDL
         List<string> listaRegioni, listaCAP, listaProvince;
         int numRigheSelezionate = 0, indiceFrom = 0, indiceUntil = 0;
         string capUpdate = "", cittàUpdate = "", provinciaUpdate = "", regioneUpdate = "";
+        bool firstSearch = true, firstSearchDelete = true;
 
         //Oggetti
         Label lblNumeroRighe = new Label();
@@ -67,32 +68,6 @@ namespace Esami_ECDL
             foreach (string item in listaRegioni)
             {
                 comboBoxRegione.Items.Add(item);
-            }
-        }
-
-        private void buttonClearUpdate_Click(object sender, EventArgs e)
-        {
-            textBoxCAPUpdate.Text = capUpdate;
-            textBoxCittàUpdate.Text = cittàUpdate;
-            comboBoxProvinciaUpdate.Text = provinciaUpdate;
-            comboBoxRegioneUpdate.Text = regioneUpdate;
-            textBoxCAPUpdate.ForeColor = Color.DimGray;
-            textBoxCittàUpdate.ForeColor = Color.DimGray;
-            comboBoxProvinciaUpdate.ForeColor = Color.DimGray;
-            comboBoxRegioneUpdate.ForeColor = Color.DimGray;
-            comboBoxProvinciaUpdate.Items.Clear();
-            comboBoxRegioneUpdate.Items.Clear();
-            foreach (string item in listaProvince)
-            {
-                string[] p = item.Split(',');
-                foreach (string item2 in p)
-                {
-                    comboBoxProvinciaUpdate.Items.Add(item2);
-                }
-            }
-            foreach (string item in listaRegioni)
-            {
-                comboBoxRegioneUpdate.Items.Add(item);
             }
         }
 
@@ -350,106 +325,6 @@ namespace Esami_ECDL
             }
         }
 
-        private void dataGridViewLuogodiNascitaUpdate_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dataGridViewLuogodiNascitaUpdate.CurrentRow != null && dataGridViewLuogodiNascitaUpdate.CurrentRow.Index < dataGridViewLuogodiNascitaUpdate.Rows.Count - 1)
-            {
-                textBoxCAPUpdate.Text = dataGridViewLuogodiNascitaUpdate.CurrentRow.Cells[0].Value.ToString();
-                textBoxCittàUpdate.Text = dataGridViewLuogodiNascitaUpdate.CurrentRow.Cells[1].Value.ToString();
-                comboBoxProvinciaUpdate.Text = dataGridViewLuogodiNascitaUpdate.CurrentRow.Cells[2].Value.ToString();
-                comboBoxRegioneUpdate.Text = dataGridViewLuogodiNascitaUpdate.CurrentRow.Cells[3].Value.ToString();
-                textBoxCAPUpdate.ForeColor = Color.DimGray;
-                textBoxCittàUpdate.ForeColor = Color.DimGray;
-                comboBoxProvinciaUpdate.ForeColor = Color.DimGray;
-                comboBoxRegioneUpdate.ForeColor = Color.DimGray;
-                capUpdate = textBoxCAPUpdate.Text;
-                cittàUpdate = textBoxCittàUpdate.Text;
-                provinciaUpdate = comboBoxProvinciaUpdate.Text;
-                regioneUpdate = comboBoxRegioneUpdate.Text;
-                comboBoxProvinciaUpdate.Items.Clear();
-                comboBoxRegioneUpdate.Items.Clear();
-                foreach (string item in listaProvince)
-                {
-                    string[] p = item.Split(',');
-                    foreach (string item2 in p)
-                    {
-                        comboBoxProvinciaUpdate.Items.Add(item2);
-                    }
-                }
-                foreach (string item in listaRegioni)
-                {
-                    comboBoxRegioneUpdate.Items.Add(item);
-                }
-            }
-        }
-
-        private void buttonUpdate_Click(object sender, EventArgs e)
-        {
-            if (textBoxCAPUpdate.Text != "" && textBoxCittàUpdate.Text != "" && comboBoxProvinciaUpdate.Text != "" && comboBoxRegioneUpdate.Text != "")
-            {
-                int indice = 0;
-                bool verCap = false, verProvincia = false, verRegione = false;
-                int cap = Convert.ToInt32(textBoxCAPUpdate.Text);
-                string città = textBoxCittàUpdate.Text;
-                string provincia = comboBoxProvinciaUpdate.Text;
-                string regione = comboBoxRegioneUpdate.Text;
-                foreach (string item in listaRegioni)
-                {
-                    if (regione == item)
-                    {
-                        string[] capCorretti = listaCAP.ElementAt(indice).Split('-');
-                        int minimo = Convert.ToInt32(capCorretti[0]);
-                        int massimo = Convert.ToInt32(capCorretti[1]);
-                        if (cap >= minimo && cap <= massimo)
-                        {
-                            verCap = true;
-                        }
-                        verRegione = true;
-                    }
-                    indice++;
-                }
-                foreach (string item in listaProvince)
-                {
-                    if (item.Contains(provincia))
-                    {
-                        verProvincia = true;
-                    }
-                }
-                if (verCap == true && verProvincia == true && verRegione == true)
-                {
-                    try
-                    {
-                        MySqlCommand UpdateQuery;
-                        string comando = "UPDATE ecdl.luogo_di_nascita SET CAP = " + cap + ", Città = '" + città + "', Provincia = '" + provincia + "', Regione = '" + regione + "' WHERE CAP = " + capUpdate;
-                        UpdateQuery = new MySqlCommand(comando, DatabaseECDL.connessioneEcdl);
-                        UpdateQuery.ExecuteNonQuery();
-                        MessageBox.Show("Modifica riga tabella effettuata!");
-                        Aggiorna();
-                    }
-                    catch (Exception exception)
-                    {
-                        MessageBox.Show(exception.ToString());
-                    }
-                }
-                else if (verCap == false)
-                {
-                    MessageBox.Show("CAP non corretto!");
-                }
-                else if (verProvincia == false)
-                {
-                    MessageBox.Show("Provincia non corretta!");
-                }
-                else if (verRegione == false)
-                {
-                    MessageBox.Show("Regione non corretta!");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Per eseguire il comando è necessario l'inserimento di tutti i dati!");
-            }
-        }
-
         private void buttonDelete_Click(object sender, EventArgs e)
         {
             if (radioButtonSingle.Checked == true)
@@ -574,37 +449,76 @@ namespace Esami_ECDL
             buttonDelete.BackColor = Color.Gainsboro;
         }
 
-        private void buttonUpdate_MouseEnter(object sender, EventArgs e)
+        private void textBoxCercaValore_Click(object sender, EventArgs e)
         {
-            buttonUpdate.ForeColor = Color.White;
-            buttonUpdate.BackColor = Color.SteelBlue;
+            if (firstSearch != false)
+            {
+                textBoxCercaValore.Clear();
+                textBoxCercaValore.ForeColor = Color.Black;
+                firstSearch = false;
+            }
         }
 
-        private void buttonUpdate_MouseLeave(object sender, EventArgs e)
+        private void radioButtonSearchCAP_CheckedChanged(object sender, EventArgs e)
         {
-            buttonUpdate.ForeColor = Color.Black;
-            buttonUpdate.BackColor = Color.Gainsboro;
+            textBoxCercaValore_TextChanged(sender, e);
         }
 
-        private void textBoxCAPUpdate_Click(object sender, EventArgs e)
+        private void radioButtonSearchCittà_CheckedChanged(object sender, EventArgs e)
+        {
+            textBoxCercaValore_TextChanged(sender, e);
+        }
+
+        private void radioButtonSearchProvincia_CheckedChanged(object sender, EventArgs e)
+        {
+            textBoxCercaValore_TextChanged(sender, e);
+        }
+
+        private void radioButtonSearchRegione_CheckedChanged(object sender, EventArgs e)
+        {
+            textBoxCercaValore_TextChanged(sender, e);
+        }
+
+        private void dataGridViewLuogodiNascitaUpdate_SelectionChanged_1(object sender, EventArgs e)
+        {
+            if (dataGridViewLuogodiNascitaUpdate.CurrentRow != null && dataGridViewLuogodiNascitaUpdate.CurrentRow.Index < dataGridViewLuogodiNascitaUpdate.Rows.Count - 1)
+            {
+                textBoxCAPUpdate.Text = dataGridViewLuogodiNascitaUpdate.CurrentRow.Cells[0].Value.ToString();
+                textBoxCittàUpdate.Text = dataGridViewLuogodiNascitaUpdate.CurrentRow.Cells[1].Value.ToString();
+                comboBoxProvinciaUpdate.Text = dataGridViewLuogodiNascitaUpdate.CurrentRow.Cells[2].Value.ToString();
+                comboBoxRegioneUpdate.Text = dataGridViewLuogodiNascitaUpdate.CurrentRow.Cells[3].Value.ToString();
+                textBoxCAPUpdate.ForeColor = Color.DimGray;
+                textBoxCittàUpdate.ForeColor = Color.DimGray;
+                comboBoxProvinciaUpdate.ForeColor = Color.DimGray;
+                comboBoxRegioneUpdate.ForeColor = Color.DimGray;
+                capUpdate = textBoxCAPUpdate.Text;
+                cittàUpdate = textBoxCittàUpdate.Text;
+                provinciaUpdate = comboBoxProvinciaUpdate.Text;
+                regioneUpdate = comboBoxRegioneUpdate.Text;
+                comboBoxProvinciaUpdate.Items.Clear();
+                comboBoxRegioneUpdate.Items.Clear();
+                foreach (string item in listaProvince)
+                {
+                    string[] p = item.Split(',');
+                    foreach (string item2 in p)
+                    {
+                        comboBoxProvinciaUpdate.Items.Add(item2);
+                    }
+                }
+                foreach (string item in listaRegioni)
+                {
+                    comboBoxRegioneUpdate.Items.Add(item);
+                }
+            }
+        }
+
+        private void textBoxCAPUpdate_Click_1(object sender, EventArgs e)
         {
             textBoxCAPUpdate.Clear();
             textBoxCAPUpdate.ForeColor = Color.Black;
         }
 
-        private void buttonClearUpdate_MouseEnter(object sender, EventArgs e)
-        {
-            buttonClearUpdate.ForeColor = Color.White;
-            buttonClearUpdate.BackColor = Color.SteelBlue;
-        }
-
-        private void buttonClearUpdate_MouseLeave(object sender, EventArgs e)
-        {
-            buttonClearUpdate.ForeColor = Color.Black;
-            buttonClearUpdate.BackColor = Color.Gainsboro;
-        }
-
-        private void comboBoxProvinciaUpdate_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBoxProvinciaUpdate_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             comboBoxProvinciaUpdate.ForeColor = Color.Black;
             int indice = 0;
@@ -620,7 +534,7 @@ namespace Esami_ECDL
             }
         }
 
-        private void comboBoxRegioneUpdate_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBoxRegioneUpdate_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             comboBoxRegioneUpdate.ForeColor = Color.Black;
             int indice = 0;
@@ -640,27 +554,165 @@ namespace Esami_ECDL
             }
         }
 
-        private void textBoxCAPUpdate_Leave(object sender, EventArgs e)
+        private void buttonClearUpdate_Click_1(object sender, EventArgs e)
         {
-            if (textBoxCAPUpdate.Text == "")
+            textBoxCAPUpdate.Text = capUpdate;
+            textBoxCittàUpdate.Text = cittàUpdate;
+            comboBoxProvinciaUpdate.Text = provinciaUpdate;
+            comboBoxRegioneUpdate.Text = regioneUpdate;
+            textBoxCAPUpdate.ForeColor = Color.DimGray;
+            textBoxCittàUpdate.ForeColor = Color.DimGray;
+            comboBoxProvinciaUpdate.ForeColor = Color.DimGray;
+            comboBoxRegioneUpdate.ForeColor = Color.DimGray;
+            comboBoxProvinciaUpdate.Items.Clear();
+            comboBoxRegioneUpdate.Items.Clear();
+            foreach (string item in listaProvince)
             {
-                textBoxCAPUpdate.Text = capUpdate;
-                textBoxCAPUpdate.ForeColor = Color.DimGray;
+                string[] p = item.Split(',');
+                foreach (string item2 in p)
+                {
+                    comboBoxProvinciaUpdate.Items.Add(item2);
+                }
+            }
+            foreach (string item in listaRegioni)
+            {
+                comboBoxRegioneUpdate.Items.Add(item);
             }
         }
 
-        private void textBoxCittàUpdate_Click(object sender, EventArgs e)
+        private void buttonUpdate_Click_1(object sender, EventArgs e)
         {
-            textBoxCittàUpdate.Clear();
-            textBoxCittàUpdate.ForeColor = Color.Black;
+            if (textBoxCAPUpdate.Text != "" && textBoxCittàUpdate.Text != "" && comboBoxProvinciaUpdate.Text != "" && comboBoxRegioneUpdate.Text != "")
+            {
+                int indice = 0;
+                bool verCap = false, verProvincia = false, verRegione = false;
+                int cap = Convert.ToInt32(textBoxCAPUpdate.Text);
+                string città = textBoxCittàUpdate.Text;
+                string provincia = comboBoxProvinciaUpdate.Text;
+                string regione = comboBoxRegioneUpdate.Text;
+                foreach (string item in listaRegioni)
+                {
+                    if (regione == item)
+                    {
+                        string[] capCorretti = listaCAP.ElementAt(indice).Split('-');
+                        int minimo = Convert.ToInt32(capCorretti[0]);
+                        int massimo = Convert.ToInt32(capCorretti[1]);
+                        if (cap >= minimo && cap <= massimo)
+                        {
+                            verCap = true;
+                        }
+                        verRegione = true;
+                    }
+                    indice++;
+                }
+                foreach (string item in listaProvince)
+                {
+                    if (item.Contains(provincia))
+                    {
+                        verProvincia = true;
+                    }
+                }
+                if (verCap == true && verProvincia == true && verRegione == true)
+                {
+                    try
+                    {
+                        MySqlCommand UpdateQuery;
+                        string comando = "UPDATE ecdl.luogo_di_nascita SET CAP = " + cap + ", Città = '" + città + "', Provincia = '" + provincia + "', Regione = '" + regione + "' WHERE CAP = " + capUpdate;
+                        UpdateQuery = new MySqlCommand(comando, DatabaseECDL.connessioneEcdl);
+                        UpdateQuery.ExecuteNonQuery();
+                        MessageBox.Show("Modifica riga tabella effettuata!");
+                        Aggiorna();
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show(exception.ToString());
+                    }
+                }
+                else if (verCap == false)
+                {
+                    MessageBox.Show("CAP non corretto!");
+                }
+                else if (verProvincia == false)
+                {
+                    MessageBox.Show("Provincia non corretta!");
+                }
+                else if (verRegione == false)
+                {
+                    MessageBox.Show("Regione non corretta!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Per eseguire il comando è necessario l'inserimento di tutti i dati!");
+            }
         }
 
-        private void textBoxCittàUpdate_Leave(object sender, EventArgs e)
+        private void buttonClearUpdate_MouseEnter_1(object sender, EventArgs e)
+        {
+            buttonClearUpdate.ForeColor = Color.White;
+            buttonClearUpdate.BackColor = Color.SteelBlue;
+        }
+
+        private void buttonClearUpdate_MouseLeave_1(object sender, EventArgs e)
+        {
+            buttonClearUpdate.ForeColor = Color.Black;
+            buttonClearUpdate.BackColor = Color.Gainsboro;
+        }
+
+        private void buttonUpdate_MouseEnter_1(object sender, EventArgs e)
+        {
+            buttonUpdate.ForeColor = Color.White;
+            buttonUpdate.BackColor = Color.SteelBlue;
+        }
+
+        private void buttonUpdate_MouseLeave_1(object sender, EventArgs e)
+        {
+            buttonUpdate.ForeColor = Color.Black;
+            buttonUpdate.BackColor = Color.Gainsboro;
+        }
+
+        private void textBoxCercaValoreDelete_TextChanged(object sender, EventArgs e)
+        {
+            MySqlCommand SearchCAPQuery;
+            SearchCAPQuery = new MySqlCommand("SELECT * FROM ecdl.luogo_di_nascita WHERE CAP LIKE '" + textBoxCercaValoreDelete.Text + "%'", DatabaseECDL.connessioneEcdl);
+            MySqlDataAdapter MSQLAdapter = new MySqlDataAdapter(SearchCAPQuery);
+            DataSet ds = new DataSet();
+
+            MSQLAdapter.Fill(ds);
+            dataGridViewLuogodiNascitaDelete.DataSource = ds.Tables[0];
+        }
+
+        private void textBoxCercaValoreDelete_Click(object sender, EventArgs e)
+        {
+            if (firstSearchDelete != false)
+            {
+                textBoxCercaValoreDelete.Clear();
+                textBoxCercaValoreDelete.ForeColor = Color.Black;
+                firstSearchDelete = false;
+            }
+        }
+
+        private void textBoxCittàUpdate_Leave_1(object sender, EventArgs e)
         {
             if (textBoxCittàUpdate.Text == "")
             {
                 textBoxCittàUpdate.Text = cittàUpdate;
                 textBoxCittàUpdate.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void textBoxCittàUpdate_Click_1(object sender, EventArgs e)
+        {
+            textBoxCittàUpdate.Clear();
+            textBoxCittàUpdate.ForeColor = Color.Black;
+        }
+
+        private void textBoxCAPUpdate_Leave_1(object sender, EventArgs e)
+        {
+            if (textBoxCAPUpdate.Text == "")
+            {
+                textBoxCAPUpdate.Text = capUpdate;
+                textBoxCAPUpdate.ForeColor = Color.DimGray;
             }
         }
 

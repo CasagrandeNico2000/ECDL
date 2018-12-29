@@ -56,7 +56,7 @@
             this.textBoxCAP = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.tabPageCancella = new System.Windows.Forms.TabPage();
+            this.tabPageCercaCancella = new System.Windows.Forms.TabPage();
             this.panelDeleteUntil = new System.Windows.Forms.Panel();
             this.radioButtonMulti = new System.Windows.Forms.RadioButton();
             this.radioButtonSingle = new System.Windows.Forms.RadioButton();
@@ -65,6 +65,10 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.dataGridViewLuogodiNascitaDelete = new System.Windows.Forms.DataGridView();
             this.tabPageCercaModifica = new System.Windows.Forms.TabPage();
+            this.radioButtonSearchRegione = new System.Windows.Forms.RadioButton();
+            this.radioButtonSearchProvincia = new System.Windows.Forms.RadioButton();
+            this.radioButtonSearchCittà = new System.Windows.Forms.RadioButton();
+            this.radioButtonSearchCAP = new System.Windows.Forms.RadioButton();
             this.panel40 = new System.Windows.Forms.Panel();
             this.panel41 = new System.Windows.Forms.Panel();
             this.textBoxCercaValore = new System.Windows.Forms.TextBox();
@@ -101,10 +105,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.radioButtonSearchCAP = new System.Windows.Forms.RadioButton();
-            this.radioButtonSearchCittà = new System.Windows.Forms.RadioButton();
-            this.radioButtonSearchProvincia = new System.Windows.Forms.RadioButton();
-            this.radioButtonSearchRegione = new System.Windows.Forms.RadioButton();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.panel45 = new System.Windows.Forms.Panel();
+            this.textBoxCercaValoreDelete = new System.Windows.Forms.TextBox();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.panel47 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -118,7 +123,7 @@
             this.panel13.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.tabPageCancella.SuspendLayout();
+            this.tabPageCercaCancella.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLuogodiNascitaDelete)).BeginInit();
             this.tabPageCercaModifica.SuspendLayout();
             this.panel40.SuspendLayout();
@@ -135,6 +140,8 @@
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel44.SuspendLayout();
+            this.panel45.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -165,7 +172,7 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPageInserimento);
-            this.tabControl1.Controls.Add(this.tabPageCancella);
+            this.tabControl1.Controls.Add(this.tabPageCercaCancella);
             this.tabControl1.Controls.Add(this.tabPageCercaModifica);
             this.tabControl1.Location = new System.Drawing.Point(3, 6);
             this.tabControl1.Name = "tabControl1";
@@ -445,26 +452,27 @@
             this.panel9.Size = new System.Drawing.Size(3, 32);
             this.panel9.TabIndex = 0;
             // 
-            // tabPageCancella
+            // tabPageCercaCancella
             // 
-            this.tabPageCancella.Controls.Add(this.panelDeleteUntil);
-            this.tabPageCancella.Controls.Add(this.radioButtonMulti);
-            this.tabPageCancella.Controls.Add(this.radioButtonSingle);
-            this.tabPageCancella.Controls.Add(this.panelDeleteFrom);
-            this.tabPageCancella.Controls.Add(this.buttonDeleteAll);
-            this.tabPageCancella.Controls.Add(this.buttonDelete);
-            this.tabPageCancella.Controls.Add(this.dataGridViewLuogodiNascitaDelete);
-            this.tabPageCancella.Location = new System.Drawing.Point(4, 25);
-            this.tabPageCancella.Name = "tabPageCancella";
-            this.tabPageCancella.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCancella.Size = new System.Drawing.Size(761, 310);
-            this.tabPageCancella.TabIndex = 1;
-            this.tabPageCancella.Text = "CANCELLA";
-            this.tabPageCancella.UseVisualStyleBackColor = true;
+            this.tabPageCercaCancella.Controls.Add(this.panel44);
+            this.tabPageCercaCancella.Controls.Add(this.panelDeleteUntil);
+            this.tabPageCercaCancella.Controls.Add(this.radioButtonMulti);
+            this.tabPageCercaCancella.Controls.Add(this.radioButtonSingle);
+            this.tabPageCercaCancella.Controls.Add(this.panelDeleteFrom);
+            this.tabPageCercaCancella.Controls.Add(this.buttonDeleteAll);
+            this.tabPageCercaCancella.Controls.Add(this.buttonDelete);
+            this.tabPageCercaCancella.Controls.Add(this.dataGridViewLuogodiNascitaDelete);
+            this.tabPageCercaCancella.Location = new System.Drawing.Point(4, 25);
+            this.tabPageCercaCancella.Name = "tabPageCercaCancella";
+            this.tabPageCercaCancella.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCercaCancella.Size = new System.Drawing.Size(761, 310);
+            this.tabPageCercaCancella.TabIndex = 1;
+            this.tabPageCercaCancella.Text = "CERCA E CANCELLA";
+            this.tabPageCercaCancella.UseVisualStyleBackColor = true;
             // 
             // panelDeleteUntil
             // 
-            this.panelDeleteUntil.Location = new System.Drawing.Point(309, 7);
+            this.panelDeleteUntil.Location = new System.Drawing.Point(309, 46);
             this.panelDeleteUntil.Name = "panelDeleteUntil";
             this.panelDeleteUntil.Size = new System.Drawing.Size(296, 25);
             this.panelDeleteUntil.TabIndex = 12;
@@ -473,7 +481,7 @@
             // 
             this.radioButtonMulti.AutoSize = true;
             this.radioButtonMulti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonMulti.Location = new System.Drawing.Point(692, 8);
+            this.radioButtonMulti.Location = new System.Drawing.Point(692, 47);
             this.radioButtonMulti.Name = "radioButtonMulti";
             this.radioButtonMulti.Size = new System.Drawing.Size(60, 22);
             this.radioButtonMulti.TabIndex = 11;
@@ -486,7 +494,7 @@
             this.radioButtonSingle.AutoSize = true;
             this.radioButtonSingle.Checked = true;
             this.radioButtonSingle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonSingle.Location = new System.Drawing.Point(611, 8);
+            this.radioButtonSingle.Location = new System.Drawing.Point(611, 47);
             this.radioButtonSingle.Name = "radioButtonSingle";
             this.radioButtonSingle.Size = new System.Drawing.Size(69, 22);
             this.radioButtonSingle.TabIndex = 9;
@@ -496,7 +504,7 @@
             // 
             // panelDeleteFrom
             // 
-            this.panelDeleteFrom.Location = new System.Drawing.Point(7, 7);
+            this.panelDeleteFrom.Location = new System.Drawing.Point(7, 46);
             this.panelDeleteFrom.Name = "panelDeleteFrom";
             this.panelDeleteFrom.Size = new System.Drawing.Size(296, 25);
             this.panelDeleteFrom.TabIndex = 7;
@@ -536,11 +544,11 @@
             // dataGridViewLuogodiNascitaDelete
             // 
             this.dataGridViewLuogodiNascitaDelete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewLuogodiNascitaDelete.Location = new System.Drawing.Point(7, 38);
+            this.dataGridViewLuogodiNascitaDelete.Location = new System.Drawing.Point(7, 77);
             this.dataGridViewLuogodiNascitaDelete.MultiSelect = false;
             this.dataGridViewLuogodiNascitaDelete.Name = "dataGridViewLuogodiNascitaDelete";
             this.dataGridViewLuogodiNascitaDelete.RowTemplate.Height = 24;
-            this.dataGridViewLuogodiNascitaDelete.Size = new System.Drawing.Size(748, 228);
+            this.dataGridViewLuogodiNascitaDelete.Size = new System.Drawing.Size(748, 189);
             this.dataGridViewLuogodiNascitaDelete.TabIndex = 0;
             this.dataGridViewLuogodiNascitaDelete.TabStop = false;
             this.dataGridViewLuogodiNascitaDelete.SelectionChanged += new System.EventHandler(this.dataGridViewLuogodiNascitaDelete_SelectionChanged);
@@ -565,6 +573,50 @@
             this.tabPageCercaModifica.TabIndex = 3;
             this.tabPageCercaModifica.Text = "CERCA E MODIFICA";
             this.tabPageCercaModifica.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSearchRegione
+            // 
+            this.radioButtonSearchRegione.AutoSize = true;
+            this.radioButtonSearchRegione.Location = new System.Drawing.Point(657, 12);
+            this.radioButtonSearchRegione.Name = "radioButtonSearchRegione";
+            this.radioButtonSearchRegione.Size = new System.Drawing.Size(82, 21);
+            this.radioButtonSearchRegione.TabIndex = 34;
+            this.radioButtonSearchRegione.Text = "Regione";
+            this.radioButtonSearchRegione.UseVisualStyleBackColor = true;
+            this.radioButtonSearchRegione.CheckedChanged += new System.EventHandler(this.radioButtonSearchRegione_CheckedChanged);
+            // 
+            // radioButtonSearchProvincia
+            // 
+            this.radioButtonSearchProvincia.AutoSize = true;
+            this.radioButtonSearchProvincia.Location = new System.Drawing.Point(544, 12);
+            this.radioButtonSearchProvincia.Name = "radioButtonSearchProvincia";
+            this.radioButtonSearchProvincia.Size = new System.Drawing.Size(87, 21);
+            this.radioButtonSearchProvincia.TabIndex = 33;
+            this.radioButtonSearchProvincia.Text = "Provincia";
+            this.radioButtonSearchProvincia.UseVisualStyleBackColor = true;
+            this.radioButtonSearchProvincia.CheckedChanged += new System.EventHandler(this.radioButtonSearchProvincia_CheckedChanged);
+            // 
+            // radioButtonSearchCittà
+            // 
+            this.radioButtonSearchCittà.AutoSize = true;
+            this.radioButtonSearchCittà.Location = new System.Drawing.Point(458, 12);
+            this.radioButtonSearchCittà.Name = "radioButtonSearchCittà";
+            this.radioButtonSearchCittà.Size = new System.Drawing.Size(57, 21);
+            this.radioButtonSearchCittà.TabIndex = 32;
+            this.radioButtonSearchCittà.Text = "Città";
+            this.radioButtonSearchCittà.UseVisualStyleBackColor = true;
+            this.radioButtonSearchCittà.CheckedChanged += new System.EventHandler(this.radioButtonSearchCittà_CheckedChanged);
+            // 
+            // radioButtonSearchCAP
+            // 
+            this.radioButtonSearchCAP.AutoSize = true;
+            this.radioButtonSearchCAP.Location = new System.Drawing.Point(370, 12);
+            this.radioButtonSearchCAP.Name = "radioButtonSearchCAP";
+            this.radioButtonSearchCAP.Size = new System.Drawing.Size(56, 21);
+            this.radioButtonSearchCAP.TabIndex = 31;
+            this.radioButtonSearchCAP.Text = "CAP";
+            this.radioButtonSearchCAP.UseVisualStyleBackColor = true;
+            this.radioButtonSearchCAP.CheckedChanged += new System.EventHandler(this.radioButtonSearchCAP_CheckedChanged);
             // 
             // panel40
             // 
@@ -597,6 +649,7 @@
             this.textBoxCercaValore.TabIndex = 1;
             this.textBoxCercaValore.TabStop = false;
             this.textBoxCercaValore.Text = "CERCA...";
+            this.textBoxCercaValore.Click += new System.EventHandler(this.textBoxCercaValore_Click);
             this.textBoxCercaValore.TextChanged += new System.EventHandler(this.textBoxCercaValore_TextChanged);
             // 
             // panel42
@@ -628,6 +681,9 @@
             this.buttonClearUpdate.TabStop = false;
             this.buttonClearUpdate.Text = "CLEAR";
             this.buttonClearUpdate.UseVisualStyleBackColor = false;
+            this.buttonClearUpdate.Click += new System.EventHandler(this.buttonClearUpdate_Click_1);
+            this.buttonClearUpdate.MouseEnter += new System.EventHandler(this.buttonClearUpdate_MouseEnter_1);
+            this.buttonClearUpdate.MouseLeave += new System.EventHandler(this.buttonClearUpdate_MouseLeave_1);
             // 
             // dataGridViewLuogodiNascitaUpdate
             // 
@@ -637,6 +693,7 @@
             this.dataGridViewLuogodiNascitaUpdate.RowTemplate.Height = 24;
             this.dataGridViewLuogodiNascitaUpdate.Size = new System.Drawing.Size(487, 256);
             this.dataGridViewLuogodiNascitaUpdate.TabIndex = 28;
+            this.dataGridViewLuogodiNascitaUpdate.SelectionChanged += new System.EventHandler(this.dataGridViewLuogodiNascitaUpdate_SelectionChanged_1);
             // 
             // buttonUpdate
             // 
@@ -650,6 +707,9 @@
             this.buttonUpdate.TabStop = false;
             this.buttonUpdate.Text = "UPDATE";
             this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click_1);
+            this.buttonUpdate.MouseEnter += new System.EventHandler(this.buttonUpdate_MouseEnter_1);
+            this.buttonUpdate.MouseLeave += new System.EventHandler(this.buttonUpdate_MouseLeave_1);
             // 
             // panel24
             // 
@@ -684,6 +744,7 @@
             this.comboBoxRegioneUpdate.TabIndex = 1;
             this.comboBoxRegioneUpdate.TabStop = false;
             this.comboBoxRegioneUpdate.Text = "Regione...";
+            this.comboBoxRegioneUpdate.SelectedIndexChanged += new System.EventHandler(this.comboBoxRegioneUpdate_SelectedIndexChanged_1);
             // 
             // panel26
             // 
@@ -735,6 +796,7 @@
             this.comboBoxProvinciaUpdate.TabIndex = 1;
             this.comboBoxProvinciaUpdate.TabStop = false;
             this.comboBoxProvinciaUpdate.Text = "Provincia...";
+            this.comboBoxProvinciaUpdate.SelectedIndexChanged += new System.EventHandler(this.comboBoxProvinciaUpdate_SelectedIndexChanged_1);
             // 
             // panel30
             // 
@@ -784,6 +846,8 @@
             this.textBoxCittàUpdate.TabIndex = 0;
             this.textBoxCittàUpdate.TabStop = false;
             this.textBoxCittàUpdate.Text = "Città...";
+            this.textBoxCittàUpdate.Click += new System.EventHandler(this.textBoxCittàUpdate_Click_1);
+            this.textBoxCittàUpdate.Leave += new System.EventHandler(this.textBoxCittàUpdate_Leave_1);
             // 
             // panel34
             // 
@@ -833,6 +897,8 @@
             this.textBoxCAPUpdate.TabIndex = 1;
             this.textBoxCAPUpdate.TabStop = false;
             this.textBoxCAPUpdate.Text = "CAP...";
+            this.textBoxCAPUpdate.Click += new System.EventHandler(this.textBoxCAPUpdate_Click_1);
+            this.textBoxCAPUpdate.Leave += new System.EventHandler(this.textBoxCAPUpdate_Leave_1);
             // 
             // panel38
             // 
@@ -934,45 +1000,56 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Luogo di nascita";
             // 
-            // radioButtonSearchCAP
+            // panel44
             // 
-            this.radioButtonSearchCAP.AutoSize = true;
-            this.radioButtonSearchCAP.Location = new System.Drawing.Point(370, 12);
-            this.radioButtonSearchCAP.Name = "radioButtonSearchCAP";
-            this.radioButtonSearchCAP.Size = new System.Drawing.Size(56, 21);
-            this.radioButtonSearchCAP.TabIndex = 31;
-            this.radioButtonSearchCAP.Text = "CAP";
-            this.radioButtonSearchCAP.UseVisualStyleBackColor = true;
+            this.panel44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel44.Controls.Add(this.panel45);
+            this.panel44.Controls.Add(this.panel46);
+            this.panel44.Controls.Add(this.panel47);
+            this.panel44.Location = new System.Drawing.Point(7, 6);
+            this.panel44.Name = "panel44";
+            this.panel44.Size = new System.Drawing.Size(748, 34);
+            this.panel44.TabIndex = 35;
             // 
-            // radioButtonSearchCittà
+            // panel45
             // 
-            this.radioButtonSearchCittà.AutoSize = true;
-            this.radioButtonSearchCittà.Location = new System.Drawing.Point(458, 12);
-            this.radioButtonSearchCittà.Name = "radioButtonSearchCittà";
-            this.radioButtonSearchCittà.Size = new System.Drawing.Size(57, 21);
-            this.radioButtonSearchCittà.TabIndex = 32;
-            this.radioButtonSearchCittà.Text = "Città";
-            this.radioButtonSearchCittà.UseVisualStyleBackColor = true;
+            this.panel45.Controls.Add(this.textBoxCercaValoreDelete);
+            this.panel45.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel45.Location = new System.Drawing.Point(37, 0);
+            this.panel45.Name = "panel45";
+            this.panel45.Size = new System.Drawing.Size(709, 32);
+            this.panel45.TabIndex = 2;
             // 
-            // radioButtonSearchProvincia
+            // textBoxCercaValoreDelete
             // 
-            this.radioButtonSearchProvincia.AutoSize = true;
-            this.radioButtonSearchProvincia.Location = new System.Drawing.Point(544, 12);
-            this.radioButtonSearchProvincia.Name = "radioButtonSearchProvincia";
-            this.radioButtonSearchProvincia.Size = new System.Drawing.Size(87, 21);
-            this.radioButtonSearchProvincia.TabIndex = 33;
-            this.radioButtonSearchProvincia.Text = "Provincia";
-            this.radioButtonSearchProvincia.UseVisualStyleBackColor = true;
+            this.textBoxCercaValoreDelete.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCercaValoreDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCercaValoreDelete.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxCercaValoreDelete.Location = new System.Drawing.Point(6, 6);
+            this.textBoxCercaValoreDelete.Name = "textBoxCercaValoreDelete";
+            this.textBoxCercaValoreDelete.Size = new System.Drawing.Size(697, 21);
+            this.textBoxCercaValoreDelete.TabIndex = 1;
+            this.textBoxCercaValoreDelete.TabStop = false;
+            this.textBoxCercaValoreDelete.Text = "CERCA CAP...";
+            this.textBoxCercaValoreDelete.Click += new System.EventHandler(this.textBoxCercaValoreDelete_Click);
+            this.textBoxCercaValoreDelete.TextChanged += new System.EventHandler(this.textBoxCercaValoreDelete_TextChanged);
             // 
-            // radioButtonSearchRegione
+            // panel46
             // 
-            this.radioButtonSearchRegione.AutoSize = true;
-            this.radioButtonSearchRegione.Location = new System.Drawing.Point(657, 12);
-            this.radioButtonSearchRegione.Name = "radioButtonSearchRegione";
-            this.radioButtonSearchRegione.Size = new System.Drawing.Size(82, 21);
-            this.radioButtonSearchRegione.TabIndex = 34;
-            this.radioButtonSearchRegione.Text = "Regione";
-            this.radioButtonSearchRegione.UseVisualStyleBackColor = true;
+            this.panel46.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel46.Location = new System.Drawing.Point(3, 0);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(34, 32);
+            this.panel46.TabIndex = 1;
+            // 
+            // panel47
+            // 
+            this.panel47.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel47.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel47.Location = new System.Drawing.Point(0, 0);
+            this.panel47.Name = "panel47";
+            this.panel47.Size = new System.Drawing.Size(3, 32);
+            this.panel47.TabIndex = 0;
             // 
             // FormLuogodiNascita
             // 
@@ -998,8 +1075,8 @@
             this.panel8.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            this.tabPageCancella.ResumeLayout(false);
-            this.tabPageCancella.PerformLayout();
+            this.tabPageCercaCancella.ResumeLayout(false);
+            this.tabPageCercaCancella.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLuogodiNascitaDelete)).EndInit();
             this.tabPageCercaModifica.ResumeLayout(false);
             this.tabPageCercaModifica.PerformLayout();
@@ -1023,6 +1100,9 @@
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel44.ResumeLayout(false);
+            this.panel45.ResumeLayout(false);
+            this.panel45.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1041,7 +1121,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPageInserimento;
-        private System.Windows.Forms.TabPage tabPageCancella;
+        private System.Windows.Forms.TabPage tabPageCercaCancella;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel18;
@@ -1106,5 +1186,10 @@
         private System.Windows.Forms.RadioButton radioButtonSearchProvincia;
         private System.Windows.Forms.RadioButton radioButtonSearchCittà;
         private System.Windows.Forms.RadioButton radioButtonSearchCAP;
+        private System.Windows.Forms.Panel panel44;
+        private System.Windows.Forms.Panel panel45;
+        private System.Windows.Forms.TextBox textBoxCercaValoreDelete;
+        private System.Windows.Forms.Panel panel46;
+        private System.Windows.Forms.Panel panel47;
     }
 }
