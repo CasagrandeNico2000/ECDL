@@ -127,6 +127,9 @@
     <EmbeddedResource Include="FormAccount.resx">
       <DependentUpon>FormAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormEsami.resx">
+      <DependentUpon>FormEsami.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEsaminandi.resx">
       <DependentUpon>FormEsaminandi.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRisultati.resx">
       <DependentUpon>FormRisultati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSessioni.resx">
+      <DependentUpon>FormSessioni.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -37,3 +37,4 @@ C:\Users\Casagrande Nicolò\Documents\Gitkraken\Progetti\ECDL\ECDL\Esami_ECDL\Es
 C:\Users\Casagrande Nicolò\Documents\Gitkraken\Progetti\ECDL\ECDL\Esami_ECDL\Esami_ECDL\obj\Debug\Esami_ECDL.exe
 C:\Users\Casagrande Nicolò\Documents\Gitkraken\Progetti\ECDL\ECDL\Esami_ECDL\Esami_ECDL\obj\Debug\Esami_ECDL.pdb
 C:\Users\Casagrande Nicolò\Documents\Gitkraken\Progetti\ECDL\ECDL\Esami_ECDL\Esami_ECDL\obj\Debug\Esami_ECDL.FormEsamiSessioni.resources
+C:\Users\Casagrande Nicolò\Documents\Gitkraken\Progetti\ECDL\ECDL\Esami_ECDL\Esami_ECDL\obj\Debug\Esami_ECDL.FormRisultati.resources

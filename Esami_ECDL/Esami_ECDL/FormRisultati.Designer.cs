@@ -38,10 +38,12 @@
             this.buttonInserisciRisultati = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.textBoxPercentualeEsitoRisultati = new System.Windows.Forms.TextBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel21 = new System.Windows.Forms.Panel();
+            this.textBoxEsitoRisultati = new System.Windows.Forms.TextBox();
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel23 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -68,10 +70,10 @@
             this.buttonDeleteRisultati = new System.Windows.Forms.Button();
             this.dataGridViewRisultatiDelete = new System.Windows.Forms.DataGridView();
             this.tabPageCercaModifica = new System.Windows.Forms.TabPage();
-            this.radioButtonSearchRegione = new System.Windows.Forms.RadioButton();
-            this.radioButtonSearchProvincia = new System.Windows.Forms.RadioButton();
-            this.radioButtonSearchCittà = new System.Windows.Forms.RadioButton();
-            this.radioButtonSearchCAP = new System.Windows.Forms.RadioButton();
+            this.radioButtonSearchPercentualeEsito = new System.Windows.Forms.RadioButton();
+            this.radioButtonSearchEsito = new System.Windows.Forms.RadioButton();
+            this.radioButtonSearchCodiceSkillCard = new System.Windows.Forms.RadioButton();
+            this.radioButtonSearchIDEsame = new System.Windows.Forms.RadioButton();
             this.panel40 = new System.Windows.Forms.Panel();
             this.panel41 = new System.Windows.Forms.Panel();
             this.textBoxCercaValoreRisultati = new System.Windows.Forms.TextBox();
@@ -82,10 +84,12 @@
             this.buttonUpdateRisultati = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
             this.panel25 = new System.Windows.Forms.Panel();
+            this.textBoxPercentualeEsitoUpdateRisultati = new System.Windows.Forms.TextBox();
             this.panel26 = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
             this.panel28 = new System.Windows.Forms.Panel();
             this.panel29 = new System.Windows.Forms.Panel();
+            this.textBoxEsitoUpdateRisultati = new System.Windows.Forms.TextBox();
             this.panel30 = new System.Windows.Forms.Panel();
             this.panel31 = new System.Windows.Forms.Panel();
             this.panel32 = new System.Windows.Forms.Panel();
@@ -106,10 +110,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxEsitoRisultati = new System.Windows.Forms.TextBox();
-            this.textBoxPercentualeEsitoRisultati = new System.Windows.Forms.TextBox();
-            this.textBoxEsitoUpdateRisultati = new System.Windows.Forms.TextBox();
-            this.textBoxPercentualeEsitoUpdateRisultati = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -217,6 +217,9 @@
             this.buttonClearRisultati.TabStop = false;
             this.buttonClearRisultati.Text = "CLEAR";
             this.buttonClearRisultati.UseVisualStyleBackColor = false;
+            this.buttonClearRisultati.Click += new System.EventHandler(this.buttonClearRisultati_Click);
+            this.buttonClearRisultati.MouseEnter += new System.EventHandler(this.buttonClearRisultati_MouseEnter);
+            this.buttonClearRisultati.MouseLeave += new System.EventHandler(this.buttonClearRisultati_MouseLeave);
             // 
             // dataGridViewRisultatiInsert
             // 
@@ -239,6 +242,9 @@
             this.buttonInserisciRisultati.TabStop = false;
             this.buttonInserisciRisultati.Text = "INSERT";
             this.buttonInserisciRisultati.UseVisualStyleBackColor = false;
+            this.buttonInserisciRisultati.Click += new System.EventHandler(this.buttonInserisciRisultati_Click);
+            this.buttonInserisciRisultati.MouseEnter += new System.EventHandler(this.buttonInserisciRisultati_MouseEnter);
+            this.buttonInserisciRisultati.MouseLeave += new System.EventHandler(this.buttonInserisciRisultati_MouseLeave);
             // 
             // panel16
             // 
@@ -259,6 +265,20 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(172, 32);
             this.panel17.TabIndex = 2;
+            // 
+            // textBoxPercentualeEsitoRisultati
+            // 
+            this.textBoxPercentualeEsitoRisultati.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPercentualeEsitoRisultati.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPercentualeEsitoRisultati.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxPercentualeEsitoRisultati.Location = new System.Drawing.Point(6, 6);
+            this.textBoxPercentualeEsitoRisultati.Name = "textBoxPercentualeEsitoRisultati";
+            this.textBoxPercentualeEsitoRisultati.Size = new System.Drawing.Size(160, 21);
+            this.textBoxPercentualeEsitoRisultati.TabIndex = 1;
+            this.textBoxPercentualeEsitoRisultati.TabStop = false;
+            this.textBoxPercentualeEsitoRisultati.Text = "Percentuale esito...";
+            this.textBoxPercentualeEsitoRisultati.Click += new System.EventHandler(this.textBoxPercentualeEsitoRisultati_Click);
+            this.textBoxPercentualeEsitoRisultati.Leave += new System.EventHandler(this.textBoxPercentualeEsitoRisultati_Leave);
             // 
             // panel18
             // 
@@ -296,6 +316,20 @@
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(172, 32);
             this.panel21.TabIndex = 2;
+            // 
+            // textBoxEsitoRisultati
+            // 
+            this.textBoxEsitoRisultati.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxEsitoRisultati.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEsitoRisultati.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxEsitoRisultati.Location = new System.Drawing.Point(6, 6);
+            this.textBoxEsitoRisultati.Name = "textBoxEsitoRisultati";
+            this.textBoxEsitoRisultati.Size = new System.Drawing.Size(160, 21);
+            this.textBoxEsitoRisultati.TabIndex = 1;
+            this.textBoxEsitoRisultati.TabStop = false;
+            this.textBoxEsitoRisultati.Text = "Esito...";
+            this.textBoxEsitoRisultati.Click += new System.EventHandler(this.textBoxEsitoRisultati_Click);
+            this.textBoxEsitoRisultati.Leave += new System.EventHandler(this.textBoxEsitoRisultati_Leave);
             // 
             // panel22
             // 
@@ -345,6 +379,8 @@
             this.textBoxCodiceSkillCardRisultati.TabIndex = 0;
             this.textBoxCodiceSkillCardRisultati.TabStop = false;
             this.textBoxCodiceSkillCardRisultati.Text = "Codice skill-card...";
+            this.textBoxCodiceSkillCardRisultati.Click += new System.EventHandler(this.textBoxCodiceSkillCardRisultati_Click);
+            this.textBoxCodiceSkillCardRisultati.Leave += new System.EventHandler(this.textBoxCodiceSkillCardRisultati_Leave);
             // 
             // panel14
             // 
@@ -394,6 +430,8 @@
             this.textBoxIDEsameRisultati.TabIndex = 1;
             this.textBoxIDEsameRisultati.TabStop = false;
             this.textBoxIDEsameRisultati.Text = "ID Esame...";
+            this.textBoxIDEsameRisultati.Click += new System.EventHandler(this.textBoxIDEsameRisultati_Click);
+            this.textBoxIDEsameRisultati.Leave += new System.EventHandler(this.textBoxIDEsameRisultati_Leave);
             // 
             // panel10
             // 
@@ -461,6 +499,8 @@
             this.textBoxCercaValoreDeleteRisultati.TabIndex = 1;
             this.textBoxCercaValoreDeleteRisultati.TabStop = false;
             this.textBoxCercaValoreDeleteRisultati.Text = "CERCA ID ESAME...";
+            this.textBoxCercaValoreDeleteRisultati.Click += new System.EventHandler(this.textBoxCercaValoreDeleteRisultati_Click);
+            this.textBoxCercaValoreDeleteRisultati.TextChanged += new System.EventHandler(this.textBoxCercaValoreDeleteRisultati_TextChanged);
             // 
             // panel46
             // 
@@ -496,6 +536,7 @@
             this.radioButtonMultiRisultati.TabIndex = 11;
             this.radioButtonMultiRisultati.Text = "Multi";
             this.radioButtonMultiRisultati.UseVisualStyleBackColor = true;
+            this.radioButtonMultiRisultati.CheckedChanged += new System.EventHandler(this.radioButtonMultiRisultati_CheckedChanged);
             // 
             // radioButtonSingleRisultati
             // 
@@ -529,6 +570,9 @@
             this.buttonDeleteAllRisultati.TabStop = false;
             this.buttonDeleteAllRisultati.Text = "DELETE ALL";
             this.buttonDeleteAllRisultati.UseVisualStyleBackColor = false;
+            this.buttonDeleteAllRisultati.Click += new System.EventHandler(this.buttonDeleteAllRisultati_Click);
+            this.buttonDeleteAllRisultati.MouseEnter += new System.EventHandler(this.buttonDeleteAllRisultati_MouseEnter);
+            this.buttonDeleteAllRisultati.MouseLeave += new System.EventHandler(this.buttonDeleteAllRisultati_MouseLeave);
             // 
             // buttonDeleteRisultati
             // 
@@ -542,6 +586,9 @@
             this.buttonDeleteRisultati.TabStop = false;
             this.buttonDeleteRisultati.Text = "DELETE";
             this.buttonDeleteRisultati.UseVisualStyleBackColor = false;
+            this.buttonDeleteRisultati.Click += new System.EventHandler(this.buttonDeleteRisultati_Click);
+            this.buttonDeleteRisultati.MouseEnter += new System.EventHandler(this.buttonDeleteRisultati_MouseEnter);
+            this.buttonDeleteRisultati.MouseLeave += new System.EventHandler(this.buttonDeleteRisultati_MouseLeave);
             // 
             // dataGridViewRisultatiDelete
             // 
@@ -553,13 +600,14 @@
             this.dataGridViewRisultatiDelete.Size = new System.Drawing.Size(748, 189);
             this.dataGridViewRisultatiDelete.TabIndex = 0;
             this.dataGridViewRisultatiDelete.TabStop = false;
+            this.dataGridViewRisultatiDelete.SelectionChanged += new System.EventHandler(this.dataGridViewRisultatiDelete_SelectionChanged);
             // 
             // tabPageCercaModifica
             // 
-            this.tabPageCercaModifica.Controls.Add(this.radioButtonSearchRegione);
-            this.tabPageCercaModifica.Controls.Add(this.radioButtonSearchProvincia);
-            this.tabPageCercaModifica.Controls.Add(this.radioButtonSearchCittà);
-            this.tabPageCercaModifica.Controls.Add(this.radioButtonSearchCAP);
+            this.tabPageCercaModifica.Controls.Add(this.radioButtonSearchPercentualeEsito);
+            this.tabPageCercaModifica.Controls.Add(this.radioButtonSearchEsito);
+            this.tabPageCercaModifica.Controls.Add(this.radioButtonSearchCodiceSkillCard);
+            this.tabPageCercaModifica.Controls.Add(this.radioButtonSearchIDEsame);
             this.tabPageCercaModifica.Controls.Add(this.panel40);
             this.tabPageCercaModifica.Controls.Add(this.buttonClearUpdateRisultati);
             this.tabPageCercaModifica.Controls.Add(this.dataGridViewRisultatiUpdate);
@@ -575,45 +623,49 @@
             this.tabPageCercaModifica.Text = "CERCA E MODIFICA";
             this.tabPageCercaModifica.UseVisualStyleBackColor = true;
             // 
-            // radioButtonSearchRegione
+            // radioButtonSearchPercentualeEsito
             // 
-            this.radioButtonSearchRegione.AutoSize = true;
-            this.radioButtonSearchRegione.Location = new System.Drawing.Point(657, 12);
-            this.radioButtonSearchRegione.Name = "radioButtonSearchRegione";
-            this.radioButtonSearchRegione.Size = new System.Drawing.Size(82, 21);
-            this.radioButtonSearchRegione.TabIndex = 34;
-            this.radioButtonSearchRegione.Text = "Regione";
-            this.radioButtonSearchRegione.UseVisualStyleBackColor = true;
+            this.radioButtonSearchPercentualeEsito.AutoSize = true;
+            this.radioButtonSearchPercentualeEsito.Location = new System.Drawing.Point(600, 12);
+            this.radioButtonSearchPercentualeEsito.Name = "radioButtonSearchPercentualeEsito";
+            this.radioButtonSearchPercentualeEsito.Size = new System.Drawing.Size(139, 21);
+            this.radioButtonSearchPercentualeEsito.TabIndex = 34;
+            this.radioButtonSearchPercentualeEsito.Text = "Percentuale esito";
+            this.radioButtonSearchPercentualeEsito.UseVisualStyleBackColor = true;
+            this.radioButtonSearchPercentualeEsito.CheckedChanged += new System.EventHandler(this.radioButtonSearchPercentualeEsito_CheckedChanged);
             // 
-            // radioButtonSearchProvincia
+            // radioButtonSearchEsito
             // 
-            this.radioButtonSearchProvincia.AutoSize = true;
-            this.radioButtonSearchProvincia.Location = new System.Drawing.Point(544, 12);
-            this.radioButtonSearchProvincia.Name = "radioButtonSearchProvincia";
-            this.radioButtonSearchProvincia.Size = new System.Drawing.Size(87, 21);
-            this.radioButtonSearchProvincia.TabIndex = 33;
-            this.radioButtonSearchProvincia.Text = "Provincia";
-            this.radioButtonSearchProvincia.UseVisualStyleBackColor = true;
+            this.radioButtonSearchEsito.AutoSize = true;
+            this.radioButtonSearchEsito.Location = new System.Drawing.Point(515, 12);
+            this.radioButtonSearchEsito.Name = "radioButtonSearchEsito";
+            this.radioButtonSearchEsito.Size = new System.Drawing.Size(60, 21);
+            this.radioButtonSearchEsito.TabIndex = 33;
+            this.radioButtonSearchEsito.Text = "Esito";
+            this.radioButtonSearchEsito.UseVisualStyleBackColor = true;
+            this.radioButtonSearchEsito.CheckedChanged += new System.EventHandler(this.radioButtonSearchEsito_CheckedChanged);
             // 
-            // radioButtonSearchCittà
+            // radioButtonSearchCodiceSkillCard
             // 
-            this.radioButtonSearchCittà.AutoSize = true;
-            this.radioButtonSearchCittà.Location = new System.Drawing.Point(458, 12);
-            this.radioButtonSearchCittà.Name = "radioButtonSearchCittà";
-            this.radioButtonSearchCittà.Size = new System.Drawing.Size(57, 21);
-            this.radioButtonSearchCittà.TabIndex = 32;
-            this.radioButtonSearchCittà.Text = "Città";
-            this.radioButtonSearchCittà.UseVisualStyleBackColor = true;
+            this.radioButtonSearchCodiceSkillCard.AutoSize = true;
+            this.radioButtonSearchCodiceSkillCard.Location = new System.Drawing.Point(359, 12);
+            this.radioButtonSearchCodiceSkillCard.Name = "radioButtonSearchCodiceSkillCard";
+            this.radioButtonSearchCodiceSkillCard.Size = new System.Drawing.Size(132, 21);
+            this.radioButtonSearchCodiceSkillCard.TabIndex = 32;
+            this.radioButtonSearchCodiceSkillCard.Text = "Codice skill-card";
+            this.radioButtonSearchCodiceSkillCard.UseVisualStyleBackColor = true;
+            this.radioButtonSearchCodiceSkillCard.CheckedChanged += new System.EventHandler(this.radioButtonSearchCodiceSkillCard_CheckedChanged);
             // 
-            // radioButtonSearchCAP
+            // radioButtonSearchIDEsame
             // 
-            this.radioButtonSearchCAP.AutoSize = true;
-            this.radioButtonSearchCAP.Location = new System.Drawing.Point(370, 12);
-            this.radioButtonSearchCAP.Name = "radioButtonSearchCAP";
-            this.radioButtonSearchCAP.Size = new System.Drawing.Size(56, 21);
-            this.radioButtonSearchCAP.TabIndex = 31;
-            this.radioButtonSearchCAP.Text = "CAP";
-            this.radioButtonSearchCAP.UseVisualStyleBackColor = true;
+            this.radioButtonSearchIDEsame.AutoSize = true;
+            this.radioButtonSearchIDEsame.Location = new System.Drawing.Point(252, 12);
+            this.radioButtonSearchIDEsame.Name = "radioButtonSearchIDEsame";
+            this.radioButtonSearchIDEsame.Size = new System.Drawing.Size(89, 21);
+            this.radioButtonSearchIDEsame.TabIndex = 31;
+            this.radioButtonSearchIDEsame.Text = "ID Esame";
+            this.radioButtonSearchIDEsame.UseVisualStyleBackColor = true;
+            this.radioButtonSearchIDEsame.CheckedChanged += new System.EventHandler(this.radioButtonSearchIDEsame_CheckedChanged);
             // 
             // panel40
             // 
@@ -623,7 +675,7 @@
             this.panel40.Controls.Add(this.panel43);
             this.panel40.Location = new System.Drawing.Point(22, 5);
             this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(323, 34);
+            this.panel40.Size = new System.Drawing.Size(211, 34);
             this.panel40.TabIndex = 30;
             // 
             // panel41
@@ -632,7 +684,7 @@
             this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel41.Location = new System.Drawing.Point(37, 0);
             this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(284, 32);
+            this.panel41.Size = new System.Drawing.Size(172, 32);
             this.panel41.TabIndex = 2;
             // 
             // textBoxCercaValoreRisultati
@@ -642,10 +694,12 @@
             this.textBoxCercaValoreRisultati.ForeColor = System.Drawing.Color.DimGray;
             this.textBoxCercaValoreRisultati.Location = new System.Drawing.Point(6, 6);
             this.textBoxCercaValoreRisultati.Name = "textBoxCercaValoreRisultati";
-            this.textBoxCercaValoreRisultati.Size = new System.Drawing.Size(272, 21);
+            this.textBoxCercaValoreRisultati.Size = new System.Drawing.Size(160, 21);
             this.textBoxCercaValoreRisultati.TabIndex = 1;
             this.textBoxCercaValoreRisultati.TabStop = false;
             this.textBoxCercaValoreRisultati.Text = "CERCA...";
+            this.textBoxCercaValoreRisultati.Click += new System.EventHandler(this.textBoxCercaValoreRisultati_Click);
+            this.textBoxCercaValoreRisultati.TextChanged += new System.EventHandler(this.textBoxCercaValoreRisultati_TextChanged);
             // 
             // panel42
             // 
@@ -676,6 +730,9 @@
             this.buttonClearUpdateRisultati.TabStop = false;
             this.buttonClearUpdateRisultati.Text = "CLEAR";
             this.buttonClearUpdateRisultati.UseVisualStyleBackColor = false;
+            this.buttonClearUpdateRisultati.Click += new System.EventHandler(this.buttonClearUpdateRisultati_Click);
+            this.buttonClearUpdateRisultati.MouseEnter += new System.EventHandler(this.buttonClearUpdateRisultati_MouseEnter);
+            this.buttonClearUpdateRisultati.MouseLeave += new System.EventHandler(this.buttonClearUpdateRisultati_MouseLeave);
             // 
             // dataGridViewRisultatiUpdate
             // 
@@ -685,6 +742,7 @@
             this.dataGridViewRisultatiUpdate.RowTemplate.Height = 24;
             this.dataGridViewRisultatiUpdate.Size = new System.Drawing.Size(487, 256);
             this.dataGridViewRisultatiUpdate.TabIndex = 28;
+            this.dataGridViewRisultatiUpdate.SelectionChanged += new System.EventHandler(this.dataGridViewRisultatiUpdate_SelectionChanged);
             // 
             // buttonUpdateRisultati
             // 
@@ -698,6 +756,9 @@
             this.buttonUpdateRisultati.TabStop = false;
             this.buttonUpdateRisultati.Text = "UPDATE";
             this.buttonUpdateRisultati.UseVisualStyleBackColor = false;
+            this.buttonUpdateRisultati.Click += new System.EventHandler(this.buttonUpdateRisultati_Click);
+            this.buttonUpdateRisultati.MouseEnter += new System.EventHandler(this.buttonUpdateRisultati_MouseEnter);
+            this.buttonUpdateRisultati.MouseLeave += new System.EventHandler(this.buttonUpdateRisultati_MouseLeave);
             // 
             // panel24
             // 
@@ -718,6 +779,20 @@
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(172, 32);
             this.panel25.TabIndex = 2;
+            // 
+            // textBoxPercentualeEsitoUpdateRisultati
+            // 
+            this.textBoxPercentualeEsitoUpdateRisultati.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPercentualeEsitoUpdateRisultati.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPercentualeEsitoUpdateRisultati.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxPercentualeEsitoUpdateRisultati.Location = new System.Drawing.Point(6, 6);
+            this.textBoxPercentualeEsitoUpdateRisultati.Name = "textBoxPercentualeEsitoUpdateRisultati";
+            this.textBoxPercentualeEsitoUpdateRisultati.Size = new System.Drawing.Size(160, 21);
+            this.textBoxPercentualeEsitoUpdateRisultati.TabIndex = 1;
+            this.textBoxPercentualeEsitoUpdateRisultati.TabStop = false;
+            this.textBoxPercentualeEsitoUpdateRisultati.Text = "Percentuale esito...";
+            this.textBoxPercentualeEsitoUpdateRisultati.Click += new System.EventHandler(this.textBoxPercentualeEsitoUpdateRisultati_Click);
+            this.textBoxPercentualeEsitoUpdateRisultati.Leave += new System.EventHandler(this.textBoxPercentualeEsitoUpdateRisultati_Leave);
             // 
             // panel26
             // 
@@ -755,6 +830,20 @@
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(172, 32);
             this.panel29.TabIndex = 2;
+            // 
+            // textBoxEsitoUpdateRisultati
+            // 
+            this.textBoxEsitoUpdateRisultati.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxEsitoUpdateRisultati.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEsitoUpdateRisultati.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxEsitoUpdateRisultati.Location = new System.Drawing.Point(6, 6);
+            this.textBoxEsitoUpdateRisultati.Name = "textBoxEsitoUpdateRisultati";
+            this.textBoxEsitoUpdateRisultati.Size = new System.Drawing.Size(160, 21);
+            this.textBoxEsitoUpdateRisultati.TabIndex = 1;
+            this.textBoxEsitoUpdateRisultati.TabStop = false;
+            this.textBoxEsitoUpdateRisultati.Text = "Esito...";
+            this.textBoxEsitoUpdateRisultati.Click += new System.EventHandler(this.textBoxEsitoUpdateRisultati_Click);
+            this.textBoxEsitoUpdateRisultati.Leave += new System.EventHandler(this.textBoxEsitoUpdateRisultati_Leave);
             // 
             // panel30
             // 
@@ -804,6 +893,8 @@
             this.textBoxCodiceSkillCardUpdateRisultati.TabIndex = 0;
             this.textBoxCodiceSkillCardUpdateRisultati.TabStop = false;
             this.textBoxCodiceSkillCardUpdateRisultati.Text = "Codice skill-card...";
+            this.textBoxCodiceSkillCardUpdateRisultati.Click += new System.EventHandler(this.textBoxCodiceSkillCardUpdateRisultati_Click);
+            this.textBoxCodiceSkillCardUpdateRisultati.Leave += new System.EventHandler(this.textBoxCodiceSkillCardUpdateRisultati_Leave);
             // 
             // panel34
             // 
@@ -853,6 +944,8 @@
             this.textBoxIDEsameUpdateRisultati.TabIndex = 1;
             this.textBoxIDEsameUpdateRisultati.TabStop = false;
             this.textBoxIDEsameUpdateRisultati.Text = "ID Esame...";
+            this.textBoxIDEsameUpdateRisultati.Click += new System.EventHandler(this.textBoxIDEsameUpdateRisultati_Click);
+            this.textBoxIDEsameUpdateRisultati.Leave += new System.EventHandler(this.textBoxIDEsameUpdateRisultati_Leave);
             // 
             // panel38
             // 
@@ -920,6 +1013,9 @@
             this.label2Risultati.Size = new System.Drawing.Size(98, 38);
             this.label2Risultati.TabIndex = 1;
             this.label2Risultati.Text = "Menù";
+            this.label2Risultati.Click += new System.EventHandler(this.label2Risultati_Click);
+            this.label2Risultati.MouseEnter += new System.EventHandler(this.label2Risultati_MouseEnter);
+            this.label2Risultati.MouseLeave += new System.EventHandler(this.label2Risultati_MouseLeave);
             // 
             // panel3
             // 
@@ -951,54 +1047,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Risultati";
             // 
-            // textBoxEsitoRisultati
-            // 
-            this.textBoxEsitoRisultati.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxEsitoRisultati.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEsitoRisultati.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxEsitoRisultati.Location = new System.Drawing.Point(6, 6);
-            this.textBoxEsitoRisultati.Name = "textBoxEsitoRisultati";
-            this.textBoxEsitoRisultati.Size = new System.Drawing.Size(160, 21);
-            this.textBoxEsitoRisultati.TabIndex = 1;
-            this.textBoxEsitoRisultati.TabStop = false;
-            this.textBoxEsitoRisultati.Text = "Esito...";
-            // 
-            // textBoxPercentualeEsitoRisultati
-            // 
-            this.textBoxPercentualeEsitoRisultati.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxPercentualeEsitoRisultati.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPercentualeEsitoRisultati.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxPercentualeEsitoRisultati.Location = new System.Drawing.Point(6, 6);
-            this.textBoxPercentualeEsitoRisultati.Name = "textBoxPercentualeEsitoRisultati";
-            this.textBoxPercentualeEsitoRisultati.Size = new System.Drawing.Size(160, 21);
-            this.textBoxPercentualeEsitoRisultati.TabIndex = 1;
-            this.textBoxPercentualeEsitoRisultati.TabStop = false;
-            this.textBoxPercentualeEsitoRisultati.Text = "Percentuale esito...";
-            // 
-            // textBoxEsitoUpdateRisultati
-            // 
-            this.textBoxEsitoUpdateRisultati.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxEsitoUpdateRisultati.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEsitoUpdateRisultati.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxEsitoUpdateRisultati.Location = new System.Drawing.Point(6, 6);
-            this.textBoxEsitoUpdateRisultati.Name = "textBoxEsitoUpdateRisultati";
-            this.textBoxEsitoUpdateRisultati.Size = new System.Drawing.Size(160, 21);
-            this.textBoxEsitoUpdateRisultati.TabIndex = 1;
-            this.textBoxEsitoUpdateRisultati.TabStop = false;
-            this.textBoxEsitoUpdateRisultati.Text = "Esito...";
-            // 
-            // textBoxPercentualeEsitoUpdateRisultati
-            // 
-            this.textBoxPercentualeEsitoUpdateRisultati.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxPercentualeEsitoUpdateRisultati.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPercentualeEsitoUpdateRisultati.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxPercentualeEsitoUpdateRisultati.Location = new System.Drawing.Point(6, 6);
-            this.textBoxPercentualeEsitoUpdateRisultati.Name = "textBoxPercentualeEsitoUpdateRisultati";
-            this.textBoxPercentualeEsitoUpdateRisultati.Size = new System.Drawing.Size(160, 21);
-            this.textBoxPercentualeEsitoUpdateRisultati.TabIndex = 1;
-            this.textBoxPercentualeEsitoUpdateRisultati.TabStop = false;
-            this.textBoxPercentualeEsitoUpdateRisultati.Text = "Percentuale esito...";
-            // 
             // FormRisultati
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1007,6 +1055,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FormRisultati";
             this.Text = "FormRisultati";
+            this.Load += new System.EventHandler(this.FormRisultati_Load);
             this.panel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
@@ -1102,10 +1151,10 @@
         private System.Windows.Forms.Button buttonDeleteRisultati;
         private System.Windows.Forms.DataGridView dataGridViewRisultatiDelete;
         private System.Windows.Forms.TabPage tabPageCercaModifica;
-        private System.Windows.Forms.RadioButton radioButtonSearchRegione;
-        private System.Windows.Forms.RadioButton radioButtonSearchProvincia;
-        private System.Windows.Forms.RadioButton radioButtonSearchCittà;
-        private System.Windows.Forms.RadioButton radioButtonSearchCAP;
+        private System.Windows.Forms.RadioButton radioButtonSearchPercentualeEsito;
+        private System.Windows.Forms.RadioButton radioButtonSearchEsito;
+        private System.Windows.Forms.RadioButton radioButtonSearchCodiceSkillCard;
+        private System.Windows.Forms.RadioButton radioButtonSearchIDEsame;
         private System.Windows.Forms.Panel panel40;
         private System.Windows.Forms.Panel panel41;
         private System.Windows.Forms.TextBox textBoxCercaValoreRisultati;
