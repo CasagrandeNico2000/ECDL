@@ -535,6 +535,69 @@ namespace Esami_ECDL
             buttonUpdateEsaminandi.BackColor = Color.Gainsboro;
         }
 
+        private void dataGridViewEsaminandiUpdate_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridViewEsaminandiUpdate.CurrentRow != null && dataGridViewEsaminandiUpdate.CurrentRow.Index < dataGridViewEsaminandiUpdate.Rows.Count - 1)
+            {
+                textBoxCodiceSkillCardUpdateEsaminandi.Text = dataGridViewEsaminandiUpdate.CurrentRow.Cells[0].Value.ToString();
+                textBoxNomeUpdateEsaminandi.Text = dataGridViewEsaminandiUpdate.CurrentRow.Cells[1].Value.ToString();
+                comboBoxSessoUpdateEsaminandi.Text = dataGridViewEsaminandiUpdate.CurrentRow.Cells[2].Value.ToString();
+                dateTimePickerDatadiNascitaUpdateEsaminandi.Text = dataGridViewEsaminandiUpdate.CurrentRow.Cells[3].Value.ToString();
+                textBoxProfessioneUpdateEsaminandi.Text = dataGridViewEsaminandiUpdate.CurrentRow.Cells[4].Value.ToString();
+                textBoxCAPLuogodiNascitaUpdateEsaminandi.Text = dataGridViewEsaminandiUpdate.CurrentRow.Cells[5].Value.ToString();
+                textBoxCodiceSkillCardUpdateEsaminandi.ForeColor = Color.DimGray;
+                textBoxNomeUpdateEsaminandi.ForeColor = Color.DimGray;
+                comboBoxSessoUpdateEsaminandi.ForeColor = Color.DimGray;
+                textBoxProfessioneUpdateEsaminandi.ForeColor = Color.DimGray;
+                textBoxCAPLuogodiNascitaUpdateEsaminandi.ForeColor = Color.DimGray;
+                CodiceSkillCardUpdate = textBoxCodiceSkillCardUpdateEsaminandi.Text;
+                NomeUpdate = textBoxNomeUpdateEsaminandi.Text;
+                SessoUpdate = comboBoxSessoUpdateEsaminandi.Text;
+                DatadiNascitaUpdate = dateTimePickerDatadiNascitaUpdateEsaminandi.Text;
+                ProfessioneUpdate = textBoxProfessioneUpdateEsaminandi.Text;
+                CAPUpdate = textBoxCAPLuogodiNascitaUpdateEsaminandi.Text;
+            }
+        }
+
+        private void buttonClearUpdateEsaminandi_Click(object sender, EventArgs e)
+        {
+            textBoxCodiceSkillCardUpdateEsaminandi.Text = CodiceSkillCardUpdate;
+            textBoxNomeUpdateEsaminandi.Text = NomeUpdate;
+            comboBoxSessoUpdateEsaminandi.Text = SessoUpdate;
+            dateTimePickerDatadiNascitaUpdateEsaminandi.Text = DatadiNascitaUpdate;
+            textBoxProfessioneUpdateEsaminandi.Text = ProfessioneUpdate;
+            textBoxCAPLuogodiNascitaUpdateEsaminandi.Text = CAPUpdate;
+            textBoxCodiceSkillCardUpdateEsaminandi.ForeColor = Color.DimGray;
+            textBoxNomeUpdateEsaminandi.ForeColor = Color.DimGray;
+            comboBoxSessoUpdateEsaminandi.ForeColor = Color.DimGray;
+            textBoxProfessioneUpdateEsaminandi.ForeColor = Color.DimGray;
+            textBoxCAPLuogodiNascitaUpdateEsaminandi.ForeColor = Color.DimGray;
+        }
+
+        private void buttonUpdateEsaminandi_Click(object sender, EventArgs e)
+        {
+            if (dateTimePickerDatadiNascitaUpdateEsaminandi.Text != "" && comboBoxSessoUpdateEsaminandi.Text != "" && textBoxCodiceSkillCardUpdateEsaminandi.Text != "" && textBoxNomeUpdateEsaminandi.Text != "" && textBoxProfessioneUpdateEsaminandi.Text != "" && textBoxCAPLuogodiNascitaUpdateEsaminandi.Text != "")
+            {
+                try
+                {
+                    MySqlCommand UpdateQuery;
+                    string comando = "UPDATE ecdl.esaminandi SET Codice_Skill_Card = " + textBoxCodiceSkillCardUpdateEsaminandi.Text + ", Nome = '" + textBoxNomeUpdateEsaminandi.Text + "', Sesso = '" + comboBoxSessoUpdateEsaminandi.Text + "', Data_di_Nascita = '" + dateTimePickerDatadiNascitaUpdateEsaminandi.Text + "', Professione = '" + textBoxProfessioneUpdateEsaminandi.Text + "', Luogo_di_Nascita_CAP = " + textBoxCAPLuogodiNascitaUpdateEsaminandi.Text + " WHERE Codice_Skill_Card = " + CodiceSkillCardUpdate;
+                    UpdateQuery = new MySqlCommand(comando, DatabaseECDL.connessioneEcdl);
+                    UpdateQuery.ExecuteNonQuery();
+                    MessageBox.Show("Modifica riga tabella effettuata!");
+                    Aggiorna();
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show(exception.ToString());
+                }
+            }
+            else
+            {
+                MessageBox.Show("Per eseguire il comando è necessario l'inserimento di tutti i dati!");
+            }
+        }
+
         private void Aggiorna()
         {
             MySqlCommand SelectQuery;

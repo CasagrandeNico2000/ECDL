@@ -32,6 +32,23 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageInserimento = new System.Windows.Forms.TabPage();
+            this.radioButtonFemminaEsaminandi = new System.Windows.Forms.RadioButton();
+            this.radioButtonMaschioEsaminandi = new System.Windows.Forms.RadioButton();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.textBoxNomeEsaminandi = new System.Windows.Forms.TextBox();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.textBoxCodiceSkillCardEsaminandi = new System.Windows.Forms.TextBox();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.textBoxCAPLuogodiNascitaEsaminandi = new System.Windows.Forms.TextBox();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.panel27 = new System.Windows.Forms.Panel();
             this.dateTimePickerDatadiNascitaEsaminandi = new System.Windows.Forms.DateTimePicker();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
@@ -56,41 +73,13 @@
             this.buttonDeleteEsaminandi = new System.Windows.Forms.Button();
             this.dataGridViewEsaminandiDelete = new System.Windows.Forms.DataGridView();
             this.tabPageCercaModifica = new System.Windows.Forms.TabPage();
-            this.radioButtonSearchDatadiNascitaEsaminandi = new System.Windows.Forms.RadioButton();
-            this.radioButtonSearchCodiceSkillCardEsaminandi = new System.Windows.Forms.RadioButton();
-            this.radioButtonSearchSessoEsaminandi = new System.Windows.Forms.RadioButton();
-            this.radioButtonSearchNomeEsaminandi = new System.Windows.Forms.RadioButton();
-            this.panel40 = new System.Windows.Forms.Panel();
-            this.panel41 = new System.Windows.Forms.Panel();
-            this.textBoxCercaValoreEsaminandi = new System.Windows.Forms.TextBox();
-            this.panel42 = new System.Windows.Forms.Panel();
-            this.panel43 = new System.Windows.Forms.Panel();
-            this.dataGridViewEsaminandiUpdate = new System.Windows.Forms.DataGridView();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2Esaminandi = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.textBoxNomeEsaminandi = new System.Windows.Forms.TextBox();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.textBoxCodiceSkillCardEsaminandi = new System.Windows.Forms.TextBox();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.textBoxCAPLuogodiNascitaEsaminandi = new System.Windows.Forms.TextBox();
-            this.radioButtonMaschioEsaminandi = new System.Windows.Forms.RadioButton();
-            this.radioButtonFemminaEsaminandi = new System.Windows.Forms.RadioButton();
+            this.panel48 = new System.Windows.Forms.Panel();
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.comboBoxSessoUpdateEsaminandi = new System.Windows.Forms.ComboBox();
+            this.panel50 = new System.Windows.Forms.Panel();
+            this.panel51 = new System.Windows.Forms.Panel();
+            this.radioButtonSearchCAPEsaminandi = new System.Windows.Forms.RadioButton();
+            this.radioButtonSearchProfessioneEsaminandi = new System.Windows.Forms.RadioButton();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.textBoxNomeUpdateEsaminandi = new System.Windows.Forms.TextBox();
@@ -114,17 +103,34 @@
             this.panel39 = new System.Windows.Forms.Panel();
             this.buttonClearUpdateEsaminandi = new System.Windows.Forms.Button();
             this.buttonUpdateEsaminandi = new System.Windows.Forms.Button();
-            this.radioButtonSearchProfessioneEsaminandi = new System.Windows.Forms.RadioButton();
-            this.radioButtonSearchCAPEsaminandi = new System.Windows.Forms.RadioButton();
-            this.panel48 = new System.Windows.Forms.Panel();
-            this.panel49 = new System.Windows.Forms.Panel();
-            this.panel50 = new System.Windows.Forms.Panel();
-            this.panel51 = new System.Windows.Forms.Panel();
-            this.comboBoxSessoUpdateEsaminandi = new System.Windows.Forms.ComboBox();
+            this.radioButtonSearchDatadiNascitaEsaminandi = new System.Windows.Forms.RadioButton();
+            this.radioButtonSearchCodiceSkillCardEsaminandi = new System.Windows.Forms.RadioButton();
+            this.radioButtonSearchSessoEsaminandi = new System.Windows.Forms.RadioButton();
+            this.radioButtonSearchNomeEsaminandi = new System.Windows.Forms.RadioButton();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.textBoxCercaValoreEsaminandi = new System.Windows.Forms.TextBox();
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.panel43 = new System.Windows.Forms.Panel();
+            this.dataGridViewEsaminandiUpdate = new System.Windows.Forms.DataGridView();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label2Esaminandi = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPageInserimento.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel28.SuspendLayout();
+            this.panel29.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel25.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEsaminandiInsert)).BeginInit();
@@ -133,18 +139,8 @@
             this.panel45.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEsaminandiDelete)).BeginInit();
             this.tabPageCercaModifica.SuspendLayout();
-            this.panel40.SuspendLayout();
-            this.panel41.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEsaminandiUpdate)).BeginInit();
-            this.panel6.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel25.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel28.SuspendLayout();
-            this.panel29.SuspendLayout();
+            this.panel48.SuspendLayout();
+            this.panel49.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel20.SuspendLayout();
@@ -153,8 +149,12 @@
             this.panel33.SuspendLayout();
             this.panel36.SuspendLayout();
             this.panel37.SuspendLayout();
-            this.panel48.SuspendLayout();
-            this.panel49.SuspendLayout();
+            this.panel40.SuspendLayout();
+            this.panel41.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEsaminandiUpdate)).BeginInit();
+            this.panel6.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -213,6 +213,181 @@
             this.tabPageInserimento.TabIndex = 0;
             this.tabPageInserimento.Text = "INSERISCI";
             this.tabPageInserimento.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonFemminaEsaminandi
+            // 
+            this.radioButtonFemminaEsaminandi.AutoSize = true;
+            this.radioButtonFemminaEsaminandi.Location = new System.Drawing.Point(131, 127);
+            this.radioButtonFemminaEsaminandi.Name = "radioButtonFemminaEsaminandi";
+            this.radioButtonFemminaEsaminandi.Size = new System.Drawing.Size(86, 21);
+            this.radioButtonFemminaEsaminandi.TabIndex = 15;
+            this.radioButtonFemminaEsaminandi.TabStop = true;
+            this.radioButtonFemminaEsaminandi.Text = "Femmina";
+            this.radioButtonFemminaEsaminandi.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonMaschioEsaminandi
+            // 
+            this.radioButtonMaschioEsaminandi.AutoSize = true;
+            this.radioButtonMaschioEsaminandi.Location = new System.Drawing.Point(44, 127);
+            this.radioButtonMaschioEsaminandi.Name = "radioButtonMaschioEsaminandi";
+            this.radioButtonMaschioEsaminandi.Size = new System.Drawing.Size(81, 21);
+            this.radioButtonMaschioEsaminandi.TabIndex = 14;
+            this.radioButtonMaschioEsaminandi.TabStop = true;
+            this.radioButtonMaschioEsaminandi.Text = "Maschio";
+            this.radioButtonMaschioEsaminandi.UseVisualStyleBackColor = true;
+            // 
+            // panel12
+            // 
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Controls.Add(this.panel13);
+            this.panel12.Controls.Add(this.panel14);
+            this.panel12.Controls.Add(this.panel15);
+            this.panel12.Location = new System.Drawing.Point(25, 87);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(211, 34);
+            this.panel12.TabIndex = 13;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.textBoxNomeEsaminandi);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel13.Location = new System.Drawing.Point(37, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(172, 32);
+            this.panel13.TabIndex = 2;
+            // 
+            // textBoxNomeEsaminandi
+            // 
+            this.textBoxNomeEsaminandi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNomeEsaminandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNomeEsaminandi.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxNomeEsaminandi.Location = new System.Drawing.Point(6, 6);
+            this.textBoxNomeEsaminandi.Name = "textBoxNomeEsaminandi";
+            this.textBoxNomeEsaminandi.Size = new System.Drawing.Size(160, 20);
+            this.textBoxNomeEsaminandi.TabIndex = 0;
+            this.textBoxNomeEsaminandi.TabStop = false;
+            this.textBoxNomeEsaminandi.Text = "Nome...";
+            this.textBoxNomeEsaminandi.Click += new System.EventHandler(this.textBoxNomeEsaminandi_Click);
+            this.textBoxNomeEsaminandi.Leave += new System.EventHandler(this.textBoxNomeEsaminandi_Leave);
+            // 
+            // panel14
+            // 
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel14.Location = new System.Drawing.Point(3, 0);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(34, 32);
+            this.panel14.TabIndex = 1;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(3, 32);
+            this.panel15.TabIndex = 0;
+            // 
+            // panel28
+            // 
+            this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel28.Controls.Add(this.panel29);
+            this.panel28.Controls.Add(this.panel30);
+            this.panel28.Controls.Add(this.panel31);
+            this.panel28.Location = new System.Drawing.Point(25, 46);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(211, 34);
+            this.panel28.TabIndex = 12;
+            // 
+            // panel29
+            // 
+            this.panel29.Controls.Add(this.textBoxCodiceSkillCardEsaminandi);
+            this.panel29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel29.Location = new System.Drawing.Point(37, 0);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(172, 32);
+            this.panel29.TabIndex = 2;
+            // 
+            // textBoxCodiceSkillCardEsaminandi
+            // 
+            this.textBoxCodiceSkillCardEsaminandi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCodiceSkillCardEsaminandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCodiceSkillCardEsaminandi.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxCodiceSkillCardEsaminandi.Location = new System.Drawing.Point(6, 6);
+            this.textBoxCodiceSkillCardEsaminandi.Name = "textBoxCodiceSkillCardEsaminandi";
+            this.textBoxCodiceSkillCardEsaminandi.Size = new System.Drawing.Size(160, 20);
+            this.textBoxCodiceSkillCardEsaminandi.TabIndex = 0;
+            this.textBoxCodiceSkillCardEsaminandi.TabStop = false;
+            this.textBoxCodiceSkillCardEsaminandi.Text = "Codice skill-card...";
+            this.textBoxCodiceSkillCardEsaminandi.Click += new System.EventHandler(this.textBoxCodiceSkillCardEsaminandi_Click);
+            this.textBoxCodiceSkillCardEsaminandi.Leave += new System.EventHandler(this.textBoxCodiceSkillCardEsaminandi_Leave);
+            // 
+            // panel30
+            // 
+            this.panel30.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel30.Location = new System.Drawing.Point(3, 0);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(34, 32);
+            this.panel30.TabIndex = 1;
+            // 
+            // panel31
+            // 
+            this.panel31.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel31.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel31.Location = new System.Drawing.Point(0, 0);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(3, 32);
+            this.panel31.TabIndex = 0;
+            // 
+            // panel24
+            // 
+            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel24.Controls.Add(this.panel25);
+            this.panel24.Controls.Add(this.panel26);
+            this.panel24.Controls.Add(this.panel27);
+            this.panel24.Location = new System.Drawing.Point(25, 228);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(211, 34);
+            this.panel24.TabIndex = 11;
+            // 
+            // panel25
+            // 
+            this.panel25.Controls.Add(this.textBoxCAPLuogodiNascitaEsaminandi);
+            this.panel25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel25.Location = new System.Drawing.Point(37, 0);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(172, 32);
+            this.panel25.TabIndex = 2;
+            // 
+            // textBoxCAPLuogodiNascitaEsaminandi
+            // 
+            this.textBoxCAPLuogodiNascitaEsaminandi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCAPLuogodiNascitaEsaminandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCAPLuogodiNascitaEsaminandi.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxCAPLuogodiNascitaEsaminandi.Location = new System.Drawing.Point(3, 6);
+            this.textBoxCAPLuogodiNascitaEsaminandi.Name = "textBoxCAPLuogodiNascitaEsaminandi";
+            this.textBoxCAPLuogodiNascitaEsaminandi.Size = new System.Drawing.Size(168, 20);
+            this.textBoxCAPLuogodiNascitaEsaminandi.TabIndex = 1;
+            this.textBoxCAPLuogodiNascitaEsaminandi.TabStop = false;
+            this.textBoxCAPLuogodiNascitaEsaminandi.Text = "CAP luogo di nascita...";
+            this.textBoxCAPLuogodiNascitaEsaminandi.Click += new System.EventHandler(this.textBoxCAPLuogodiNascitaEsaminandi_Click);
+            this.textBoxCAPLuogodiNascitaEsaminandi.Leave += new System.EventHandler(this.textBoxCAPLuogodiNascitaEsaminandi_Leave);
+            // 
+            // panel26
+            // 
+            this.panel26.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel26.Location = new System.Drawing.Point(3, 0);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(34, 32);
+            this.panel26.TabIndex = 1;
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel27.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel27.Location = new System.Drawing.Point(0, 0);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(3, 32);
+            this.panel27.TabIndex = 0;
             // 
             // dateTimePickerDatadiNascitaEsaminandi
             // 
@@ -500,367 +675,82 @@
             this.tabPageCercaModifica.Text = "CERCA E MODIFICA";
             this.tabPageCercaModifica.UseVisualStyleBackColor = true;
             // 
-            // radioButtonSearchDatadiNascitaEsaminandi
-            // 
-            this.radioButtonSearchDatadiNascitaEsaminandi.AutoSize = true;
-            this.radioButtonSearchDatadiNascitaEsaminandi.Location = new System.Drawing.Point(455, 13);
-            this.radioButtonSearchDatadiNascitaEsaminandi.Name = "radioButtonSearchDatadiNascitaEsaminandi";
-            this.radioButtonSearchDatadiNascitaEsaminandi.Size = new System.Drawing.Size(123, 21);
-            this.radioButtonSearchDatadiNascitaEsaminandi.TabIndex = 41;
-            this.radioButtonSearchDatadiNascitaEsaminandi.Text = "Data di nascita";
-            this.radioButtonSearchDatadiNascitaEsaminandi.UseVisualStyleBackColor = true;
-            this.radioButtonSearchDatadiNascitaEsaminandi.CheckedChanged += new System.EventHandler(this.radioButtonSearchDatadiNascitaEsaminandi_CheckedChanged);
-            // 
-            // radioButtonSearchCodiceSkillCardEsaminandi
-            // 
-            this.radioButtonSearchCodiceSkillCardEsaminandi.AutoSize = true;
-            this.radioButtonSearchCodiceSkillCardEsaminandi.Location = new System.Drawing.Point(199, 13);
-            this.radioButtonSearchCodiceSkillCardEsaminandi.Name = "radioButtonSearchCodiceSkillCardEsaminandi";
-            this.radioButtonSearchCodiceSkillCardEsaminandi.Size = new System.Drawing.Size(104, 21);
-            this.radioButtonSearchCodiceSkillCardEsaminandi.TabIndex = 35;
-            this.radioButtonSearchCodiceSkillCardEsaminandi.Text = "Codice card";
-            this.radioButtonSearchCodiceSkillCardEsaminandi.UseVisualStyleBackColor = true;
-            this.radioButtonSearchCodiceSkillCardEsaminandi.CheckedChanged += new System.EventHandler(this.radioButtonSearchCodiceSkillCardEsaminandi_CheckedChanged);
-            // 
-            // radioButtonSearchSessoEsaminandi
-            // 
-            this.radioButtonSearchSessoEsaminandi.AutoSize = true;
-            this.radioButtonSearchSessoEsaminandi.Location = new System.Drawing.Point(381, 13);
-            this.radioButtonSearchSessoEsaminandi.Name = "radioButtonSearchSessoEsaminandi";
-            this.radioButtonSearchSessoEsaminandi.Size = new System.Drawing.Size(68, 21);
-            this.radioButtonSearchSessoEsaminandi.TabIndex = 34;
-            this.radioButtonSearchSessoEsaminandi.Text = "Sesso";
-            this.radioButtonSearchSessoEsaminandi.UseVisualStyleBackColor = true;
-            this.radioButtonSearchSessoEsaminandi.CheckedChanged += new System.EventHandler(this.radioButtonSearchSessoEsaminandi_CheckedChanged);
-            // 
-            // radioButtonSearchNomeEsaminandi
-            // 
-            this.radioButtonSearchNomeEsaminandi.AutoSize = true;
-            this.radioButtonSearchNomeEsaminandi.Location = new System.Drawing.Point(309, 13);
-            this.radioButtonSearchNomeEsaminandi.Name = "radioButtonSearchNomeEsaminandi";
-            this.radioButtonSearchNomeEsaminandi.Size = new System.Drawing.Size(66, 21);
-            this.radioButtonSearchNomeEsaminandi.TabIndex = 33;
-            this.radioButtonSearchNomeEsaminandi.Text = "Nome";
-            this.radioButtonSearchNomeEsaminandi.UseVisualStyleBackColor = true;
-            this.radioButtonSearchNomeEsaminandi.CheckedChanged += new System.EventHandler(this.radioButtonSearchNomeEsaminandi_CheckedChanged);
-            // 
-            // panel40
-            // 
-            this.panel40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel40.Controls.Add(this.panel41);
-            this.panel40.Controls.Add(this.panel42);
-            this.panel40.Controls.Add(this.panel43);
-            this.panel40.Location = new System.Drawing.Point(22, 5);
-            this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(171, 34);
-            this.panel40.TabIndex = 30;
-            // 
-            // panel41
-            // 
-            this.panel41.Controls.Add(this.textBoxCercaValoreEsaminandi);
-            this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel41.Location = new System.Drawing.Point(37, 0);
-            this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(132, 32);
-            this.panel41.TabIndex = 2;
-            // 
-            // textBoxCercaValoreEsaminandi
-            // 
-            this.textBoxCercaValoreEsaminandi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxCercaValoreEsaminandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCercaValoreEsaminandi.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxCercaValoreEsaminandi.Location = new System.Drawing.Point(6, 6);
-            this.textBoxCercaValoreEsaminandi.Name = "textBoxCercaValoreEsaminandi";
-            this.textBoxCercaValoreEsaminandi.Size = new System.Drawing.Size(120, 20);
-            this.textBoxCercaValoreEsaminandi.TabIndex = 1;
-            this.textBoxCercaValoreEsaminandi.TabStop = false;
-            this.textBoxCercaValoreEsaminandi.Text = "CERCA...";
-            this.textBoxCercaValoreEsaminandi.Click += new System.EventHandler(this.textBoxCercaValoreEsaminandi_Click);
-            this.textBoxCercaValoreEsaminandi.TextChanged += new System.EventHandler(this.textBoxCercaValoreEsaminandi_TextChanged);
-            // 
-            // panel42
-            // 
-            this.panel42.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel42.Location = new System.Drawing.Point(3, 0);
-            this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(34, 32);
-            this.panel42.TabIndex = 1;
-            // 
-            // panel43
-            // 
-            this.panel43.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel43.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel43.Location = new System.Drawing.Point(0, 0);
-            this.panel43.Name = "panel43";
-            this.panel43.Size = new System.Drawing.Size(3, 32);
-            this.panel43.TabIndex = 0;
-            // 
-            // dataGridViewEsaminandiUpdate
-            // 
-            this.dataGridViewEsaminandiUpdate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEsaminandiUpdate.Location = new System.Drawing.Point(252, 50);
-            this.dataGridViewEsaminandiUpdate.Name = "dataGridViewEsaminandiUpdate";
-            this.dataGridViewEsaminandiUpdate.RowTemplate.Height = 24;
-            this.dataGridViewEsaminandiUpdate.Size = new System.Drawing.Size(487, 256);
-            this.dataGridViewEsaminandiUpdate.TabIndex = 28;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label3);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 78);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(775, 49);
-            this.panel6.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(281, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(209, 29);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Scegliere opzione";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 478);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(775, 3);
-            this.panel5.TabIndex = 3;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel4.Controls.Add(this.label2Esaminandi);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 481);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(775, 75);
-            this.panel4.TabIndex = 2;
-            // 
-            // label2Esaminandi
-            // 
-            this.label2Esaminandi.AutoSize = true;
-            this.label2Esaminandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2Esaminandi.ForeColor = System.Drawing.Color.DimGray;
-            this.label2Esaminandi.Location = new System.Drawing.Point(335, 18);
-            this.label2Esaminandi.Name = "label2Esaminandi";
-            this.label2Esaminandi.Size = new System.Drawing.Size(98, 38);
-            this.label2Esaminandi.TabIndex = 1;
-            this.label2Esaminandi.Text = "Menù";
-            this.label2Esaminandi.Click += new System.EventHandler(this.label2Esaminandi_Click);
-            this.label2Esaminandi.MouseEnter += new System.EventHandler(this.label2Esaminandi_MouseEnter);
-            this.label2Esaminandi.MouseLeave += new System.EventHandler(this.label2Esaminandi_MouseLeave);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 75);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(775, 3);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(775, 75);
-            this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(292, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 38);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Esaminandi";
-            // 
-            // panel24
-            // 
-            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel24.Controls.Add(this.panel25);
-            this.panel24.Controls.Add(this.panel26);
-            this.panel24.Controls.Add(this.panel27);
-            this.panel24.Location = new System.Drawing.Point(25, 228);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(211, 34);
-            this.panel24.TabIndex = 11;
-            // 
-            // panel25
-            // 
-            this.panel25.Controls.Add(this.textBoxCAPLuogodiNascitaEsaminandi);
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel25.Location = new System.Drawing.Point(37, 0);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(172, 32);
-            this.panel25.TabIndex = 2;
-            // 
-            // panel26
-            // 
-            this.panel26.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel26.Location = new System.Drawing.Point(3, 0);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(34, 32);
-            this.panel26.TabIndex = 1;
-            // 
-            // panel27
-            // 
-            this.panel27.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel27.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel27.Location = new System.Drawing.Point(0, 0);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(3, 32);
-            this.panel27.TabIndex = 0;
-            // 
-            // panel12
-            // 
-            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.panel13);
-            this.panel12.Controls.Add(this.panel14);
-            this.panel12.Controls.Add(this.panel15);
-            this.panel12.Location = new System.Drawing.Point(25, 87);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(211, 34);
-            this.panel12.TabIndex = 13;
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.textBoxNomeEsaminandi);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(37, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(172, 32);
-            this.panel13.TabIndex = 2;
-            // 
-            // textBoxNomeEsaminandi
-            // 
-            this.textBoxNomeEsaminandi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxNomeEsaminandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNomeEsaminandi.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxNomeEsaminandi.Location = new System.Drawing.Point(6, 6);
-            this.textBoxNomeEsaminandi.Name = "textBoxNomeEsaminandi";
-            this.textBoxNomeEsaminandi.Size = new System.Drawing.Size(160, 20);
-            this.textBoxNomeEsaminandi.TabIndex = 0;
-            this.textBoxNomeEsaminandi.TabStop = false;
-            this.textBoxNomeEsaminandi.Text = "Nome...";
-            this.textBoxNomeEsaminandi.Click += new System.EventHandler(this.textBoxNomeEsaminandi_Click);
-            this.textBoxNomeEsaminandi.Leave += new System.EventHandler(this.textBoxNomeEsaminandi_Leave);
-            // 
-            // panel14
-            // 
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel14.Location = new System.Drawing.Point(3, 0);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(34, 32);
-            this.panel14.TabIndex = 1;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(3, 32);
-            this.panel15.TabIndex = 0;
-            // 
-            // panel28
-            // 
-            this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel28.Controls.Add(this.panel29);
-            this.panel28.Controls.Add(this.panel30);
-            this.panel28.Controls.Add(this.panel31);
-            this.panel28.Location = new System.Drawing.Point(25, 46);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(211, 34);
-            this.panel28.TabIndex = 12;
-            // 
-            // panel29
-            // 
-            this.panel29.Controls.Add(this.textBoxCodiceSkillCardEsaminandi);
-            this.panel29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel29.Location = new System.Drawing.Point(37, 0);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(172, 32);
-            this.panel29.TabIndex = 2;
-            // 
-            // textBoxCodiceSkillCardEsaminandi
-            // 
-            this.textBoxCodiceSkillCardEsaminandi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxCodiceSkillCardEsaminandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCodiceSkillCardEsaminandi.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxCodiceSkillCardEsaminandi.Location = new System.Drawing.Point(6, 6);
-            this.textBoxCodiceSkillCardEsaminandi.Name = "textBoxCodiceSkillCardEsaminandi";
-            this.textBoxCodiceSkillCardEsaminandi.Size = new System.Drawing.Size(160, 20);
-            this.textBoxCodiceSkillCardEsaminandi.TabIndex = 0;
-            this.textBoxCodiceSkillCardEsaminandi.TabStop = false;
-            this.textBoxCodiceSkillCardEsaminandi.Text = "Codice skill-card...";
-            this.textBoxCodiceSkillCardEsaminandi.Click += new System.EventHandler(this.textBoxCodiceSkillCardEsaminandi_Click);
-            this.textBoxCodiceSkillCardEsaminandi.Leave += new System.EventHandler(this.textBoxCodiceSkillCardEsaminandi_Leave);
-            // 
-            // panel30
-            // 
-            this.panel30.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel30.Location = new System.Drawing.Point(3, 0);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(34, 32);
-            this.panel30.TabIndex = 1;
-            // 
-            // panel31
-            // 
-            this.panel31.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel31.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel31.Location = new System.Drawing.Point(0, 0);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(3, 32);
-            this.panel31.TabIndex = 0;
-            // 
-            // textBoxCAPLuogodiNascitaEsaminandi
-            // 
-            this.textBoxCAPLuogodiNascitaEsaminandi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxCAPLuogodiNascitaEsaminandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCAPLuogodiNascitaEsaminandi.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxCAPLuogodiNascitaEsaminandi.Location = new System.Drawing.Point(3, 6);
-            this.textBoxCAPLuogodiNascitaEsaminandi.Name = "textBoxCAPLuogodiNascitaEsaminandi";
-            this.textBoxCAPLuogodiNascitaEsaminandi.Size = new System.Drawing.Size(168, 20);
-            this.textBoxCAPLuogodiNascitaEsaminandi.TabIndex = 1;
-            this.textBoxCAPLuogodiNascitaEsaminandi.TabStop = false;
-            this.textBoxCAPLuogodiNascitaEsaminandi.Text = "CAP luogo di nascita...";
-            this.textBoxCAPLuogodiNascitaEsaminandi.Click += new System.EventHandler(this.textBoxCAPLuogodiNascitaEsaminandi_Click);
-            this.textBoxCAPLuogodiNascitaEsaminandi.Leave += new System.EventHandler(this.textBoxCAPLuogodiNascitaEsaminandi_Leave);
-            // 
-            // radioButtonMaschioEsaminandi
-            // 
-            this.radioButtonMaschioEsaminandi.AutoSize = true;
-            this.radioButtonMaschioEsaminandi.Location = new System.Drawing.Point(44, 127);
-            this.radioButtonMaschioEsaminandi.Name = "radioButtonMaschioEsaminandi";
-            this.radioButtonMaschioEsaminandi.Size = new System.Drawing.Size(81, 21);
-            this.radioButtonMaschioEsaminandi.TabIndex = 14;
-            this.radioButtonMaschioEsaminandi.TabStop = true;
-            this.radioButtonMaschioEsaminandi.Text = "Maschio";
-            this.radioButtonMaschioEsaminandi.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonFemminaEsaminandi
-            // 
-            this.radioButtonFemminaEsaminandi.AutoSize = true;
-            this.radioButtonFemminaEsaminandi.Location = new System.Drawing.Point(131, 127);
-            this.radioButtonFemminaEsaminandi.Name = "radioButtonFemminaEsaminandi";
-            this.radioButtonFemminaEsaminandi.Size = new System.Drawing.Size(86, 21);
-            this.radioButtonFemminaEsaminandi.TabIndex = 15;
-            this.radioButtonFemminaEsaminandi.TabStop = true;
-            this.radioButtonFemminaEsaminandi.Text = "Femmina";
-            this.radioButtonFemminaEsaminandi.UseVisualStyleBackColor = true;
+            // panel48
+            // 
+            this.panel48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel48.Controls.Add(this.panel49);
+            this.panel48.Controls.Add(this.panel50);
+            this.panel48.Controls.Add(this.panel51);
+            this.panel48.Location = new System.Drawing.Point(22, 127);
+            this.panel48.Name = "panel48";
+            this.panel48.Size = new System.Drawing.Size(211, 34);
+            this.panel48.TabIndex = 53;
+            // 
+            // panel49
+            // 
+            this.panel49.Controls.Add(this.comboBoxSessoUpdateEsaminandi);
+            this.panel49.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel49.Location = new System.Drawing.Point(37, 0);
+            this.panel49.Name = "panel49";
+            this.panel49.Size = new System.Drawing.Size(172, 32);
+            this.panel49.TabIndex = 2;
+            // 
+            // comboBoxSessoUpdateEsaminandi
+            // 
+            this.comboBoxSessoUpdateEsaminandi.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBoxSessoUpdateEsaminandi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSessoUpdateEsaminandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSessoUpdateEsaminandi.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBoxSessoUpdateEsaminandi.FormattingEnabled = true;
+            this.comboBoxSessoUpdateEsaminandi.Items.AddRange(new object[] {
+            "Maschio",
+            "Femmina"});
+            this.comboBoxSessoUpdateEsaminandi.Location = new System.Drawing.Point(3, 1);
+            this.comboBoxSessoUpdateEsaminandi.Name = "comboBoxSessoUpdateEsaminandi";
+            this.comboBoxSessoUpdateEsaminandi.Size = new System.Drawing.Size(166, 30);
+            this.comboBoxSessoUpdateEsaminandi.TabIndex = 2;
+            this.comboBoxSessoUpdateEsaminandi.TabStop = false;
+            this.comboBoxSessoUpdateEsaminandi.Text = "Sesso...";
+            this.comboBoxSessoUpdateEsaminandi.SelectedIndexChanged += new System.EventHandler(this.comboBoxSessoUpdateEsaminandi_SelectedIndexChanged);
+            // 
+            // panel50
+            // 
+            this.panel50.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel50.Location = new System.Drawing.Point(3, 0);
+            this.panel50.Name = "panel50";
+            this.panel50.Size = new System.Drawing.Size(34, 32);
+            this.panel50.TabIndex = 1;
+            // 
+            // panel51
+            // 
+            this.panel51.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel51.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel51.Location = new System.Drawing.Point(0, 0);
+            this.panel51.Name = "panel51";
+            this.panel51.Size = new System.Drawing.Size(3, 32);
+            this.panel51.TabIndex = 0;
+            // 
+            // radioButtonSearchCAPEsaminandi
+            // 
+            this.radioButtonSearchCAPEsaminandi.AutoSize = true;
+            this.radioButtonSearchCAPEsaminandi.Location = new System.Drawing.Point(694, 13);
+            this.radioButtonSearchCAPEsaminandi.Name = "radioButtonSearchCAPEsaminandi";
+            this.radioButtonSearchCAPEsaminandi.Size = new System.Drawing.Size(56, 21);
+            this.radioButtonSearchCAPEsaminandi.TabIndex = 52;
+            this.radioButtonSearchCAPEsaminandi.Text = "CAP";
+            this.radioButtonSearchCAPEsaminandi.UseVisualStyleBackColor = true;
+            this.radioButtonSearchCAPEsaminandi.CheckedChanged += new System.EventHandler(this.radioButtonSearchCAPEsaminandi_CheckedChanged);
+            // 
+            // radioButtonSearchProfessioneEsaminandi
+            // 
+            this.radioButtonSearchProfessioneEsaminandi.AutoSize = true;
+            this.radioButtonSearchProfessioneEsaminandi.Location = new System.Drawing.Point(584, 13);
+            this.radioButtonSearchProfessioneEsaminandi.Name = "radioButtonSearchProfessioneEsaminandi";
+            this.radioButtonSearchProfessioneEsaminandi.Size = new System.Drawing.Size(104, 21);
+            this.radioButtonSearchProfessioneEsaminandi.TabIndex = 51;
+            this.radioButtonSearchProfessioneEsaminandi.Text = "Professione";
+            this.radioButtonSearchProfessioneEsaminandi.UseVisualStyleBackColor = true;
+            this.radioButtonSearchProfessioneEsaminandi.CheckedChanged += new System.EventHandler(this.radioButtonSearchProfessioneEsaminandi_CheckedChanged);
             // 
             // panel8
             // 
@@ -1088,6 +978,7 @@
             this.buttonClearUpdateEsaminandi.TabStop = false;
             this.buttonClearUpdateEsaminandi.Text = "CLEAR";
             this.buttonClearUpdateEsaminandi.UseVisualStyleBackColor = false;
+            this.buttonClearUpdateEsaminandi.Click += new System.EventHandler(this.buttonClearUpdateEsaminandi_Click);
             this.buttonClearUpdateEsaminandi.MouseEnter += new System.EventHandler(this.buttonClearUpdateEsaminandi_MouseEnter);
             this.buttonClearUpdateEsaminandi.MouseLeave += new System.EventHandler(this.buttonClearUpdateEsaminandi_MouseLeave);
             // 
@@ -1103,85 +994,197 @@
             this.buttonUpdateEsaminandi.TabStop = false;
             this.buttonUpdateEsaminandi.Text = "UPDATE";
             this.buttonUpdateEsaminandi.UseVisualStyleBackColor = false;
+            this.buttonUpdateEsaminandi.Click += new System.EventHandler(this.buttonUpdateEsaminandi_Click);
             this.buttonUpdateEsaminandi.MouseEnter += new System.EventHandler(this.buttonUpdateEsaminandi_MouseEnter);
             this.buttonUpdateEsaminandi.MouseLeave += new System.EventHandler(this.buttonUpdateEsaminandi_MouseLeave);
             // 
-            // radioButtonSearchProfessioneEsaminandi
+            // radioButtonSearchDatadiNascitaEsaminandi
             // 
-            this.radioButtonSearchProfessioneEsaminandi.AutoSize = true;
-            this.radioButtonSearchProfessioneEsaminandi.Location = new System.Drawing.Point(584, 13);
-            this.radioButtonSearchProfessioneEsaminandi.Name = "radioButtonSearchProfessioneEsaminandi";
-            this.radioButtonSearchProfessioneEsaminandi.Size = new System.Drawing.Size(104, 21);
-            this.radioButtonSearchProfessioneEsaminandi.TabIndex = 51;
-            this.radioButtonSearchProfessioneEsaminandi.Text = "Professione";
-            this.radioButtonSearchProfessioneEsaminandi.UseVisualStyleBackColor = true;
-            this.radioButtonSearchProfessioneEsaminandi.CheckedChanged += new System.EventHandler(this.radioButtonSearchProfessioneEsaminandi_CheckedChanged);
+            this.radioButtonSearchDatadiNascitaEsaminandi.AutoSize = true;
+            this.radioButtonSearchDatadiNascitaEsaminandi.Location = new System.Drawing.Point(455, 13);
+            this.radioButtonSearchDatadiNascitaEsaminandi.Name = "radioButtonSearchDatadiNascitaEsaminandi";
+            this.radioButtonSearchDatadiNascitaEsaminandi.Size = new System.Drawing.Size(123, 21);
+            this.radioButtonSearchDatadiNascitaEsaminandi.TabIndex = 41;
+            this.radioButtonSearchDatadiNascitaEsaminandi.Text = "Data di nascita";
+            this.radioButtonSearchDatadiNascitaEsaminandi.UseVisualStyleBackColor = true;
+            this.radioButtonSearchDatadiNascitaEsaminandi.CheckedChanged += new System.EventHandler(this.radioButtonSearchDatadiNascitaEsaminandi_CheckedChanged);
             // 
-            // radioButtonSearchCAPEsaminandi
+            // radioButtonSearchCodiceSkillCardEsaminandi
             // 
-            this.radioButtonSearchCAPEsaminandi.AutoSize = true;
-            this.radioButtonSearchCAPEsaminandi.Location = new System.Drawing.Point(694, 13);
-            this.radioButtonSearchCAPEsaminandi.Name = "radioButtonSearchCAPEsaminandi";
-            this.radioButtonSearchCAPEsaminandi.Size = new System.Drawing.Size(56, 21);
-            this.radioButtonSearchCAPEsaminandi.TabIndex = 52;
-            this.radioButtonSearchCAPEsaminandi.Text = "CAP";
-            this.radioButtonSearchCAPEsaminandi.UseVisualStyleBackColor = true;
-            this.radioButtonSearchCAPEsaminandi.CheckedChanged += new System.EventHandler(this.radioButtonSearchCAPEsaminandi_CheckedChanged);
+            this.radioButtonSearchCodiceSkillCardEsaminandi.AutoSize = true;
+            this.radioButtonSearchCodiceSkillCardEsaminandi.Location = new System.Drawing.Point(199, 13);
+            this.radioButtonSearchCodiceSkillCardEsaminandi.Name = "radioButtonSearchCodiceSkillCardEsaminandi";
+            this.radioButtonSearchCodiceSkillCardEsaminandi.Size = new System.Drawing.Size(104, 21);
+            this.radioButtonSearchCodiceSkillCardEsaminandi.TabIndex = 35;
+            this.radioButtonSearchCodiceSkillCardEsaminandi.Text = "Codice card";
+            this.radioButtonSearchCodiceSkillCardEsaminandi.UseVisualStyleBackColor = true;
+            this.radioButtonSearchCodiceSkillCardEsaminandi.CheckedChanged += new System.EventHandler(this.radioButtonSearchCodiceSkillCardEsaminandi_CheckedChanged);
             // 
-            // panel48
+            // radioButtonSearchSessoEsaminandi
             // 
-            this.panel48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel48.Controls.Add(this.panel49);
-            this.panel48.Controls.Add(this.panel50);
-            this.panel48.Controls.Add(this.panel51);
-            this.panel48.Location = new System.Drawing.Point(22, 127);
-            this.panel48.Name = "panel48";
-            this.panel48.Size = new System.Drawing.Size(211, 34);
-            this.panel48.TabIndex = 53;
+            this.radioButtonSearchSessoEsaminandi.AutoSize = true;
+            this.radioButtonSearchSessoEsaminandi.Location = new System.Drawing.Point(381, 13);
+            this.radioButtonSearchSessoEsaminandi.Name = "radioButtonSearchSessoEsaminandi";
+            this.radioButtonSearchSessoEsaminandi.Size = new System.Drawing.Size(68, 21);
+            this.radioButtonSearchSessoEsaminandi.TabIndex = 34;
+            this.radioButtonSearchSessoEsaminandi.Text = "Sesso";
+            this.radioButtonSearchSessoEsaminandi.UseVisualStyleBackColor = true;
+            this.radioButtonSearchSessoEsaminandi.CheckedChanged += new System.EventHandler(this.radioButtonSearchSessoEsaminandi_CheckedChanged);
             // 
-            // panel49
+            // radioButtonSearchNomeEsaminandi
             // 
-            this.panel49.Controls.Add(this.comboBoxSessoUpdateEsaminandi);
-            this.panel49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel49.Location = new System.Drawing.Point(37, 0);
-            this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(172, 32);
-            this.panel49.TabIndex = 2;
+            this.radioButtonSearchNomeEsaminandi.AutoSize = true;
+            this.radioButtonSearchNomeEsaminandi.Location = new System.Drawing.Point(309, 13);
+            this.radioButtonSearchNomeEsaminandi.Name = "radioButtonSearchNomeEsaminandi";
+            this.radioButtonSearchNomeEsaminandi.Size = new System.Drawing.Size(66, 21);
+            this.radioButtonSearchNomeEsaminandi.TabIndex = 33;
+            this.radioButtonSearchNomeEsaminandi.Text = "Nome";
+            this.radioButtonSearchNomeEsaminandi.UseVisualStyleBackColor = true;
+            this.radioButtonSearchNomeEsaminandi.CheckedChanged += new System.EventHandler(this.radioButtonSearchNomeEsaminandi_CheckedChanged);
             // 
-            // panel50
+            // panel40
             // 
-            this.panel50.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel50.Location = new System.Drawing.Point(3, 0);
-            this.panel50.Name = "panel50";
-            this.panel50.Size = new System.Drawing.Size(34, 32);
-            this.panel50.TabIndex = 1;
+            this.panel40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel40.Controls.Add(this.panel41);
+            this.panel40.Controls.Add(this.panel42);
+            this.panel40.Controls.Add(this.panel43);
+            this.panel40.Location = new System.Drawing.Point(22, 5);
+            this.panel40.Name = "panel40";
+            this.panel40.Size = new System.Drawing.Size(171, 34);
+            this.panel40.TabIndex = 30;
             // 
-            // panel51
+            // panel41
             // 
-            this.panel51.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel51.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel51.Location = new System.Drawing.Point(0, 0);
-            this.panel51.Name = "panel51";
-            this.panel51.Size = new System.Drawing.Size(3, 32);
-            this.panel51.TabIndex = 0;
+            this.panel41.Controls.Add(this.textBoxCercaValoreEsaminandi);
+            this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel41.Location = new System.Drawing.Point(37, 0);
+            this.panel41.Name = "panel41";
+            this.panel41.Size = new System.Drawing.Size(132, 32);
+            this.panel41.TabIndex = 2;
             // 
-            // comboBoxSessoUpdateEsaminandi
+            // textBoxCercaValoreEsaminandi
             // 
-            this.comboBoxSessoUpdateEsaminandi.BackColor = System.Drawing.SystemColors.Window;
-            this.comboBoxSessoUpdateEsaminandi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxSessoUpdateEsaminandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxSessoUpdateEsaminandi.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBoxSessoUpdateEsaminandi.FormattingEnabled = true;
-            this.comboBoxSessoUpdateEsaminandi.Items.AddRange(new object[] {
-            "Maschio",
-            "Femmina"});
-            this.comboBoxSessoUpdateEsaminandi.Location = new System.Drawing.Point(3, 1);
-            this.comboBoxSessoUpdateEsaminandi.Name = "comboBoxSessoUpdateEsaminandi";
-            this.comboBoxSessoUpdateEsaminandi.Size = new System.Drawing.Size(166, 30);
-            this.comboBoxSessoUpdateEsaminandi.TabIndex = 2;
-            this.comboBoxSessoUpdateEsaminandi.TabStop = false;
-            this.comboBoxSessoUpdateEsaminandi.Text = "Sesso...";
-            this.comboBoxSessoUpdateEsaminandi.SelectedIndexChanged += new System.EventHandler(this.comboBoxSessoUpdateEsaminandi_SelectedIndexChanged);
+            this.textBoxCercaValoreEsaminandi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCercaValoreEsaminandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCercaValoreEsaminandi.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxCercaValoreEsaminandi.Location = new System.Drawing.Point(6, 6);
+            this.textBoxCercaValoreEsaminandi.Name = "textBoxCercaValoreEsaminandi";
+            this.textBoxCercaValoreEsaminandi.Size = new System.Drawing.Size(120, 20);
+            this.textBoxCercaValoreEsaminandi.TabIndex = 1;
+            this.textBoxCercaValoreEsaminandi.TabStop = false;
+            this.textBoxCercaValoreEsaminandi.Text = "CERCA...";
+            this.textBoxCercaValoreEsaminandi.Click += new System.EventHandler(this.textBoxCercaValoreEsaminandi_Click);
+            this.textBoxCercaValoreEsaminandi.TextChanged += new System.EventHandler(this.textBoxCercaValoreEsaminandi_TextChanged);
+            // 
+            // panel42
+            // 
+            this.panel42.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel42.Location = new System.Drawing.Point(3, 0);
+            this.panel42.Name = "panel42";
+            this.panel42.Size = new System.Drawing.Size(34, 32);
+            this.panel42.TabIndex = 1;
+            // 
+            // panel43
+            // 
+            this.panel43.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel43.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel43.Location = new System.Drawing.Point(0, 0);
+            this.panel43.Name = "panel43";
+            this.panel43.Size = new System.Drawing.Size(3, 32);
+            this.panel43.TabIndex = 0;
+            // 
+            // dataGridViewEsaminandiUpdate
+            // 
+            this.dataGridViewEsaminandiUpdate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEsaminandiUpdate.Location = new System.Drawing.Point(252, 50);
+            this.dataGridViewEsaminandiUpdate.Name = "dataGridViewEsaminandiUpdate";
+            this.dataGridViewEsaminandiUpdate.RowTemplate.Height = 24;
+            this.dataGridViewEsaminandiUpdate.Size = new System.Drawing.Size(487, 256);
+            this.dataGridViewEsaminandiUpdate.TabIndex = 28;
+            this.dataGridViewEsaminandiUpdate.SelectionChanged += new System.EventHandler(this.dataGridViewEsaminandiUpdate_SelectionChanged);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 78);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(775, 49);
+            this.panel6.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DimGray;
+            this.label3.Location = new System.Drawing.Point(281, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(209, 29);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Scegliere opzione";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 478);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(775, 3);
+            this.panel5.TabIndex = 3;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel4.Controls.Add(this.label2Esaminandi);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 481);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(775, 75);
+            this.panel4.TabIndex = 2;
+            // 
+            // label2Esaminandi
+            // 
+            this.label2Esaminandi.AutoSize = true;
+            this.label2Esaminandi.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2Esaminandi.ForeColor = System.Drawing.Color.DimGray;
+            this.label2Esaminandi.Location = new System.Drawing.Point(335, 18);
+            this.label2Esaminandi.Name = "label2Esaminandi";
+            this.label2Esaminandi.Size = new System.Drawing.Size(98, 38);
+            this.label2Esaminandi.TabIndex = 1;
+            this.label2Esaminandi.Text = "Menù";
+            this.label2Esaminandi.Click += new System.EventHandler(this.label2Esaminandi_Click);
+            this.label2Esaminandi.MouseEnter += new System.EventHandler(this.label2Esaminandi_MouseEnter);
+            this.label2Esaminandi.MouseLeave += new System.EventHandler(this.label2Esaminandi_MouseLeave);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 75);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(775, 3);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(775, 75);
+            this.panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.Location = new System.Drawing.Point(292, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(187, 38);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Esaminandi";
             // 
             // FormEsaminandi
             // 
@@ -1197,6 +1200,15 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPageInserimento.ResumeLayout(false);
             this.tabPageInserimento.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            this.panel28.ResumeLayout(false);
+            this.panel29.ResumeLayout(false);
+            this.panel29.PerformLayout();
+            this.panel24.ResumeLayout(false);
+            this.panel25.ResumeLayout(false);
+            this.panel25.PerformLayout();
             this.panel16.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
@@ -1209,25 +1221,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEsaminandiDelete)).EndInit();
             this.tabPageCercaModifica.ResumeLayout(false);
             this.tabPageCercaModifica.PerformLayout();
-            this.panel40.ResumeLayout(false);
-            this.panel41.ResumeLayout(false);
-            this.panel41.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEsaminandiUpdate)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel24.ResumeLayout(false);
-            this.panel25.ResumeLayout(false);
-            this.panel25.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            this.panel28.ResumeLayout(false);
-            this.panel29.ResumeLayout(false);
-            this.panel29.PerformLayout();
+            this.panel48.ResumeLayout(false);
+            this.panel49.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
@@ -1240,8 +1235,16 @@
             this.panel36.ResumeLayout(false);
             this.panel37.ResumeLayout(false);
             this.panel37.PerformLayout();
-            this.panel48.ResumeLayout(false);
-            this.panel49.ResumeLayout(false);
+            this.panel40.ResumeLayout(false);
+            this.panel41.ResumeLayout(false);
+            this.panel41.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEsaminandiUpdate)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

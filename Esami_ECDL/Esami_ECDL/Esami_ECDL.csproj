@@ -145,6 +145,9 @@
     <EmbeddedResource Include="FormRisultati.resx">
       <DependentUpon>FormRisultati.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormSede.resx">
+      <DependentUpon>FormSede.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSessioni.resx">
       <DependentUpon>FormSessioni.cs</DependentUpon>
     </EmbeddedResource>

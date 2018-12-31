@@ -54,7 +54,7 @@ namespace Esami_ECDL
                 try
                 {
                     MySqlCommand InsertQuery;
-                    string comando = "INSERT INTO ecdl.risultati(Esami_IDEsame,Esaminandi_Codice_Skill-Card,Esito,Percentuale_Esito) VALUES (" + textBoxIDEsameRisultati.Text + "," + textBoxCodiceSkillCardRisultati.Text + ",'" + textBoxEsitoRisultati.Text + "'," + textBoxPercentualeEsitoRisultati.Text + ")";
+                    string comando = "INSERT INTO ecdl.risultati(Esami_IDEsame,Esaminandi_Codice_Skill_Card,Esito,Percentuale_Esito) VALUES (" + textBoxIDEsameRisultati.Text + "," + textBoxCodiceSkillCardRisultati.Text + ",'" + textBoxEsitoRisultati.Text + "'," + textBoxPercentualeEsitoRisultati.Text + ")";
                     InsertQuery = new MySqlCommand(comando, DatabaseECDL.connessioneEcdl);
                     InsertQuery.ExecuteNonQuery();
                     MessageBox.Show("Inserimento riga tabella effettuato!");
@@ -386,7 +386,7 @@ namespace Esami_ECDL
             else if (radioButtonSearchCodiceSkillCard.Checked == true)
             {
                 MySqlCommand SearchCodiceSkillCardQuery;
-                SearchCodiceSkillCardQuery = new MySqlCommand("SELECT * FROM ecdl.risultati WHERE Esaminandi_Codice_Skill-Card LIKE '" + textBoxCercaValoreRisultati.Text + "%'", DatabaseECDL.connessioneEcdl);
+                SearchCodiceSkillCardQuery = new MySqlCommand("SELECT * FROM ecdl.risultati WHERE Esaminandi_Codice_Skill_Card LIKE '" + textBoxCercaValoreRisultati.Text + "%'", DatabaseECDL.connessioneEcdl);
                 MySqlDataAdapter MSQLAdapter = new MySqlDataAdapter(SearchCodiceSkillCardQuery);
                 DataSet ds = new DataSet();
 
@@ -557,7 +557,7 @@ namespace Esami_ECDL
                 try
                 {
                     MySqlCommand UpdateQuery;
-                    string comando = "UPDATE ecdl.risultati SET Esami_IDEsame = " + textBoxIDEsameUpdateRisultati.Text + ", Esaminandi_Codice_Skill-Card = " + textBoxCodiceSkillCardUpdateRisultati.Text + ", Esito = '" + textBoxEsitoUpdateRisultati.Text + "', Percentuale_Esito = " + textBoxPercentualeEsitoUpdateRisultati.Text + " WHERE Esami_IDEsame = " + IDEsameUpdate;
+                    string comando = "UPDATE ecdl.risultati SET Esami_IDEsame = " + textBoxIDEsameUpdateRisultati.Text + ", Esaminandi_Codice_Skill_Card = " + textBoxCodiceSkillCardUpdateRisultati.Text + ", Esito = '" + textBoxEsitoUpdateRisultati.Text + "', Percentuale_Esito = " + textBoxPercentualeEsitoUpdateRisultati.Text + " WHERE Esami_IDEsame = " + IDEsameUpdate;
                     UpdateQuery = new MySqlCommand(comando, DatabaseECDL.connessioneEcdl);
                     UpdateQuery.ExecuteNonQuery();
                     MessageBox.Show("Modifica riga tabella effettuata!");
