@@ -32,6 +32,12 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageInserimento = new System.Windows.Forms.TabPage();
+            this.dateTimePickerDataSessioni = new System.Windows.Forms.DateTimePicker();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.textBoxNomeSedeSessioni = new System.Windows.Forms.TextBox();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
             this.panelNumeroRigheSessioni = new System.Windows.Forms.Panel();
             this.buttonClearSessioni = new System.Windows.Forms.Button();
             this.dataGridViewSessioniInsert = new System.Windows.Forms.DataGridView();
@@ -50,6 +56,14 @@
             this.buttonDeleteSessioni = new System.Windows.Forms.Button();
             this.dataGridViewSessioniDelete = new System.Windows.Forms.DataGridView();
             this.tabPageCercaModifica = new System.Windows.Forms.TabPage();
+            this.radioButtonSearchNomeSedeSessioni = new System.Windows.Forms.RadioButton();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.textBoxNomeSedeUpdateSessioni = new System.Windows.Forms.TextBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.buttonClearUpdateSessioni = new System.Windows.Forms.Button();
+            this.buttonUpdateSessioni = new System.Windows.Forms.Button();
             this.radioButtonSearchIDSessioneSessioni = new System.Windows.Forms.RadioButton();
             this.radioButtonSearchOraSessioni = new System.Windows.Forms.RadioButton();
             this.radioButtonSearchDataSessioni = new System.Windows.Forms.RadioButton();
@@ -67,43 +81,45 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.textBoxNomeSedeSessioni = new System.Windows.Forms.TextBox();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.dateTimePickerDataSessioni = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerOraSessioni = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerOraUpdateSessioni = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerDataUpdateSessioni = new System.Windows.Forms.DateTimePicker();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.textBoxNomeSedeUpdateSessioni = new System.Windows.Forms.TextBox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.buttonClearUpdateSessioni = new System.Windows.Forms.Button();
-            this.buttonUpdateSessioni = new System.Windows.Forms.Button();
-            this.radioButtonSearchNomeSedeSessioni = new System.Windows.Forms.RadioButton();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.comboBoxOreSessioni = new System.Windows.Forms.ComboBox();
+            this.comboBoxMinutiSessioni = new System.Windows.Forms.ComboBox();
+            this.comboBoxSecondiSessioni = new System.Windows.Forms.ComboBox();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.comboBoxSecondiUpdateSessioni = new System.Windows.Forms.ComboBox();
+            this.comboBoxMinutiUpdateSessioni = new System.Windows.Forms.ComboBox();
+            this.comboBoxOreUpdateSessioni = new System.Windows.Forms.ComboBox();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPageInserimento.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSessioniInsert)).BeginInit();
             this.tabPageCercaCancella.SuspendLayout();
             this.panel44.SuspendLayout();
             this.panel45.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSessioniDelete)).BeginInit();
             this.tabPageCercaModifica.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.panel40.SuspendLayout();
             this.panel41.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSessioniUpdate)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.panel21.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -144,7 +160,7 @@
             // 
             // tabPageInserimento
             // 
-            this.tabPageInserimento.Controls.Add(this.dateTimePickerOraSessioni);
+            this.tabPageInserimento.Controls.Add(this.panel12);
             this.tabPageInserimento.Controls.Add(this.dateTimePickerDataSessioni);
             this.tabPageInserimento.Controls.Add(this.panel16);
             this.tabPageInserimento.Controls.Add(this.panelNumeroRigheSessioni);
@@ -159,6 +175,67 @@
             this.tabPageInserimento.Text = "INSERISCI";
             this.tabPageInserimento.UseVisualStyleBackColor = true;
             // 
+            // dateTimePickerDataSessioni
+            // 
+            this.dateTimePickerDataSessioni.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerDataSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerDataSessioni.Location = new System.Drawing.Point(25, 46);
+            this.dateTimePickerDataSessioni.Name = "dateTimePickerDataSessioni";
+            this.dateTimePickerDataSessioni.Size = new System.Drawing.Size(211, 22);
+            this.dateTimePickerDataSessioni.TabIndex = 9;
+            this.dateTimePickerDataSessioni.TabStop = false;
+            // 
+            // panel16
+            // 
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.Controls.Add(this.panel17);
+            this.panel16.Controls.Add(this.panel18);
+            this.panel16.Controls.Add(this.panel19);
+            this.panel16.Location = new System.Drawing.Point(25, 124);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(211, 34);
+            this.panel16.TabIndex = 8;
+            // 
+            // panel17
+            // 
+            this.panel17.Controls.Add(this.textBoxNomeSedeSessioni);
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel17.Location = new System.Drawing.Point(37, 0);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(172, 32);
+            this.panel17.TabIndex = 2;
+            // 
+            // textBoxNomeSedeSessioni
+            // 
+            this.textBoxNomeSedeSessioni.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNomeSedeSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNomeSedeSessioni.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxNomeSedeSessioni.Location = new System.Drawing.Point(6, 6);
+            this.textBoxNomeSedeSessioni.Name = "textBoxNomeSedeSessioni";
+            this.textBoxNomeSedeSessioni.Size = new System.Drawing.Size(160, 20);
+            this.textBoxNomeSedeSessioni.TabIndex = 0;
+            this.textBoxNomeSedeSessioni.TabStop = false;
+            this.textBoxNomeSedeSessioni.Text = "Nome sede...";
+            this.textBoxNomeSedeSessioni.Click += new System.EventHandler(this.textBoxNomeSedeSessioni_Click);
+            this.textBoxNomeSedeSessioni.Leave += new System.EventHandler(this.textBoxNomeSedeSessioni_Leave);
+            // 
+            // panel18
+            // 
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel18.Location = new System.Drawing.Point(3, 0);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(34, 32);
+            this.panel18.TabIndex = 1;
+            // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel19.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel19.Location = new System.Drawing.Point(0, 0);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(3, 32);
+            this.panel19.TabIndex = 0;
+            // 
             // panelNumeroRigheSessioni
             // 
             this.panelNumeroRigheSessioni.Location = new System.Drawing.Point(25, 7);
@@ -171,13 +248,16 @@
             this.buttonClearSessioni.BackColor = System.Drawing.Color.Gainsboro;
             this.buttonClearSessioni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClearSessioni.ForeColor = System.Drawing.Color.Black;
-            this.buttonClearSessioni.Location = new System.Drawing.Point(25, 168);
+            this.buttonClearSessioni.Location = new System.Drawing.Point(25, 170);
             this.buttonClearSessioni.Name = "buttonClearSessioni";
             this.buttonClearSessioni.Size = new System.Drawing.Size(211, 60);
             this.buttonClearSessioni.TabIndex = 6;
             this.buttonClearSessioni.TabStop = false;
             this.buttonClearSessioni.Text = "CLEAR";
             this.buttonClearSessioni.UseVisualStyleBackColor = false;
+            this.buttonClearSessioni.Click += new System.EventHandler(this.buttonClearSessioni_Click);
+            this.buttonClearSessioni.MouseEnter += new System.EventHandler(this.buttonClearSessioni_MouseEnter);
+            this.buttonClearSessioni.MouseLeave += new System.EventHandler(this.buttonClearSessioni_MouseLeave);
             // 
             // dataGridViewSessioniInsert
             // 
@@ -200,6 +280,9 @@
             this.buttonInserisciSessioni.TabStop = false;
             this.buttonInserisciSessioni.Text = "INSERT";
             this.buttonInserisciSessioni.UseVisualStyleBackColor = false;
+            this.buttonInserisciSessioni.Click += new System.EventHandler(this.buttonInserisciSessioni_Click);
+            this.buttonInserisciSessioni.MouseEnter += new System.EventHandler(this.buttonInserisciSessioni_MouseEnter);
+            this.buttonInserisciSessioni.MouseLeave += new System.EventHandler(this.buttonInserisciSessioni_MouseLeave);
             // 
             // tabPageCercaCancella
             // 
@@ -250,6 +333,8 @@
             this.textBoxCercaValoreDeleteSessioni.TabIndex = 1;
             this.textBoxCercaValoreDeleteSessioni.TabStop = false;
             this.textBoxCercaValoreDeleteSessioni.Text = "CERCA ID SESSIONE...";
+            this.textBoxCercaValoreDeleteSessioni.Click += new System.EventHandler(this.textBoxCercaValoreDeleteSessioni_Click);
+            this.textBoxCercaValoreDeleteSessioni.TextChanged += new System.EventHandler(this.textBoxCercaValoreDeleteSessioni_TextChanged);
             // 
             // panel46
             // 
@@ -285,6 +370,7 @@
             this.radioButtonMultiSessioni.TabIndex = 11;
             this.radioButtonMultiSessioni.Text = "Multi";
             this.radioButtonMultiSessioni.UseVisualStyleBackColor = true;
+            this.radioButtonMultiSessioni.CheckedChanged += new System.EventHandler(this.radioButtonMultiSessioni_CheckedChanged);
             // 
             // radioButtonSingleSessioni
             // 
@@ -318,6 +404,9 @@
             this.buttonDeleteAllSessioni.TabStop = false;
             this.buttonDeleteAllSessioni.Text = "DELETE ALL";
             this.buttonDeleteAllSessioni.UseVisualStyleBackColor = false;
+            this.buttonDeleteAllSessioni.Click += new System.EventHandler(this.buttonDeleteAllSessioni_Click);
+            this.buttonDeleteAllSessioni.MouseEnter += new System.EventHandler(this.buttonDeleteAllSessioni_MouseEnter);
+            this.buttonDeleteAllSessioni.MouseLeave += new System.EventHandler(this.buttonDeleteAllSessioni_MouseLeave);
             // 
             // buttonDeleteSessioni
             // 
@@ -331,6 +420,9 @@
             this.buttonDeleteSessioni.TabStop = false;
             this.buttonDeleteSessioni.Text = "DELETE";
             this.buttonDeleteSessioni.UseVisualStyleBackColor = false;
+            this.buttonDeleteSessioni.Click += new System.EventHandler(this.buttonDeleteSessioni_Click);
+            this.buttonDeleteSessioni.MouseEnter += new System.EventHandler(this.buttonDeleteSessioni_MouseEnter);
+            this.buttonDeleteSessioni.MouseLeave += new System.EventHandler(this.buttonDeleteSessioni_MouseLeave);
             // 
             // dataGridViewSessioniDelete
             // 
@@ -342,12 +434,13 @@
             this.dataGridViewSessioniDelete.Size = new System.Drawing.Size(748, 189);
             this.dataGridViewSessioniDelete.TabIndex = 0;
             this.dataGridViewSessioniDelete.TabStop = false;
+            this.dataGridViewSessioniDelete.SelectionChanged += new System.EventHandler(this.dataGridViewSessioniDelete_SelectionChanged);
             // 
             // tabPageCercaModifica
             // 
-            this.tabPageCercaModifica.Controls.Add(this.radioButtonSearchNomeSedeSessioni);
-            this.tabPageCercaModifica.Controls.Add(this.dateTimePickerOraUpdateSessioni);
+            this.tabPageCercaModifica.Controls.Add(this.panel20);
             this.tabPageCercaModifica.Controls.Add(this.dateTimePickerDataUpdateSessioni);
+            this.tabPageCercaModifica.Controls.Add(this.radioButtonSearchNomeSedeSessioni);
             this.tabPageCercaModifica.Controls.Add(this.panel8);
             this.tabPageCercaModifica.Controls.Add(this.buttonClearUpdateSessioni);
             this.tabPageCercaModifica.Controls.Add(this.buttonUpdateSessioni);
@@ -363,6 +456,100 @@
             this.tabPageCercaModifica.Text = "CERCA E MODIFICA";
             this.tabPageCercaModifica.UseVisualStyleBackColor = true;
             // 
+            // radioButtonSearchNomeSedeSessioni
+            // 
+            this.radioButtonSearchNomeSedeSessioni.AutoSize = true;
+            this.radioButtonSearchNomeSedeSessioni.Location = new System.Drawing.Point(638, 12);
+            this.radioButtonSearchNomeSedeSessioni.Name = "radioButtonSearchNomeSedeSessioni";
+            this.radioButtonSearchNomeSedeSessioni.Size = new System.Drawing.Size(101, 21);
+            this.radioButtonSearchNomeSedeSessioni.TabIndex = 41;
+            this.radioButtonSearchNomeSedeSessioni.Text = "Nome sede";
+            this.radioButtonSearchNomeSedeSessioni.UseVisualStyleBackColor = true;
+            this.radioButtonSearchNomeSedeSessioni.CheckedChanged += new System.EventHandler(this.radioButtonSearchNomeSedeSessioni_CheckedChanged);
+            // 
+            // panel8
+            // 
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Controls.Add(this.panel10);
+            this.panel8.Controls.Add(this.panel11);
+            this.panel8.Location = new System.Drawing.Point(22, 127);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(211, 34);
+            this.panel8.TabIndex = 38;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.textBoxNomeSedeUpdateSessioni);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(37, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(172, 32);
+            this.panel9.TabIndex = 2;
+            // 
+            // textBoxNomeSedeUpdateSessioni
+            // 
+            this.textBoxNomeSedeUpdateSessioni.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNomeSedeUpdateSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNomeSedeUpdateSessioni.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxNomeSedeUpdateSessioni.Location = new System.Drawing.Point(6, 6);
+            this.textBoxNomeSedeUpdateSessioni.Name = "textBoxNomeSedeUpdateSessioni";
+            this.textBoxNomeSedeUpdateSessioni.Size = new System.Drawing.Size(160, 20);
+            this.textBoxNomeSedeUpdateSessioni.TabIndex = 0;
+            this.textBoxNomeSedeUpdateSessioni.TabStop = false;
+            this.textBoxNomeSedeUpdateSessioni.Text = "Nome sede...";
+            this.textBoxNomeSedeUpdateSessioni.Click += new System.EventHandler(this.textBoxNomeSedeUpdateSessioni_Click);
+            this.textBoxNomeSedeUpdateSessioni.Leave += new System.EventHandler(this.textBoxNomeSedeUpdateSessioni_Leave);
+            // 
+            // panel10
+            // 
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel10.Location = new System.Drawing.Point(3, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(34, 32);
+            this.panel10.TabIndex = 1;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel11.Location = new System.Drawing.Point(0, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(3, 32);
+            this.panel11.TabIndex = 0;
+            // 
+            // buttonClearUpdateSessioni
+            // 
+            this.buttonClearUpdateSessioni.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonClearUpdateSessioni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearUpdateSessioni.ForeColor = System.Drawing.Color.Black;
+            this.buttonClearUpdateSessioni.Location = new System.Drawing.Point(22, 174);
+            this.buttonClearUpdateSessioni.Name = "buttonClearUpdateSessioni";
+            this.buttonClearUpdateSessioni.Size = new System.Drawing.Size(211, 60);
+            this.buttonClearUpdateSessioni.TabIndex = 37;
+            this.buttonClearUpdateSessioni.TabStop = false;
+            this.buttonClearUpdateSessioni.Text = "CLEAR";
+            this.buttonClearUpdateSessioni.UseVisualStyleBackColor = false;
+            this.buttonClearUpdateSessioni.Click += new System.EventHandler(this.buttonClearUpdateSessioni_Click);
+            this.buttonClearUpdateSessioni.MouseEnter += new System.EventHandler(this.buttonClearUpdateSessioni_MouseEnter);
+            this.buttonClearUpdateSessioni.MouseLeave += new System.EventHandler(this.buttonClearUpdateSessioni_MouseLeave);
+            // 
+            // buttonUpdateSessioni
+            // 
+            this.buttonUpdateSessioni.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonUpdateSessioni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUpdateSessioni.ForeColor = System.Drawing.Color.Black;
+            this.buttonUpdateSessioni.Location = new System.Drawing.Point(22, 246);
+            this.buttonUpdateSessioni.Name = "buttonUpdateSessioni";
+            this.buttonUpdateSessioni.Size = new System.Drawing.Size(211, 60);
+            this.buttonUpdateSessioni.TabIndex = 36;
+            this.buttonUpdateSessioni.TabStop = false;
+            this.buttonUpdateSessioni.Text = "UPDATE";
+            this.buttonUpdateSessioni.UseVisualStyleBackColor = false;
+            this.buttonUpdateSessioni.Click += new System.EventHandler(this.buttonUpdateSessioni_Click);
+            this.buttonUpdateSessioni.MouseEnter += new System.EventHandler(this.buttonUpdateSessioni_MouseEnter);
+            this.buttonUpdateSessioni.MouseLeave += new System.EventHandler(this.buttonUpdateSessioni_MouseLeave);
+            // 
             // radioButtonSearchIDSessioneSessioni
             // 
             this.radioButtonSearchIDSessioneSessioni.AutoSize = true;
@@ -372,6 +559,7 @@
             this.radioButtonSearchIDSessioneSessioni.TabIndex = 35;
             this.radioButtonSearchIDSessioneSessioni.Text = "ID Sessione";
             this.radioButtonSearchIDSessioneSessioni.UseVisualStyleBackColor = true;
+            this.radioButtonSearchIDSessioneSessioni.CheckedChanged += new System.EventHandler(this.radioButtonSearchIDSessioneSessioni_CheckedChanged);
             // 
             // radioButtonSearchOraSessioni
             // 
@@ -382,6 +570,7 @@
             this.radioButtonSearchOraSessioni.TabIndex = 34;
             this.radioButtonSearchOraSessioni.Text = "Ora";
             this.radioButtonSearchOraSessioni.UseVisualStyleBackColor = true;
+            this.radioButtonSearchOraSessioni.CheckedChanged += new System.EventHandler(this.radioButtonSearchOraSessioni_CheckedChanged);
             // 
             // radioButtonSearchDataSessioni
             // 
@@ -392,6 +581,7 @@
             this.radioButtonSearchDataSessioni.TabIndex = 33;
             this.radioButtonSearchDataSessioni.Text = "Data";
             this.radioButtonSearchDataSessioni.UseVisualStyleBackColor = true;
+            this.radioButtonSearchDataSessioni.CheckedChanged += new System.EventHandler(this.radioButtonSearchDataSessioni_CheckedChanged);
             // 
             // panel40
             // 
@@ -424,6 +614,8 @@
             this.textBoxCercaValoreSessioni.TabIndex = 1;
             this.textBoxCercaValoreSessioni.TabStop = false;
             this.textBoxCercaValoreSessioni.Text = "CERCA...";
+            this.textBoxCercaValoreSessioni.Click += new System.EventHandler(this.textBoxCercaValoreSessioni_Click);
+            this.textBoxCercaValoreSessioni.TextChanged += new System.EventHandler(this.textBoxCercaValoreSessioni_TextChanged);
             // 
             // panel42
             // 
@@ -450,6 +642,7 @@
             this.dataGridViewSessioniUpdate.RowTemplate.Height = 24;
             this.dataGridViewSessioniUpdate.Size = new System.Drawing.Size(487, 256);
             this.dataGridViewSessioniUpdate.TabIndex = 28;
+            this.dataGridViewSessioniUpdate.SelectionChanged += new System.EventHandler(this.dataGridViewSessioniUpdate_SelectionChanged);
             // 
             // panel6
             // 
@@ -534,179 +727,465 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Sessioni";
             // 
-            // panel16
-            // 
-            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Controls.Add(this.panel17);
-            this.panel16.Controls.Add(this.panel18);
-            this.panel16.Controls.Add(this.panel19);
-            this.panel16.Location = new System.Drawing.Point(25, 120);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(211, 34);
-            this.panel16.TabIndex = 8;
-            // 
-            // panel17
-            // 
-            this.panel17.Controls.Add(this.textBoxNomeSedeSessioni);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel17.Location = new System.Drawing.Point(37, 0);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(172, 32);
-            this.panel17.TabIndex = 2;
-            // 
-            // textBoxNomeSedeSessioni
-            // 
-            this.textBoxNomeSedeSessioni.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxNomeSedeSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNomeSedeSessioni.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxNomeSedeSessioni.Location = new System.Drawing.Point(6, 6);
-            this.textBoxNomeSedeSessioni.Name = "textBoxNomeSedeSessioni";
-            this.textBoxNomeSedeSessioni.Size = new System.Drawing.Size(160, 20);
-            this.textBoxNomeSedeSessioni.TabIndex = 0;
-            this.textBoxNomeSedeSessioni.TabStop = false;
-            this.textBoxNomeSedeSessioni.Text = "Nome sede...";
-            // 
-            // panel18
-            // 
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel18.Location = new System.Drawing.Point(3, 0);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(34, 32);
-            this.panel18.TabIndex = 1;
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel19.Location = new System.Drawing.Point(0, 0);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(3, 32);
-            this.panel19.TabIndex = 0;
-            // 
-            // dateTimePickerDataSessioni
-            // 
-            this.dateTimePickerDataSessioni.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerDataSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerDataSessioni.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerDataSessioni.Location = new System.Drawing.Point(25, 46);
-            this.dateTimePickerDataSessioni.Name = "dateTimePickerDataSessioni";
-            this.dateTimePickerDataSessioni.Size = new System.Drawing.Size(211, 22);
-            this.dateTimePickerDataSessioni.TabIndex = 9;
-            // 
-            // dateTimePickerOraSessioni
-            // 
-            this.dateTimePickerOraSessioni.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerOraSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerOraSessioni.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePickerOraSessioni.Location = new System.Drawing.Point(25, 83);
-            this.dateTimePickerOraSessioni.Name = "dateTimePickerOraSessioni";
-            this.dateTimePickerOraSessioni.Size = new System.Drawing.Size(211, 22);
-            this.dateTimePickerOraSessioni.TabIndex = 10;
-            // 
-            // dateTimePickerOraUpdateSessioni
-            // 
-            this.dateTimePickerOraUpdateSessioni.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerOraUpdateSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerOraUpdateSessioni.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePickerOraUpdateSessioni.Location = new System.Drawing.Point(22, 87);
-            this.dateTimePickerOraUpdateSessioni.Name = "dateTimePickerOraUpdateSessioni";
-            this.dateTimePickerOraUpdateSessioni.Size = new System.Drawing.Size(211, 22);
-            this.dateTimePickerOraUpdateSessioni.TabIndex = 40;
-            // 
             // dateTimePickerDataUpdateSessioni
             // 
             this.dateTimePickerDataUpdateSessioni.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerDataUpdateSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerDataUpdateSessioni.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerDataUpdateSessioni.Location = new System.Drawing.Point(22, 50);
             this.dateTimePickerDataUpdateSessioni.Name = "dateTimePickerDataUpdateSessioni";
             this.dateTimePickerDataUpdateSessioni.Size = new System.Drawing.Size(211, 22);
-            this.dateTimePickerDataUpdateSessioni.TabIndex = 39;
+            this.dateTimePickerDataUpdateSessioni.TabIndex = 42;
+            this.dateTimePickerDataUpdateSessioni.TabStop = false;
             // 
-            // panel8
+            // panel12
             // 
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.panel9);
-            this.panel8.Controls.Add(this.panel10);
-            this.panel8.Controls.Add(this.panel11);
-            this.panel8.Location = new System.Drawing.Point(22, 124);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(211, 34);
-            this.panel8.TabIndex = 38;
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Controls.Add(this.panel13);
+            this.panel12.Controls.Add(this.panel14);
+            this.panel12.Controls.Add(this.panel15);
+            this.panel12.Location = new System.Drawing.Point(25, 79);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(211, 34);
+            this.panel12.TabIndex = 10;
             // 
-            // panel9
+            // panel13
             // 
-            this.panel9.Controls.Add(this.textBoxNomeSedeUpdateSessioni);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(37, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(172, 32);
-            this.panel9.TabIndex = 2;
+            this.panel13.Controls.Add(this.comboBoxSecondiSessioni);
+            this.panel13.Controls.Add(this.comboBoxMinutiSessioni);
+            this.panel13.Controls.Add(this.comboBoxOreSessioni);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel13.Location = new System.Drawing.Point(37, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(172, 32);
+            this.panel13.TabIndex = 2;
             // 
-            // textBoxNomeSedeUpdateSessioni
+            // panel14
             // 
-            this.textBoxNomeSedeUpdateSessioni.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxNomeSedeUpdateSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNomeSedeUpdateSessioni.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxNomeSedeUpdateSessioni.Location = new System.Drawing.Point(6, 6);
-            this.textBoxNomeSedeUpdateSessioni.Name = "textBoxNomeSedeUpdateSessioni";
-            this.textBoxNomeSedeUpdateSessioni.Size = new System.Drawing.Size(160, 20);
-            this.textBoxNomeSedeUpdateSessioni.TabIndex = 0;
-            this.textBoxNomeSedeUpdateSessioni.TabStop = false;
-            this.textBoxNomeSedeUpdateSessioni.Text = "Nome sede...";
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel14.Location = new System.Drawing.Point(3, 0);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(34, 32);
+            this.panel14.TabIndex = 1;
             // 
-            // panel10
+            // panel15
             // 
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel10.Location = new System.Drawing.Point(3, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(34, 32);
-            this.panel10.TabIndex = 1;
+            this.panel15.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(3, 32);
+            this.panel15.TabIndex = 0;
             // 
-            // panel11
+            // comboBoxOreSessioni
             // 
-            this.panel11.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel11.Location = new System.Drawing.Point(0, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(3, 32);
-            this.panel11.TabIndex = 0;
+            this.comboBoxOreSessioni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxOreSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxOreSessioni.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBoxOreSessioni.FormattingEnabled = true;
+            this.comboBoxOreSessioni.Items.AddRange(new object[] {
+            "00",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"});
+            this.comboBoxOreSessioni.Location = new System.Drawing.Point(6, 1);
+            this.comboBoxOreSessioni.Name = "comboBoxOreSessioni";
+            this.comboBoxOreSessioni.Size = new System.Drawing.Size(49, 30);
+            this.comboBoxOreSessioni.TabIndex = 1;
+            this.comboBoxOreSessioni.Text = "hh";
+            this.comboBoxOreSessioni.SelectedIndexChanged += new System.EventHandler(this.comboBoxOreSessioni_SelectedIndexChanged);
             // 
-            // buttonClearUpdateSessioni
+            // comboBoxMinutiSessioni
             // 
-            this.buttonClearUpdateSessioni.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonClearUpdateSessioni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClearUpdateSessioni.ForeColor = System.Drawing.Color.Black;
-            this.buttonClearUpdateSessioni.Location = new System.Drawing.Point(22, 172);
-            this.buttonClearUpdateSessioni.Name = "buttonClearUpdateSessioni";
-            this.buttonClearUpdateSessioni.Size = new System.Drawing.Size(211, 60);
-            this.buttonClearUpdateSessioni.TabIndex = 37;
-            this.buttonClearUpdateSessioni.TabStop = false;
-            this.buttonClearUpdateSessioni.Text = "CLEAR";
-            this.buttonClearUpdateSessioni.UseVisualStyleBackColor = false;
+            this.comboBoxMinutiSessioni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxMinutiSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxMinutiSessioni.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBoxMinutiSessioni.FormattingEnabled = true;
+            this.comboBoxMinutiSessioni.Items.AddRange(new object[] {
+            "00",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.comboBoxMinutiSessioni.Location = new System.Drawing.Point(60, 1);
+            this.comboBoxMinutiSessioni.Name = "comboBoxMinutiSessioni";
+            this.comboBoxMinutiSessioni.Size = new System.Drawing.Size(57, 30);
+            this.comboBoxMinutiSessioni.TabIndex = 2;
+            this.comboBoxMinutiSessioni.Text = "mm";
+            this.comboBoxMinutiSessioni.SelectedIndexChanged += new System.EventHandler(this.comboBoxMinutiSessioni_SelectedIndexChanged);
             // 
-            // buttonUpdateSessioni
+            // comboBoxSecondiSessioni
             // 
-            this.buttonUpdateSessioni.BackColor = System.Drawing.Color.Gainsboro;
-            this.buttonUpdateSessioni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUpdateSessioni.ForeColor = System.Drawing.Color.Black;
-            this.buttonUpdateSessioni.Location = new System.Drawing.Point(22, 246);
-            this.buttonUpdateSessioni.Name = "buttonUpdateSessioni";
-            this.buttonUpdateSessioni.Size = new System.Drawing.Size(211, 60);
-            this.buttonUpdateSessioni.TabIndex = 36;
-            this.buttonUpdateSessioni.TabStop = false;
-            this.buttonUpdateSessioni.Text = "UPDATE";
-            this.buttonUpdateSessioni.UseVisualStyleBackColor = false;
+            this.comboBoxSecondiSessioni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSecondiSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSecondiSessioni.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBoxSecondiSessioni.FormattingEnabled = true;
+            this.comboBoxSecondiSessioni.Items.AddRange(new object[] {
+            "00",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.comboBoxSecondiSessioni.Location = new System.Drawing.Point(122, 1);
+            this.comboBoxSecondiSessioni.Name = "comboBoxSecondiSessioni";
+            this.comboBoxSecondiSessioni.Size = new System.Drawing.Size(49, 30);
+            this.comboBoxSecondiSessioni.TabIndex = 3;
+            this.comboBoxSecondiSessioni.Text = "ss";
+            this.comboBoxSecondiSessioni.SelectedIndexChanged += new System.EventHandler(this.comboBoxSecondiSessioni_SelectedIndexChanged);
             // 
-            // radioButtonSearchNomeSedeSessioni
+            // panel20
             // 
-            this.radioButtonSearchNomeSedeSessioni.AutoSize = true;
-            this.radioButtonSearchNomeSedeSessioni.Location = new System.Drawing.Point(638, 12);
-            this.radioButtonSearchNomeSedeSessioni.Name = "radioButtonSearchNomeSedeSessioni";
-            this.radioButtonSearchNomeSedeSessioni.Size = new System.Drawing.Size(101, 21);
-            this.radioButtonSearchNomeSedeSessioni.TabIndex = 41;
-            this.radioButtonSearchNomeSedeSessioni.Text = "Nome sede";
-            this.radioButtonSearchNomeSedeSessioni.UseVisualStyleBackColor = true;
+            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel20.Controls.Add(this.panel21);
+            this.panel20.Controls.Add(this.panel22);
+            this.panel20.Controls.Add(this.panel23);
+            this.panel20.Location = new System.Drawing.Point(22, 82);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(211, 34);
+            this.panel20.TabIndex = 43;
+            // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.comboBoxSecondiUpdateSessioni);
+            this.panel21.Controls.Add(this.comboBoxMinutiUpdateSessioni);
+            this.panel21.Controls.Add(this.comboBoxOreUpdateSessioni);
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel21.Location = new System.Drawing.Point(37, 0);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(172, 32);
+            this.panel21.TabIndex = 2;
+            // 
+            // comboBoxSecondiUpdateSessioni
+            // 
+            this.comboBoxSecondiUpdateSessioni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSecondiUpdateSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxSecondiUpdateSessioni.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBoxSecondiUpdateSessioni.FormattingEnabled = true;
+            this.comboBoxSecondiUpdateSessioni.Items.AddRange(new object[] {
+            "00",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.comboBoxSecondiUpdateSessioni.Location = new System.Drawing.Point(122, 1);
+            this.comboBoxSecondiUpdateSessioni.Name = "comboBoxSecondiUpdateSessioni";
+            this.comboBoxSecondiUpdateSessioni.Size = new System.Drawing.Size(49, 30);
+            this.comboBoxSecondiUpdateSessioni.TabIndex = 3;
+            this.comboBoxSecondiUpdateSessioni.Text = "ss";
+            this.comboBoxSecondiUpdateSessioni.SelectedIndexChanged += new System.EventHandler(this.comboBoxSecondiUpdateSessioni_SelectedIndexChanged);
+            // 
+            // comboBoxMinutiUpdateSessioni
+            // 
+            this.comboBoxMinutiUpdateSessioni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxMinutiUpdateSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxMinutiUpdateSessioni.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBoxMinutiUpdateSessioni.FormattingEnabled = true;
+            this.comboBoxMinutiUpdateSessioni.Items.AddRange(new object[] {
+            "00",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.comboBoxMinutiUpdateSessioni.Location = new System.Drawing.Point(60, 1);
+            this.comboBoxMinutiUpdateSessioni.Name = "comboBoxMinutiUpdateSessioni";
+            this.comboBoxMinutiUpdateSessioni.Size = new System.Drawing.Size(57, 30);
+            this.comboBoxMinutiUpdateSessioni.TabIndex = 2;
+            this.comboBoxMinutiUpdateSessioni.Text = "mm";
+            this.comboBoxMinutiUpdateSessioni.SelectedIndexChanged += new System.EventHandler(this.comboBoxMinutiUpdateSessioni_SelectedIndexChanged);
+            // 
+            // comboBoxOreUpdateSessioni
+            // 
+            this.comboBoxOreUpdateSessioni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxOreUpdateSessioni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxOreUpdateSessioni.ForeColor = System.Drawing.Color.DimGray;
+            this.comboBoxOreUpdateSessioni.FormattingEnabled = true;
+            this.comboBoxOreUpdateSessioni.Items.AddRange(new object[] {
+            "00",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23"});
+            this.comboBoxOreUpdateSessioni.Location = new System.Drawing.Point(6, 1);
+            this.comboBoxOreUpdateSessioni.Name = "comboBoxOreUpdateSessioni";
+            this.comboBoxOreUpdateSessioni.Size = new System.Drawing.Size(49, 30);
+            this.comboBoxOreUpdateSessioni.TabIndex = 1;
+            this.comboBoxOreUpdateSessioni.Text = "hh";
+            this.comboBoxOreUpdateSessioni.SelectedIndexChanged += new System.EventHandler(this.comboBoxOreUpdateSessioni_SelectedIndexChanged);
+            // 
+            // panel22
+            // 
+            this.panel22.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel22.Location = new System.Drawing.Point(3, 0);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(34, 32);
+            this.panel22.TabIndex = 1;
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel23.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel23.Location = new System.Drawing.Point(0, 0);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(3, 32);
+            this.panel23.TabIndex = 0;
             // 
             // FormSessioni
             // 
@@ -721,6 +1200,9 @@
             this.panel7.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPageInserimento.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSessioniInsert)).EndInit();
             this.tabPageCercaCancella.ResumeLayout(false);
             this.tabPageCercaCancella.PerformLayout();
@@ -730,6 +1212,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSessioniDelete)).EndInit();
             this.tabPageCercaModifica.ResumeLayout(false);
             this.tabPageCercaModifica.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.panel40.ResumeLayout(false);
             this.panel41.ResumeLayout(false);
             this.panel41.PerformLayout();
@@ -740,12 +1225,10 @@
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel16.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -756,7 +1239,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPageInserimento;
-        private System.Windows.Forms.DateTimePicker dateTimePickerOraSessioni;
         private System.Windows.Forms.DateTimePicker dateTimePickerDataSessioni;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel17;
@@ -782,8 +1264,6 @@
         private System.Windows.Forms.DataGridView dataGridViewSessioniDelete;
         private System.Windows.Forms.TabPage tabPageCercaModifica;
         private System.Windows.Forms.RadioButton radioButtonSearchNomeSedeSessioni;
-        private System.Windows.Forms.DateTimePicker dateTimePickerOraUpdateSessioni;
-        private System.Windows.Forms.DateTimePicker dateTimePickerDataUpdateSessioni;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.TextBox textBoxNomeSedeUpdateSessioni;
@@ -808,5 +1288,20 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerDataUpdateSessioni;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.ComboBox comboBoxSecondiSessioni;
+        private System.Windows.Forms.ComboBox comboBoxMinutiSessioni;
+        private System.Windows.Forms.ComboBox comboBoxOreSessioni;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.ComboBox comboBoxSecondiUpdateSessioni;
+        private System.Windows.Forms.ComboBox comboBoxMinutiUpdateSessioni;
+        private System.Windows.Forms.ComboBox comboBoxOreUpdateSessioni;
+        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.Panel panel23;
     }
 }
