@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.buttonClear = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.checkBoxCriptazionePW = new System.Windows.Forms.CheckBox();
@@ -53,7 +54,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonClear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel16.SuspendLayout();
@@ -94,6 +94,16 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(645, 257);
             this.panel7.TabIndex = 5;
+            // 
+            // buttonClear
+            // 
+            this.buttonClear.Location = new System.Drawing.Point(514, 108);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(90, 33);
+            this.buttonClear.TabIndex = 6;
+            this.buttonClear.Text = "CLEAR";
+            this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // panel16
             // 
@@ -342,16 +352,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Creazione Account";
             // 
-            // buttonClear
-            // 
-            this.buttonClear.Location = new System.Drawing.Point(514, 108);
-            this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(90, 33);
-            this.buttonClear.TabIndex = 6;
-            this.buttonClear.Text = "CLEAR";
-            this.buttonClear.UseVisualStyleBackColor = true;
-            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
-            // 
             // FormAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -359,7 +359,7 @@
             this.ClientSize = new System.Drawing.Size(669, 486);
             this.Controls.Add(this.panel1);
             this.Name = "FormAccount";
-            this.Text = "FormAccount";
+            this.Text = "Creazione account";
             this.Load += new System.EventHandler(this.FormAccount_Load);
             this.panel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);

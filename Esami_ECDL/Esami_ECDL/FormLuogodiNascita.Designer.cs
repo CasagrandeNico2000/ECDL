@@ -57,6 +57,11 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.tabPageCercaCancella = new System.Windows.Forms.TabPage();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.panel45 = new System.Windows.Forms.Panel();
+            this.textBoxCercaValoreDelete = new System.Windows.Forms.TextBox();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.panel47 = new System.Windows.Forms.Panel();
             this.panelDeleteUntil = new System.Windows.Forms.Panel();
             this.radioButtonMulti = new System.Windows.Forms.RadioButton();
             this.radioButtonSingle = new System.Windows.Forms.RadioButton();
@@ -105,11 +110,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel44 = new System.Windows.Forms.Panel();
-            this.panel45 = new System.Windows.Forms.Panel();
-            this.textBoxCercaValoreDelete = new System.Windows.Forms.TextBox();
-            this.panel46 = new System.Windows.Forms.Panel();
-            this.panel47 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -124,6 +124,8 @@
             this.panel8.SuspendLayout();
             this.panel11.SuspendLayout();
             this.tabPageCercaCancella.SuspendLayout();
+            this.panel44.SuspendLayout();
+            this.panel45.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLuogodiNascitaDelete)).BeginInit();
             this.tabPageCercaModifica.SuspendLayout();
             this.panel40.SuspendLayout();
@@ -140,8 +142,6 @@
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel44.SuspendLayout();
-            this.panel45.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -469,6 +469,57 @@
             this.tabPageCercaCancella.TabIndex = 1;
             this.tabPageCercaCancella.Text = "CERCA E CANCELLA";
             this.tabPageCercaCancella.UseVisualStyleBackColor = true;
+            // 
+            // panel44
+            // 
+            this.panel44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel44.Controls.Add(this.panel45);
+            this.panel44.Controls.Add(this.panel46);
+            this.panel44.Controls.Add(this.panel47);
+            this.panel44.Location = new System.Drawing.Point(7, 6);
+            this.panel44.Name = "panel44";
+            this.panel44.Size = new System.Drawing.Size(748, 34);
+            this.panel44.TabIndex = 35;
+            // 
+            // panel45
+            // 
+            this.panel45.Controls.Add(this.textBoxCercaValoreDelete);
+            this.panel45.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel45.Location = new System.Drawing.Point(37, 0);
+            this.panel45.Name = "panel45";
+            this.panel45.Size = new System.Drawing.Size(709, 32);
+            this.panel45.TabIndex = 2;
+            // 
+            // textBoxCercaValoreDelete
+            // 
+            this.textBoxCercaValoreDelete.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCercaValoreDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCercaValoreDelete.ForeColor = System.Drawing.Color.DimGray;
+            this.textBoxCercaValoreDelete.Location = new System.Drawing.Point(6, 6);
+            this.textBoxCercaValoreDelete.Name = "textBoxCercaValoreDelete";
+            this.textBoxCercaValoreDelete.Size = new System.Drawing.Size(697, 21);
+            this.textBoxCercaValoreDelete.TabIndex = 1;
+            this.textBoxCercaValoreDelete.TabStop = false;
+            this.textBoxCercaValoreDelete.Text = "CERCA CAP...";
+            this.textBoxCercaValoreDelete.Click += new System.EventHandler(this.textBoxCercaValoreDelete_Click);
+            this.textBoxCercaValoreDelete.TextChanged += new System.EventHandler(this.textBoxCercaValoreDelete_TextChanged);
+            // 
+            // panel46
+            // 
+            this.panel46.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel46.Location = new System.Drawing.Point(3, 0);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(34, 32);
+            this.panel46.TabIndex = 1;
+            // 
+            // panel47
+            // 
+            this.panel47.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel47.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel47.Location = new System.Drawing.Point(0, 0);
+            this.panel47.Name = "panel47";
+            this.panel47.Size = new System.Drawing.Size(3, 32);
+            this.panel47.TabIndex = 0;
             // 
             // panelDeleteUntil
             // 
@@ -1000,57 +1051,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Luogo di nascita";
             // 
-            // panel44
-            // 
-            this.panel44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel44.Controls.Add(this.panel45);
-            this.panel44.Controls.Add(this.panel46);
-            this.panel44.Controls.Add(this.panel47);
-            this.panel44.Location = new System.Drawing.Point(7, 6);
-            this.panel44.Name = "panel44";
-            this.panel44.Size = new System.Drawing.Size(748, 34);
-            this.panel44.TabIndex = 35;
-            // 
-            // panel45
-            // 
-            this.panel45.Controls.Add(this.textBoxCercaValoreDelete);
-            this.panel45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel45.Location = new System.Drawing.Point(37, 0);
-            this.panel45.Name = "panel45";
-            this.panel45.Size = new System.Drawing.Size(709, 32);
-            this.panel45.TabIndex = 2;
-            // 
-            // textBoxCercaValoreDelete
-            // 
-            this.textBoxCercaValoreDelete.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxCercaValoreDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCercaValoreDelete.ForeColor = System.Drawing.Color.DimGray;
-            this.textBoxCercaValoreDelete.Location = new System.Drawing.Point(6, 6);
-            this.textBoxCercaValoreDelete.Name = "textBoxCercaValoreDelete";
-            this.textBoxCercaValoreDelete.Size = new System.Drawing.Size(697, 21);
-            this.textBoxCercaValoreDelete.TabIndex = 1;
-            this.textBoxCercaValoreDelete.TabStop = false;
-            this.textBoxCercaValoreDelete.Text = "CERCA CAP...";
-            this.textBoxCercaValoreDelete.Click += new System.EventHandler(this.textBoxCercaValoreDelete_Click);
-            this.textBoxCercaValoreDelete.TextChanged += new System.EventHandler(this.textBoxCercaValoreDelete_TextChanged);
-            // 
-            // panel46
-            // 
-            this.panel46.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel46.Location = new System.Drawing.Point(3, 0);
-            this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(34, 32);
-            this.panel46.TabIndex = 1;
-            // 
-            // panel47
-            // 
-            this.panel47.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel47.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel47.Location = new System.Drawing.Point(0, 0);
-            this.panel47.Name = "panel47";
-            this.panel47.Size = new System.Drawing.Size(3, 32);
-            this.panel47.TabIndex = 0;
-            // 
             // FormLuogodiNascita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1058,7 +1058,7 @@
             this.ClientSize = new System.Drawing.Size(800, 581);
             this.Controls.Add(this.panel1);
             this.Name = "FormLuogodiNascita";
-            this.Text = " ";
+            this.Text = "Luogo di nascita";
             this.Load += new System.EventHandler(this.FormLuogodiNascita_Load);
             this.panel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -1077,6 +1077,9 @@
             this.panel11.PerformLayout();
             this.tabPageCercaCancella.ResumeLayout(false);
             this.tabPageCercaCancella.PerformLayout();
+            this.panel44.ResumeLayout(false);
+            this.panel45.ResumeLayout(false);
+            this.panel45.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLuogodiNascitaDelete)).EndInit();
             this.tabPageCercaModifica.ResumeLayout(false);
             this.tabPageCercaModifica.PerformLayout();
@@ -1100,9 +1103,6 @@
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel44.ResumeLayout(false);
-            this.panel45.ResumeLayout(false);
-            this.panel45.PerformLayout();
             this.ResumeLayout(false);
 
         }

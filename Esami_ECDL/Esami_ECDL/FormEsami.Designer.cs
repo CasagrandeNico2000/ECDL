@@ -805,7 +805,7 @@
             this.ClientSize = new System.Drawing.Size(800, 581);
             this.Controls.Add(this.panel1);
             this.Name = "FormEsami";
-            this.Text = "FormEsami";
+            this.Text = "Esami";
             this.Load += new System.EventHandler(this.FormEsami_Load);
             this.panel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);

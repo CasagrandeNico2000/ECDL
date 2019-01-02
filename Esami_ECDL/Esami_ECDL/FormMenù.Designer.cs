@@ -292,7 +292,7 @@
             this.ClientSize = new System.Drawing.Size(800, 531);
             this.Controls.Add(this.panel1);
             this.Name = "FormMenù";
-            this.Text = "FormMenù";
+            this.Text = "Menù";
             this.panel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);

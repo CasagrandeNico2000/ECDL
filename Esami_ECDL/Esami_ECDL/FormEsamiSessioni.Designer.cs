@@ -792,7 +792,7 @@
             this.ClientSize = new System.Drawing.Size(800, 581);
             this.Controls.Add(this.panel1);
             this.Name = "FormEsamiSessioni";
-            this.Text = "FormEsamiSessioni";
+            this.Text = "Esami e sessioni";
             this.Load += new System.EventHandler(this.FormEsamiSessioni_Load);
             this.panel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);

@@ -1193,7 +1193,7 @@
             this.ClientSize = new System.Drawing.Size(800, 581);
             this.Controls.Add(this.panel1);
             this.Name = "FormEsaminandi";
-            this.Text = "FormEsaminandi";
+            this.Text = "Esaminandi";
             this.Load += new System.EventHandler(this.FormEsaminandi_Load);
             this.panel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
